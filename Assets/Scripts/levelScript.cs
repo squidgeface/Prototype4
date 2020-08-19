@@ -7,27 +7,62 @@ using UnityEngine;
 public class levelScript : MonoBehaviour
 {
  
-    public GameObject Dialogue1;
+    public GameObject Dialogue;
     public GameObject Dialogue2;
     public GameObject Dialogue3;
- 
+    public GameObject TrumpDialogue;
+
+   
 
     bool activateDialogue = false;
 
     // Update is called once per frame
     void Update()
     {
-        if (Dialogue1.GetComponent<typewriterText>().clicked)
+        if (Dialogue.GetComponent<typewriterText>().clicked)
         {
-            Dialogue1.GetComponent<typewriterText>().startText = true;
+            Dialogue.GetComponent<typewriterText>().fullText = "";
+            Dialogue.GetComponent<TextMeshPro>().text = "";
+            Dialogue.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            Dialogue2.GetComponent<typewriterText>().fullText = "";
+            Dialogue2.GetComponent<TextMeshPro>().text = "";
+            Dialogue2.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            Dialogue3.GetComponent<typewriterText>().fullText = "";
+            Dialogue3.GetComponent<TextMeshPro>().text = "";
+            Dialogue3.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            TrumpDialogue.GetComponent<typewriterText>().isPlaying = true;
+            TrumpDialogue.GetComponent<typewriterText>().playAudio = 1;
+            Dialogue.GetComponent<typewriterText>().clicked = false;
         }
         else if (Dialogue2.GetComponent<typewriterText>().clicked)
         {
-            Dialogue2.GetComponent<typewriterText>().startText = true;
+            Dialogue.GetComponent<typewriterText>().fullText = "";
+            Dialogue.GetComponent<TextMeshPro>().text = "";
+            Dialogue.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            Dialogue2.GetComponent<typewriterText>().fullText = "";
+            Dialogue2.GetComponent<TextMeshPro>().text = "";
+            Dialogue2.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            Dialogue3.GetComponent<typewriterText>().fullText = "";
+            Dialogue3.GetComponent<TextMeshPro>().text = "";
+            Dialogue3.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            TrumpDialogue.GetComponent<typewriterText>().isPlaying = true;
+            TrumpDialogue.GetComponent<typewriterText>().playAudio = 2;
+            Dialogue2.GetComponent<typewriterText>().clicked = false;
         }
         else if (Dialogue3.GetComponent<typewriterText>().clicked)
         {
-            Dialogue3.GetComponent<typewriterText>().startText = true;
+            Dialogue.GetComponent<typewriterText>().fullText = "";
+            Dialogue.GetComponent<TextMeshPro>().text = "";
+            Dialogue.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            Dialogue2.GetComponent<typewriterText>().fullText = "";
+            Dialogue2.GetComponent<TextMeshPro>().text = "";
+            Dialogue2.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            Dialogue3.GetComponent<typewriterText>().fullText = "";
+            Dialogue3.GetComponent<TextMeshPro>().text = "";
+            Dialogue3.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            TrumpDialogue.GetComponent<typewriterText>().isPlaying = true;
+            TrumpDialogue.GetComponent<typewriterText>().playAudio = 3;
+            Dialogue3.GetComponent<typewriterText>().clicked = false;
         }
 
     }
