@@ -10,8 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6047744659577997975}
   - component: {fileID: 1990297571368668752}
-  - component: {fileID: 5375133563171782959}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,19 +81,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &5375133563171782959
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3063004617507030940}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 9.579999, y: 7.1627707, z: 0.19999999}
-  m_Center: {x: 0, y: 0.89434355, z: 0}
 --- !u!1 &8999034593787312339
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,7 +95,8 @@ GameObject:
   - component: {fileID: 8999034593787312336}
   - component: {fileID: 8999034593787312337}
   - component: {fileID: 8999034593787312338}
-  m_Layer: 0
+  - component: {fileID: 6035314151814145006}
+  m_Layer: 8
   m_Name: TypingText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +197,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Testing some text for the size and whatnot
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -279,13 +266,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 8999034593787312337}
-    characterCount: 42
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 7
-    wordCount: 8
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 2
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -314,8 +301,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c1297e91568048469f184eeb177a65b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.1
+  delay: 0.5
   fullText: ' We need to reduce carbon emissions in order to lower the rate at which
     Greenhouse gasses are released into the atmosphere.  One way to do this is to
     transfer our energy production away from coal'
-  startText: 1
+  startText: 0
+  clicked: 0
+  mainCam: {fileID: 0}
+  clickable:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!65 &6035314151814145006
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8999034593787312339}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 78.55, y: 57.38, z: 1}
+  m_Center: {x: 0, y: -11.1, z: 0}

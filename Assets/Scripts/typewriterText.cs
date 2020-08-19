@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 public class typewriterText : MonoBehaviour
 {
-    public float delay = 0.1f;
+    public float delay = 0.5f;
     public string fullText;
     private string curText = "";
     public bool startText = false;
-
+    public bool clicked = false;
 
     private void Update()
     {
@@ -18,6 +18,7 @@ public class typewriterText : MonoBehaviour
         {
             StartCoroutine(RevealText());
             startText = false;
+            clicked = false;
         }
     }
 
@@ -30,4 +31,12 @@ public class typewriterText : MonoBehaviour
             yield return new WaitForSeconds(delay);
         }
     }
+
+    void OnMouseDown()
+    {
+        if (!clicked)
+            clicked = true;
+    }
+
+
 }
