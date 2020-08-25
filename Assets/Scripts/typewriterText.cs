@@ -13,120 +13,110 @@ public class typewriterText : MonoBehaviour
     public bool clicked = false;
     public int playAudio = 0;
     public bool isPlaying = false;
-    public int level = 1;
+
+    public int level = 0;
+
+    public int advisor = 0;
+    public int tracker = 0;
+
     public levelScript LevelManager;
-    public frumpScripts frumpText;
     public AdvisorScripts advisorText;
+    public Advisors advisorNum;
+    public TrumpWriterText trumpScript;
+    public GameObject advisorGO;
 
-    public AudioSource trump1;
-    public AudioSource trump2;
-    public AudioSource trump3;
 
-    public AudioSource Cheering;
+    private void Start()
+    {
+        gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
+        gameObject.GetComponentInChildren<BoxCollider>().enabled = false;
+    }
 
     private void Update()
     {
+       if (LevelManager.GetComponent<levelScript>().advisorClicked != advisor)
+       {
+            startText = advisorNum.GetComponent<Advisors>().clicked;
+            level = LevelManager.GetComponent<levelScript>().level;
+       }
+
+       if (LevelManager.GetComponent<levelScript>().advisorClicked == advisor)
+       {
+            gameObject.GetComponentInChildren<BoxCollider>().enabled = true;
+       }
+
+        if (LevelManager.GetComponent<levelScript>().advisorClicked != 0)
+        {
+            advisorGO.GetComponent<SphereCollider>().enabled = false;
+        }
+
+
         if (startText)
         {
+            LevelManager.GetComponent<levelScript>().advisorClicked = advisor;
+            gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
+            gameObject.GetComponentInChildren<BoxCollider>().enabled = true;
+
+            if (advisorNum.GetComponent<Advisors>().advisorNum == 1)
+            {
+                if (LevelManager.GetComponent<levelScript>().level == 1)
+                {
+                    curText = advisorText.GetComponent<AdvisorScripts>().goodLvl1;
+                    playAudio = 1;
+                    tracker = 1;
+                }
+                else if (LevelManager.GetComponent<levelScript>().level == 2)
+                {
+                    curText = advisorText.GetComponent<AdvisorScripts>().goodLvl2;
+                }
+                else if (LevelManager.GetComponent<levelScript>().level == 3)
+                {
+                    curText = advisorText.GetComponent<AdvisorScripts>().goodLvl3;
+                }
+
+            }
+            else if (advisorNum.GetComponent<Advisors>().advisorNum == 2)
+            {
+                if (LevelManager.GetComponent<levelScript>().level == 1)
+                {
+                    curText = advisorText.GetComponent<AdvisorScripts>().stupidLvl1;
+                    playAudio = 2;
+                    tracker = 2;
+                }
+                else if (LevelManager.GetComponent<levelScript>().level == 2)
+                {
+                    curText = advisorText.GetComponent<AdvisorScripts>().stupidLvl2;
+                }
+                else if (LevelManager.GetComponent<levelScript>().level == 3)
+                {
+                    curText = advisorText.GetComponent<AdvisorScripts>().stupidLvl3;
+                }
+
+            }    
+            else if (advisorNum.GetComponent<Advisors>().advisorNum == 3)
+            {
+                if (LevelManager.GetComponent<levelScript>().level == 1)
+                {
+                    curText = advisorText.GetComponent<AdvisorScripts>().evilLvl1;
+                    playAudio = 3;
+                    tracker = 3;
+                }
+                else if (LevelManager.GetComponent<levelScript>().level == 2)
+                {
+                    curText = advisorText.GetComponent<AdvisorScripts>().evilLvl2;
+                }
+                else if (LevelManager.GetComponent<levelScript>().level == 3)
+                {
+                    curText = advisorText.GetComponent<AdvisorScripts>().evilLvl3;
+                }
+
+            }
             StartCoroutine(RevealText());
+            advisorNum.GetComponent<Advisors>().clicked = false;
             startText = false;
          
         }
-        if (level == 1)
-        {
-            if (playAudio == 1 && isPlaying)
-            {
-                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
-                trump1.Play();
-                fullText = frumpText.GetComponent<frumpScripts>().Lvl1Option1;
-                StartCoroutine(RevealText());
-                isPlaying = false;
-                clicked = false;
-            }
-            else if (playAudio == 2 && isPlaying)
-            {
-                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
-                trump2.Play();
-                fullText = frumpText.GetComponent<frumpScripts>().Lvl1Option2;
-                StartCoroutine(RevealText());
-                isPlaying = false;
-                clicked = false;
-            }
-            else if (playAudio == 3 && isPlaying)
-            {
-                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
-                trump3.Play();
-                fullText = frumpText.GetComponent<frumpScripts>().Lvl1Option3;
-                StartCoroutine(RevealText());
-                isPlaying = false;
-                clicked = false;
-            }
-        }
-        else if (level == 2)
-        {
-            if (playAudio == 1 && isPlaying)
-            {
-                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
-                trump1.Play();
-                fullText = frumpText.GetComponent<frumpScripts>().Lvl2Option1;
-                StartCoroutine(RevealText());
-                isPlaying = false;
-                clicked = false;
-            }
-            else if (playAudio == 2 && isPlaying)
-            {
-                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
-                trump2.Play();
-                fullText = frumpText.GetComponent<frumpScripts>().Lvl2Option2;
-                StartCoroutine(RevealText());
-                isPlaying = false;
-                clicked = false;
-            }
-            else if (playAudio == 3 && isPlaying)
-            {
-                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
-                trump3.Play();
-                fullText = frumpText.GetComponent<frumpScripts>().Lvl2Option3;
-                StartCoroutine(RevealText());
-                isPlaying = false;
-                clicked = false;
-            }
-        }
-        else if (level == 2)
-        {
-            if (playAudio == 1 && isPlaying)
-            {
-                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
-                trump1.Play();
-                fullText = frumpText.GetComponent<frumpScripts>().Lvl3Option1;
-                StartCoroutine(RevealText());
-                isPlaying = false;
-                clicked = false;
-            }
-            else if (playAudio == 2 && isPlaying)
-            {
-                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
-                trump2.Play();
-                fullText = frumpText.GetComponent<frumpScripts>().Lvl3Option2;
-                StartCoroutine(RevealText());
-                isPlaying = false;
-                clicked = false;
-            }
-            else if (playAudio == 3 && isPlaying)
-            {
-                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
-                trump3.Play();
-                fullText = frumpText.GetComponent<frumpScripts>().Lvl3Option3;
-                StartCoroutine(RevealText());
-                isPlaying = false;
-                clicked = false;
-            }
-        }
-
-        if (!trump1.isPlaying || !trump2.isPlaying || !trump3.isPlaying)
-        {
-            Cheering.Play();
-        }
+        
     }
 
     private IEnumerator RevealText()
@@ -143,7 +133,8 @@ public class typewriterText : MonoBehaviour
     {
         if (!clicked)
         {
-            clicked = true;
+            trumpScript.GetComponent<TrumpWriterText>().isPlaying = true;
+            trumpScript.GetComponent<TrumpWriterText>().playAudio = advisor;
         }
     }
 

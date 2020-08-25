@@ -12,8 +12,9 @@ public class levelScript : MonoBehaviour
     public GameObject Dialogue3;
     public GameObject TrumpDialogue;
     public ScoreScript ScoreCounter;
+    public int level = 1;
 
-   
+    public int advisorClicked = 0;
 
     bool activateDialogue = false;
 
