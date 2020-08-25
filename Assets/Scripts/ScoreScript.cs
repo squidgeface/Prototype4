@@ -22,6 +22,24 @@ public class ScoreScript : MonoBehaviour
         
     }
 
+    public void EndGame()
+    {
+        if (GoodScore >= 2)
+        {
+            GoodEnding();
+        } else if (StupidScore >= 2)
+        {
+            StupidEnding();
+        }else if(EvilScore >= 2)
+        {
+            EvilEnding();
+        }
+        else
+        {
+            StupidEnding();
+        }
+    }
+
     public void GoodEnding()
     {
         //goto good scene
