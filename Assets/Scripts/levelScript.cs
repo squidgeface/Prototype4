@@ -11,10 +11,16 @@ public class levelScript : MonoBehaviour
     public GameObject Dialogue2;
     public GameObject Dialogue3;
     public GameObject TrumpDialogue;
+    public ScoreScript ScoreCounter;
 
    
 
     bool activateDialogue = false;
+
+    private void Start()
+    {
+        ScoreCounter = FindObjectOfType<ScoreScript>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -33,6 +39,7 @@ public class levelScript : MonoBehaviour
             TrumpDialogue.GetComponent<typewriterText>().isPlaying = true;
             TrumpDialogue.GetComponent<typewriterText>().playAudio = 1;
             Dialogue.GetComponent<typewriterText>().clicked = false;
+            ScoreCounter.GoodScore += 1;
         }
         else if (Dialogue2.GetComponent<typewriterText>().clicked)
         {
@@ -48,6 +55,7 @@ public class levelScript : MonoBehaviour
             TrumpDialogue.GetComponent<typewriterText>().isPlaying = true;
             TrumpDialogue.GetComponent<typewriterText>().playAudio = 2;
             Dialogue2.GetComponent<typewriterText>().clicked = false;
+            ScoreCounter.StupidScore += 1;
         }
         else if (Dialogue3.GetComponent<typewriterText>().clicked)
         {
@@ -63,6 +71,7 @@ public class levelScript : MonoBehaviour
             TrumpDialogue.GetComponent<typewriterText>().isPlaying = true;
             TrumpDialogue.GetComponent<typewriterText>().playAudio = 3;
             Dialogue3.GetComponent<typewriterText>().clicked = false;
+            ScoreCounter.EvilScore += 1;
         }
 
     }
