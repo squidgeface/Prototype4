@@ -213,7 +213,7 @@ Transform:
   m_LocalScale: {x: 7.7006, y: 7.7006, z: 3.7799935}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &137765402
 GameObject:
@@ -307,7 +307,7 @@ Transform:
   m_LocalScale: {x: 1.5062, y: 1, z: 1.5119}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 180}
 --- !u!1 &140998008 stripped
 GameObject:
@@ -609,6 +609,75 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1174226487}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &269665277
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2710993547607590747, guid: d207851593032ff49bee401bd73a2695,
+        type: 3}
+      propertyPath: m_Name
+      value: FrumpBlinking
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710993547607590758, guid: d207851593032ff49bee401bd73a2695,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2226976
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710993547607590758, guid: d207851593032ff49bee401bd73a2695,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710993547607590758, guid: d207851593032ff49bee401bd73a2695,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710993547607590758, guid: d207851593032ff49bee401bd73a2695,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710993547607590758, guid: d207851593032ff49bee401bd73a2695,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710993547607590758, guid: d207851593032ff49bee401bd73a2695,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710993547607590758, guid: d207851593032ff49bee401bd73a2695,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710993547607590758, guid: d207851593032ff49bee401bd73a2695,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710993547607590758, guid: d207851593032ff49bee401bd73a2695,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710993547607590758, guid: d207851593032ff49bee401bd73a2695,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710993547607590758, guid: d207851593032ff49bee401bd73a2695,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d207851593032ff49bee401bd73a2695, type: 3}
 --- !u!1 &357317570
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,7 +769,7 @@ Transform:
   m_LocalScale: {x: 15.616097, y: 19.148823, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &441318430
 GameObject:
@@ -793,7 +862,7 @@ Transform:
   m_LocalScale: {x: 8.118702, y: 5.794596, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: -54.822002}
 --- !u!1001 &559673263
 PrefabInstance:
@@ -1076,7 +1145,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &651059328
 PrefabInstance:
@@ -1205,6 +1274,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 8999034593787312334, guid: e2b0823700b1cfa4b849308a67bccd6d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312335, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: m_Mesh
@@ -1234,6 +1308,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8999034593787312337, guid: e2b0823700b1cfa4b849308a67bccd6d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
@@ -1371,7 +1450,7 @@ Transform:
   m_LocalScale: {x: 1, y: 13.723141, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &842477157
 PrefabInstance:
@@ -1443,7 +1522,7 @@ PrefabInstance:
     - target: {fileID: 8999034593787312333, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312333, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
@@ -1572,9 +1651,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
-      propertyPath: Cheering
+      propertyPath: LevelManager
       value: 
-      objectReference: {fileID: 1725270976}
+      objectReference: {fileID: 920452137}
+    - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
+        type: 3}
+      propertyPath: frumpText
+      value: 
+      objectReference: {fileID: 920452138}
+    - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
+        type: 3}
+      propertyPath: advisorText
+      value: 
+      objectReference: {fileID: 920452139}
     - target: {fileID: 8999034593787312339, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: m_Name
@@ -1582,6 +1671,117 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2b0823700b1cfa4b849308a67bccd6d, type: 3}
+--- !u!1 &920452136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6537429827915395934, guid: 47520745eb6fcbf47a10b3962a959bd1,
+    type: 3}
+  m_PrefabInstance: {fileID: 6537429828422434946}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &920452137 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6537429827915395935, guid: 47520745eb6fcbf47a10b3962a959bd1,
+    type: 3}
+  m_PrefabInstance: {fileID: 6537429828422434946}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920452136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f79d42deb2d3d146941c8acfd4a70da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &920452138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920452136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea3d92fed9eacf04f8d1d1ecb54f4197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lvl1Option1: "My people tell me coal is the problem, and my people are the best.
+    So I said the only solution is to burn all the coal and get rid of it, And that
+    was MY idea. My people were amazed. They hadn\u2019t thought of that. They literally
+    gasped at how good the idea was."
+  Lvl1Option2: "You know I did some research, very in-depth research and discovered
+    that factories are the problem. I discovered this myself. So I\u2019m shutting
+    down our factories, I can do that you know. And I'll be sending our production
+    to China. China is very advanced. A very advanced people. Some of the most advanced
+    I've been told. Not only does this help the environment.It also creates jobs
+    now that people don\u2019t have to work in those terrible factories."
+  Lvl1Option3: "People do not think \u201CAmerica the great\u201D when they hear
+    2nd place, this is what i\u2019ve always said. I promised to make USA number
+    one, and that's what I plan to do. We are getting rid of those old fossil fuels,
+    that's what fossil means. And will be focusing on renewable resources like coal.
+    You know I made some coal in my fireplace yesterday, and the brilliant idea came
+    to me. We just make more coal and use that power. This ensures we get number
+    one in the carbon mission."
+  Lvl2Option1: "It\u2019s going to be, really, a voluntary thing. You can do it.
+    You don\u2019t have to do it. I\u2019m choosing not to do it, but some people
+    may want to do it, and that\u2019s OK. It may be good.Probably will. They\u2019re
+    making a recommendation. It\u2019s only a recommendation.\u201D thanks for the
+    recommendation though."
+  Lvl2Option2: "Ive been told masks help, they help a lot. I checked with my people
+    and they confirm what I said. Personally I will be using my Bat-Man mask. My
+    people tell me any mask is better than none so if spider-man is all you\u2019ve
+    got, go with that. My people also tell me tracing is important. Myself i\u2019m
+    more of a free hand artist, but this is what my people say."
+  Lvl2Option3: "Suppose that we hit the body with a tremendous force, whether it\u2019s
+    ultraviolet or just very powerful light. Supposing you brought the light inside
+    the body, which you can do either through the skin or in some other way. Is there
+    a way we can do something like that by injection inside or almost a cleaning?
+    It sounds interesting to me, so we\u2019ll see. But the whole concept of the
+    light, the"
+  Lvl3Option1: I've always said if a business is struggling you should let it die.
+    The USPS says it  will cause issues with the votes if I dont give them money.
+    They are threatening me. I could shut them down if I wanted to, I really could.
+    I have that power. Maybe I'll just add huge taxes, who knows I haven't decided.
+  Lvl3Option2: "People tell me they are worried that Russia may try and interfere
+    with the elections, but there is no need to panic. I asked Putin myself, a good
+    friend of mine. And he said \u201CNo\u201D. And that's good enough for me. He
+    is a very trustable man. "
+  Lvl3Option3: 'You know I am very honest and dependable person, some people say
+    the most. Just last week a lady came up to me and said Mr.Trump You are very
+    honest. And I would have to agree with her. If people have concerns they can
+    come to me, but no one has. These concerns are Fake news made up by the media
+    to make me look bad. '
+--- !u!114 &920452139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920452136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d67b5689fc76e4f4b9074af381b40c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goodLvl1: We need to reduce carbon emissions in order to lower the rate at which
+    Greenhouse gasses are released into the atmosphere. One way to do this is to
+    transfer our energy production away from coal.
+  goodLvl2: I would recommend isolating the problem areas by locking down the states
+    that have an outbreak and limiting travel between infected areas and enacting
+    social distancing guidelines.
+  goodLvl3: We need to give more funding to the USPS so they can successfully perform
+    the mail in voting across the entire country. Otherwise they may struggle and
+    this could cause issues with the ballots.
+  stupidLvl1: "It\u2019s that darn 5G tell ye! We need to tell everyone to do more
+    research from the youtube video I saw, then join together and rise up to bring
+    down the 5G factories and destroy the NWO alien lizard people!"
+  stupidLvl2: "I\u2019ve heard people say on the youtube that masks are dangerous
+    to our health. I won\u2019t be forced to wear a mask against my god given right
+    to not wear a mask! And anyone who wants to give up their freedom can be contact
+    traced by the evil government CIA"
+  stupidLvl3: It's probably those sneaky Russia interfering with the voting!
+  evilLvl1: In terms of carbon emission we are second only to China. We need to win
+    the carbon race and encourage businesses to stay with American fossil fuels.
+  evilLvl2: If bleach kills germs on stuff, why don't we just get people to drink
+    it to kill the virus?
+  evilLvl3: "My advice would be to stay silent on this one. We don\u2019t want to
+    reveal our plans for the takeov\u2026 er, election."
 --- !u!1 &926434628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,7 +1873,7 @@ Transform:
   m_LocalScale: {x: 15.132761, y: 38.43303, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: -23.608002, z: 0}
 --- !u!1 &1115714051
 GameObject:
@@ -1765,7 +1965,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 62.732002, y: 41, z: 0}
 --- !u!1 &1119947633
 GameObject:
@@ -1859,7 +2059,7 @@ Transform:
   m_LocalScale: {x: 45.778366, y: 0.15401584, z: 22.046988}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1122711861
 GameObject:
@@ -1953,7 +2153,7 @@ Transform:
   m_LocalScale: {x: 25.329584, y: 7.7006, z: 18.180256}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1174226487
 PrefabInstance:
@@ -2000,7 +2200,7 @@ PrefabInstance:
     - target: {fileID: 8999034593787312333, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312333, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
@@ -2236,7 +2436,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 62.732002, y: -41.474003, z: 0}
 --- !u!1 &1487862516
 GameObject:
@@ -2329,7 +2529,7 @@ Transform:
   m_LocalScale: {x: 1, y: 13.723141, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1643621350
 GameObject:
@@ -2422,135 +2622,8 @@ Transform:
   m_LocalScale: {x: 15.132761, y: 51.986, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 23, z: 0}
---- !u!1 &1725270975
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1725270977}
-  - component: {fileID: 1725270976}
-  m_Layer: 0
-  m_Name: Cheering
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &1725270976
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725270975}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 239365954056b17499e2d21c00aa9958, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &1725270977
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725270975}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7435913, y: 12.561264, z: 0.6347656}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 26
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1729503625
 GameObject:
   m_ObjectHideFlags: 0
@@ -2642,7 +2715,7 @@ Transform:
   m_LocalScale: {x: 8.734127, y: 5.794596, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -54.822002}
 --- !u!1 &1754457617
 GameObject:
@@ -2735,7 +2808,7 @@ Transform:
   m_LocalScale: {x: 2.2298, y: 13.723141, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1782340448
 PrefabInstance:
@@ -2787,7 +2860,7 @@ PrefabInstance:
     - target: {fileID: 4939707749557232072, guid: f64f44979d31fa44f950c51ec192ee6d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4939707749557232072, guid: f64f44979d31fa44f950c51ec192ee6d,
         type: 3}
@@ -2872,7 +2945,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 635a32c7bce892340a450beebf596639,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 635a32c7bce892340a450beebf596639,
         type: 3}
@@ -3007,7 +3080,7 @@ Transform:
   m_LocalScale: {x: 9.279362, y: 6.127692, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
 --- !u!1 &1844847139
 GameObject:
@@ -3100,7 +3173,7 @@ Transform:
   m_LocalScale: {x: 2.2298, y: 13.723141, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1859426408
 GameObject:
@@ -3180,7 +3253,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859426408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.97, z: -18.08}
+  m_LocalPosition: {x: 0, y: 6.97, z: -19.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3217,100 +3290,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!1 &2121268084
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2121268088}
-  - component: {fileID: 2121268087}
-  - component: {fileID: 2121268086}
-  - component: {fileID: 2121268085}
-  m_Layer: 0
-  m_Name: Plane (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!64 &2121268085
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121268084}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &2121268086
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121268084}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: cd2a9083be3327842806c5412a079d46, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &2121268087
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121268084}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &2121268088
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121268084}
-  m_LocalRotation: {x: 0.00000014901161, y: -0.7071068, z: 0.7071068, w: 0.00000014901161}
-  m_LocalPosition: {x: -0.04, y: 5.8, z: 0.78}
-  m_LocalScale: {x: 0.74673, y: 0.74673, z: 0.64679515}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 90, y: -90, z: 89.99999}
 --- !u!1001 &6537429828422434946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3356,7 +3335,7 @@ PrefabInstance:
     - target: {fileID: 6537429827915395932, guid: 47520745eb6fcbf47a10b3962a959bd1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6537429827915395932, guid: 47520745eb6fcbf47a10b3962a959bd1,
         type: 3}
