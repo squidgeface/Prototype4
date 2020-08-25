@@ -22,6 +22,8 @@ public class typewriterText : MonoBehaviour
     public AudioSource trump2;
     public AudioSource trump3;
 
+    public AudioSource Cheering;
+
     private void Update()
     {
         if (startText)
@@ -119,6 +121,11 @@ public class typewriterText : MonoBehaviour
                 isPlaying = false;
                 clicked = false;
             }
+        }
+
+        if (!trump1.isPlaying || !trump2.isPlaying || !trump3.isPlaying)
+        {
+            Cheering.Play();
         }
     }
 
