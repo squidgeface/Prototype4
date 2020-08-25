@@ -16,6 +16,7 @@ public class typewriterText : MonoBehaviour
     public int level = 1;
     public levelScript LevelManager;
     public frumpScripts frumpText;
+    public AdvisorScripts advisorText;
 
     public AudioSource trump1;
     public AudioSource trump2;
