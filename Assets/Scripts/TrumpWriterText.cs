@@ -16,6 +16,7 @@ public class TrumpWriterText : MonoBehaviour
     public bool isPlaying = false;
 
     public int level = 0;
+    private int scene = 0;
 
 
     public levelScript LevelManager;
@@ -40,6 +41,7 @@ public class TrumpWriterText : MonoBehaviour
         
         if (level == 1)
         {
+            scene = 1;
             if (playAudio == 1 && isPlaying)
             {
                 this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
@@ -79,6 +81,7 @@ public class TrumpWriterText : MonoBehaviour
         }
         else if (level == 2)
         {
+            scene = 2;
             if (playAudio == 1 && isPlaying)
             {
                 this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
@@ -116,7 +119,7 @@ public class TrumpWriterText : MonoBehaviour
                 clicked = false;
             }
         }
-        else if (level == 2)
+        else if (level == 3)
         {
             if (playAudio == 1 && isPlaying)
             {
@@ -167,20 +170,23 @@ public class TrumpWriterText : MonoBehaviour
             yield return new WaitForSeconds(delay);
         }
         Cheering.Play();
-        yield return new WaitForSeconds(1);
-        if (SceneManager.GetActiveScene().ToString() == "Answering")
+      //  yield return new WaitForSeconds(1);
+        if (level == 1)
         {
             //question2
+            yield return new WaitForSeconds(2);
             SceneManager.LoadScene(4);
         }
-        else if (SceneManager.GetActiveScene().ToString() == "Answering2")
+        else if (level == 2)
         {
             //question 3
+            yield return new WaitForSeconds(2);
             SceneManager.LoadScene(5);
         }
-        else if (SceneManager.GetActiveScene().ToString() == "Answering3")
+        else if (level == 3)
         {
             //end of game
+            yield return new WaitForSeconds(2);
             SceneManager.LoadScene(7);
         }
 
