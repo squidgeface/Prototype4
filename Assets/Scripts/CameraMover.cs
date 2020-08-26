@@ -23,7 +23,7 @@ public class CameraMover : MonoBehaviour
         {
             if (activated)
             {
-                gameObject.transform.position += new Vector3(0.0f, 0.0f, speed * Time.deltaTime * 100.0f);
+                gameObject.transform.position += new Vector3(0.0f, 0.0f, speed * Time.deltaTime * 150.0f);
 
                 if (gameObject.transform.position.z >= 0.0f)
                 {
@@ -39,7 +39,7 @@ public class CameraMover : MonoBehaviour
         {
             if (!activated)
             {
-                gameObject.transform.position += new Vector3(0.0f, 0.0f, -speed * Time.deltaTime * 100.0f);
+                gameObject.transform.position += new Vector3(0.0f, 0.0f, -speed * Time.deltaTime * 150.0f);
 
                 if (gameObject.transform.position.z <= -20.0f)
                 {
