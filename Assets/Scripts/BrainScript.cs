@@ -14,6 +14,9 @@ public class BrainScript : MonoBehaviour
     private Vector3 moveTowards;
     public Text score;
 
+    public AudioSource sound1;
+    public AudioSource sound2;
+    public AudioSource sound3;
 
 
     private float timer = 0;
@@ -38,6 +41,20 @@ public class BrainScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        int random = Random.RandomRange(0, 2000);
+        if (random == 1 || random == 4 || random == 5)
+        {
+            sound1.Play();
+        }
+        if (random == 2)
+        {
+            sound2.Play();
+        }
+        if (random == 3)
+        {
+            sound3.Play();
+        }
 
         //move towards the target
         me.transform.Rotate(0, 0, 1);
