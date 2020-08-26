@@ -49,5 +49,5 @@ public class frumpScripts : MonoBehaviour
 
     public string StupidEnding = "Having heard the advice of your people. You now frolick in the Forest with Dutin and his bear, having not been re-elected. ";
 
-    public string NoOption = "I'll let my people decide on this one";
+    public string NoOption = "I will let my people make the decision on this one";
 }

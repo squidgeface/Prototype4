@@ -22,6 +22,7 @@ public class typewriterText : MonoBehaviour
 
     public levelScript LevelManager;
     public AudioSource umm;
+    public AudioSource Reporter;
 
     private void Start()
     {
@@ -37,6 +38,7 @@ public class typewriterText : MonoBehaviour
         if (timer > 5 && done == false)
         {
             LevelManager.GetComponent<levelScript>().Clicked = true;
+            Reporter.Play();
             done = true;
             timer = 0;
         }

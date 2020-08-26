@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TrumpWriterText : MonoBehaviour
 {
@@ -66,7 +67,7 @@ public class TrumpWriterText : MonoBehaviour
                 isPlaying = false;
                 clicked = false;
             }
-            else if (playAudio == 0 && isPlaying)
+            else if (playAudio == 4 && isPlaying)
             {
                 this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
                 trump4.Play();
@@ -105,7 +106,7 @@ public class TrumpWriterText : MonoBehaviour
                 isPlaying = false;
                 clicked = false;
             }
-            else if (playAudio == 0 && isPlaying)
+            else if (playAudio == 4 && isPlaying)
             {
                 this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
                 trump4.Play();
@@ -144,7 +145,7 @@ public class TrumpWriterText : MonoBehaviour
                 isPlaying = false;
                 clicked = false;
             }
-            else if (playAudio == 0 && isPlaying)
+            else if (playAudio == 4 && isPlaying)
             {
                 this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
                 trump4.Play();
@@ -166,6 +167,23 @@ public class TrumpWriterText : MonoBehaviour
             yield return new WaitForSeconds(delay);
         }
         Cheering.Play();
+        yield return new WaitForSeconds(1);
+        if (SceneManager.GetActiveScene().ToString() == "Answering")
+        {
+            //question2
+            SceneManager.LoadScene(4);
+        }
+        else if (SceneManager.GetActiveScene().ToString() == "Answering2")
+        {
+            //question 3
+            SceneManager.LoadScene(5);
+        }
+        else if (SceneManager.GetActiveScene().ToString() == "Answering3")
+        {
+            //end of game
+            SceneManager.LoadScene(7);
+        }
+
     }
 
 
