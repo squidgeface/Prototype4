@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -331,7 +331,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 68e347536b249804dab2457dafa951d6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e41bf26fed051d74ba1bb7d0bb6bb3c9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -427,7 +427,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c8ad3a47dcf86b743b6090748dfbe4ec, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4a902d421722cca42a63ea0ad87f4f67, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -523,7 +523,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: df75b71a9ec94d54c8f918539ca63f63, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1d6d07386ef054f41985b24c95f3c506, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -742,7 +742,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 239365954056b17499e2d21c00aa9958, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.127
   m_Pitch: 1
   Loop: 1
@@ -2162,6 +2162,13 @@ MonoBehaviour:
     honest. And I would have to agree with her. If people have concerns they can
     come to me, but no one has. These concerns are Fake news made up by the media
     to make me look bad. '
+  PerfectEnding: 'By leaving matters to the experts. The country has become a Utopia
+    with Martian Colonies. '
+  BadEnding: 'Having taken matters into your own hands. You have created the perfect
+    hole above the ozone for tanning, saved a third of the population from a global
+    pandemic and proudly been re-elected. '
+  StupidEnding: 'Having heard the advice of your people. You now frolick in the Forest
+    with Dutin and his bear, having not been re-elected. '
   NoOption: I'll let my people decide on this one
 --- !u!1 &926434628
 GameObject:
