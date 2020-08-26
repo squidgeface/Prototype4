@@ -66,7 +66,7 @@ public class TrumpWriterText : MonoBehaviour
                 isPlaying = false;
                 clicked = false;
             }
-            else if (playAudio == 0 && isPlaying)
+            else if (playAudio == 4 && isPlaying)
             {
                 this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
                 trump4.Play();
@@ -105,7 +105,7 @@ public class TrumpWriterText : MonoBehaviour
                 isPlaying = false;
                 clicked = false;
             }
-            else if (playAudio == 0 && isPlaying)
+            else if (playAudio == 4 && isPlaying)
             {
                 this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
                 trump4.Play();
@@ -144,7 +144,7 @@ public class TrumpWriterText : MonoBehaviour
                 isPlaying = false;
                 clicked = false;
             }
-            else if (playAudio == 0 && isPlaying)
+            else if (playAudio == 4 && isPlaying)
             {
                 this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
                 trump4.Play();
