@@ -23,6 +23,7 @@ public class TrumpWriterText : MonoBehaviour
     public AudioSource trump1;
     public AudioSource trump2;
     public AudioSource trump3;
+    public AudioSource trump4;
     public AudioSource Cheering;
 
     private void Start()
@@ -65,6 +66,15 @@ public class TrumpWriterText : MonoBehaviour
                 isPlaying = false;
                 clicked = false;
             }
+            else if (playAudio == 0 && isPlaying)
+            {
+                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
+                trump4.Play();
+                fullText = frumpText.GetComponent<frumpScripts>().NoOption;
+                StartCoroutine(RevealText());
+                isPlaying = false;
+                clicked = false;
+            }
         }
         else if (level == 2)
         {
@@ -95,6 +105,15 @@ public class TrumpWriterText : MonoBehaviour
                 isPlaying = false;
                 clicked = false;
             }
+            else if (playAudio == 0 && isPlaying)
+            {
+                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
+                trump4.Play();
+                fullText = frumpText.GetComponent<frumpScripts>().NoOption;
+                StartCoroutine(RevealText());
+                isPlaying = false;
+                clicked = false;
+            }
         }
         else if (level == 2)
         {
@@ -121,6 +140,15 @@ public class TrumpWriterText : MonoBehaviour
                 this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
                 trump3.Play();
                 fullText = frumpText.GetComponent<frumpScripts>().Lvl3Option3;
+                StartCoroutine(RevealText());
+                isPlaying = false;
+                clicked = false;
+            }
+            else if (playAudio == 0 && isPlaying)
+            {
+                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
+                trump4.Play();
+                fullText = frumpText.GetComponent<frumpScripts>().NoOption;
                 StartCoroutine(RevealText());
                 isPlaying = false;
                 clicked = false;
