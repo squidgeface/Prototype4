@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1645,17 +1645,17 @@ PrefabInstance:
     - target: {fileID: 1990297571368668752, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6047744659577997975, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 13.181014
+      value: 7.162958
       objectReference: {fileID: 0}
     - target: {fileID: 6047744659577997975, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 13.419234
+      value: 7.292414
       objectReference: {fileID: 0}
     - target: {fileID: 6047744659577997975, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
@@ -1665,7 +1665,12 @@ PrefabInstance:
     - target: {fileID: 6047744659577997975, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.1
+      value: -7.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047744659577997975, guid: e2b0823700b1cfa4b849308a67bccd6d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.54343
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312333, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
@@ -1730,7 +1735,7 @@ PrefabInstance:
     - target: {fileID: 8999034593787312333, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 13.37
+      value: 12.52
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312333, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
@@ -1878,6 +1883,7 @@ GameObject:
   - component: {fileID: 914836978}
   - component: {fileID: 914836977}
   - component: {fileID: 914836976}
+  - component: {fileID: 914836980}
   m_Layer: 0
   m_Name: Frump
   m_TagString: Untagged
@@ -1918,6 +1924,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 85cc25dee4e81064db9a77270bc99229, type: 2}
+  - {fileID: 2100000, guid: cd2a9083be3327842806c5412a079d46, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1960,6 +1967,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
+--- !u!114 &914836980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914836975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5f9d5813b62c86499b9abbe57956860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1859426410}
 --- !u!1 &920452136 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6537429827915395934, guid: 47520745eb6fcbf47a10b3962a959bd1,
@@ -3926,5 +3946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Office
       objectReference: {fileID: 0}
+    - target: {fileID: 9020548421533196298, guid: 67445a2f7e7c29d40a00370aa561fcf7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff84916740392cd4d8b3b10ac8219d84, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67445a2f7e7c29d40a00370aa561fcf7, type: 3}
