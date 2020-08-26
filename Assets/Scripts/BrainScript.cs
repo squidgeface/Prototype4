@@ -91,6 +91,10 @@ public class BrainScript : MonoBehaviour
                 {
                     FindObjectOfType<ScoreScript>().response = 1;
                 }
+                else if (FindObjectOfType<ScoreScript>().brainScore == 0)
+                {
+                    FindObjectOfType<ScoreScript>().response = 4;
+                }
 
             } else if (FindObjectOfType<ScoreScript>().game2 == -1)
             {
@@ -108,6 +112,10 @@ public class BrainScript : MonoBehaviour
                 {
                     FindObjectOfType<ScoreScript>().response = 1;
                 }
+                else if (FindObjectOfType<ScoreScript>().brainScore == 0)
+                {
+                    FindObjectOfType<ScoreScript>().response = 4;
+                }
             }
             else if (FindObjectOfType<ScoreScript>().game3 == -1)
             {
@@ -124,6 +132,10 @@ public class BrainScript : MonoBehaviour
                 else if (FindObjectOfType<ScoreScript>().brainScore > 7 && FindObjectOfType<ScoreScript>().brainScore < 10)
                 {
                     FindObjectOfType<ScoreScript>().response = 1;
+                }
+                else if (FindObjectOfType<ScoreScript>().brainScore == 0)
+                {
+                    FindObjectOfType<ScoreScript>().response = 4;
                 }
             }
 
