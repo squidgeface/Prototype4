@@ -16,18 +16,12 @@ public class ScoreScript : MonoBehaviour
     public int game2 = -1;
     public int game3 = -1;
 
-
+    public int response = 0;
+    public int level = 0;
 
     void Start()
     {
         Object.DontDestroyOnLoad(this);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-        
     }
 
     public void EndGame()
@@ -51,13 +45,16 @@ public class ScoreScript : MonoBehaviour
     public void GoodEnding()
     {
         //goto good scene
+
     }
     public void StupidEnding()
     {
         //goto stupid scene
+
     }
     public void EvilEnding()
     {
         //goto Evil scene
+
     }
 }

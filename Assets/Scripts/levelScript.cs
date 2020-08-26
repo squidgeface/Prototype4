@@ -9,7 +9,7 @@ public class levelScript : MonoBehaviour
 
     public ScoreScript ScoreCounter;
     public int level = 0;
-    public int response = 1;
+    public int response = 0;
 
     public bool Clicked = false;
 
@@ -20,7 +20,10 @@ public class levelScript : MonoBehaviour
         ScoreCounter = FindObjectOfType<ScoreScript>();
     }
 
-  
+    private void Update()
+    {
+        response = FindObjectOfType<ScoreScript>().response;
+    }
 
     public void Click()
     {

@@ -48,15 +48,18 @@ public class BrainScript : MonoBehaviour
         int random = Random.RandomRange(0, 2000);
         if (random == 1 || random == 4 || random == 5)
         {
-            sound1.Play();
+            if (!sound1.isPlaying)
+                sound1.Play();
         }
         if (random == 2)
         {
-            sound2.Play();
+            if (!sound2.isPlaying)
+                sound2.Play();
         }
         if (random == 3)
         {
-            sound3.Play();
+            if (!sound3.isPlaying)
+                sound3.Play();
         }
 
         //move towards the target
@@ -74,14 +77,20 @@ public class BrainScript : MonoBehaviour
             if (FindObjectOfType<ScoreScript>().game1 == -1)
             {
                 FindObjectOfType<ScoreScript>().game1 = FindObjectOfType<ScoreScript>().brainScore;
+                FindObjectOfType<ScoreScript>().level++;
+                FindObjectOfType<ScoreScript>().response = 1;
 
             } else if (FindObjectOfType<ScoreScript>().game2 == -1)
             {
                 FindObjectOfType<ScoreScript>().game2 = FindObjectOfType<ScoreScript>().brainScore;
+                FindObjectOfType<ScoreScript>().level++;
+                FindObjectOfType<ScoreScript>().response = 2;
             }
             else if (FindObjectOfType<ScoreScript>().game3 == -1)
             {
                 FindObjectOfType<ScoreScript>().game3 = FindObjectOfType<ScoreScript>().brainScore;
+                FindObjectOfType<ScoreScript>().level++;
+                FindObjectOfType<ScoreScript>().response = 3;
             }
 
 
