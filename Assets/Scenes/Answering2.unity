@@ -331,7 +331,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 68e347536b249804dab2457dafa951d6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 62869ee648146af4181c41ac2982ef82, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -427,7 +427,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c8ad3a47dcf86b743b6090748dfbe4ec, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5248c74a61c53724f8a13f7f4f289d95, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -523,7 +523,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: df75b71a9ec94d54c8f918539ca63f63, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1f531187b75ed8940ad603ce08c562a1, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2162,6 +2162,13 @@ MonoBehaviour:
     honest. And I would have to agree with her. If people have concerns they can
     come to me, but no one has. These concerns are Fake news made up by the media
     to make me look bad. '
+  PerfectEnding: 'By leaving matters to the experts. The country has become a Utopia
+    with Martian Colonies. '
+  BadEnding: 'Having taken matters into your own hands. You have created the perfect
+    hole above the ozone for tanning, saved a third of the population from a global
+    pandemic and proudly been re-elected. '
+  StupidEnding: 'Having heard the advice of your people. You now frolick in the Forest
+    with Dutin and his bear, having not been re-elected. '
   NoOption: I'll let my people decide on this one
 --- !u!1 &926434628
 GameObject:
