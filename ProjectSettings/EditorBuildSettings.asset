@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Questioning3.unity
     guid: ac8d802a0b30ec14b9787df41d2b234e
+  - enabled: 1
+    path: Assets/Scenes/Answering3.unity
+    guid: e2812fcaac47dfd4190105d5562513d0
   m_configObjects: {}
