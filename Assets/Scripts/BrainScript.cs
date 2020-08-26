@@ -78,19 +78,52 @@ public class BrainScript : MonoBehaviour
             {
                 FindObjectOfType<ScoreScript>().game1 = FindObjectOfType<ScoreScript>().brainScore;
                 FindObjectOfType<ScoreScript>().level++;
-                FindObjectOfType<ScoreScript>().response = 1;
+                if (FindObjectOfType<ScoreScript>().brainScore > 0 && FindObjectOfType<ScoreScript>().brainScore < 4)
+                {
+                    FindObjectOfType<ScoreScript>().response = 3;
+                }
+                else if (FindObjectOfType<ScoreScript>().brainScore > 3 && FindObjectOfType<ScoreScript>().brainScore < 8)
+                {
+                    FindObjectOfType<ScoreScript>().response = 2;
+                }
+                else if (FindObjectOfType<ScoreScript>().brainScore > 7 && FindObjectOfType<ScoreScript>().brainScore < 10)
+                {
+                    FindObjectOfType<ScoreScript>().response = 1;
+                }
 
             } else if (FindObjectOfType<ScoreScript>().game2 == -1)
             {
                 FindObjectOfType<ScoreScript>().game2 = FindObjectOfType<ScoreScript>().brainScore;
                 FindObjectOfType<ScoreScript>().level++;
-                FindObjectOfType<ScoreScript>().response = 2;
+                if (FindObjectOfType<ScoreScript>().brainScore > 0 && FindObjectOfType<ScoreScript>().brainScore < 4)
+                {
+                    FindObjectOfType<ScoreScript>().response = 3;
+                }
+                else if (FindObjectOfType<ScoreScript>().brainScore > 3 && FindObjectOfType<ScoreScript>().brainScore < 8)
+                {
+                    FindObjectOfType<ScoreScript>().response = 2;
+                }
+                else if (FindObjectOfType<ScoreScript>().brainScore > 7 && FindObjectOfType<ScoreScript>().brainScore < 10)
+                {
+                    FindObjectOfType<ScoreScript>().response = 1;
+                }
             }
             else if (FindObjectOfType<ScoreScript>().game3 == -1)
             {
                 FindObjectOfType<ScoreScript>().game3 = FindObjectOfType<ScoreScript>().brainScore;
                 FindObjectOfType<ScoreScript>().level++;
-                FindObjectOfType<ScoreScript>().response = 3;
+                if (FindObjectOfType<ScoreScript>().brainScore > 0 && FindObjectOfType<ScoreScript>().brainScore < 4)
+                {
+                    FindObjectOfType<ScoreScript>().response = 3;
+                }
+                else if (FindObjectOfType<ScoreScript>().brainScore > 3 && FindObjectOfType<ScoreScript>().brainScore < 8)
+                {
+                    FindObjectOfType<ScoreScript>().response = 2;
+                }
+                else if (FindObjectOfType<ScoreScript>().brainScore > 7 && FindObjectOfType<ScoreScript>().brainScore < 10)
+                {
+                    FindObjectOfType<ScoreScript>().response = 1;
+                }
             }
 
 

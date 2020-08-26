@@ -23,6 +23,7 @@ public class levelScript : MonoBehaviour
     private void Update()
     {
         response = FindObjectOfType<ScoreScript>().response;
+        level = FindObjectOfType<ScoreScript>().level;
     }
 
     public void Click()
