@@ -23,7 +23,6 @@ public class TrumpWriterText : MonoBehaviour
     public AudioSource trump1;
     public AudioSource trump2;
     public AudioSource trump3;
-
     public AudioSource Cheering;
 
     private void Start()
@@ -128,10 +127,6 @@ public class TrumpWriterText : MonoBehaviour
             }
         }
 
-        if (!trump1.isPlaying || !trump2.isPlaying || !trump3.isPlaying)
-        {
-            Cheering.Play();
-        }
     }
 
     private IEnumerator RevealText()
@@ -142,6 +137,7 @@ public class TrumpWriterText : MonoBehaviour
             this.GetComponent<TextMeshPro>().text = curText;
             yield return new WaitForSeconds(delay);
         }
+        Cheering.Play();
     }
 
 
