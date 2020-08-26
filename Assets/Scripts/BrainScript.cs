@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BrainScript : MonoBehaviour
 
@@ -10,6 +11,7 @@ public class BrainScript : MonoBehaviour
     public GameObject me;
     private Vector3 objectRotation;
     private Vector3 moveTowards;
+    public Text score;
 
     private float timer = 0;
     // Start is called before the first frame update
@@ -37,7 +39,8 @@ public class BrainScript : MonoBehaviour
         //move towards the target
         me.transform.Rotate(0, 0, 1);
         transform.position -= moveTowards * Time.deltaTime * 8;
-       
+
+        
         //count how long minigame has been going ~26 is end of game in this example
         timer += Time.deltaTime;
 
@@ -47,12 +50,16 @@ public class BrainScript : MonoBehaviour
             print("end of game");
 
             print("score of " + FindObjectOfType<ScoreScript>().brainScore);
+
+    
         }
     }
     private void OnMouseDown()
     {
         //destroy and add to score when clicked
+       
         FindObjectOfType<ScoreScript>().brainScore += 1;
+        score.text = FindObjectOfType<ScoreScript>().brainScore.ToString() + "/ 10";
         GameObject.Destroy(me, 0);
     }
 
