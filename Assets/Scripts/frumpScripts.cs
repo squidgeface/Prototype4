@@ -43,5 +43,5 @@ public class frumpScripts : MonoBehaviour
         "Just last week a lady came up to me and said Mr.Trump You are very honest. And I would have to agree with her. " +
         "If people have concerns they can come to me, but no one has. These concerns are Fake news made up by the media to make me look bad. ";
 
-    public string NoOption = "I'll let my people decide on this one";
+    public string NoOption = "I will let my people make the decision on this one";
 }
