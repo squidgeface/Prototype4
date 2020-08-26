@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class CameraFlashScript : MonoBehaviour
 {
-    public float delay = 500.0f;
+    public float delay = 50.0f;
     float counter = 0f;
 
     private void Start()
@@ -20,8 +20,9 @@ public class CameraFlashScript : MonoBehaviour
         {
             gameObject.GetComponent<MeshRenderer>().enabled = true;
         }
-        if (counter == delay + 1.0f)
+        if (counter == delay + 5.0f)
         {
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
             counter = 0;
         }
 
