@@ -43,5 +43,11 @@ public class frumpScripts : MonoBehaviour
         "Just last week a lady came up to me and said Mr.Trump You are very honest. And I would have to agree with her. " +
         "If people have concerns they can come to me, but no one has. These concerns are Fake news made up by the media to make me look bad. ";
 
+    public string PerfectEnding = "By leaving matters to the experts. The country has become a Utopia with Martian Colonies. ";
+
+    public string BadEnding = "Having taken matters into your own hands. You have created the perfect hole above the ozone for tanning, saved a third of the population from a global pandemic and proudly been re-elected. ";
+
+    public string StupidEnding = "Having heard the advice of your people. You now frolick in the Forest with Dutin and his bear, having not been re-elected. ";
+
     public string NoOption = "I'll let my people decide on this one";
 }
