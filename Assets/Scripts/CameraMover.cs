@@ -12,16 +12,18 @@ public class CameraMover : MonoBehaviour
     public levelScript LevelManager;
     public TrumpWriterText trumpSpeak;
 
+
     // Update is called once per frame
     void Update()
     {
         level = LevelManager.GetComponent<levelScript>().level;
+        
 
         if (level == 0)
         {
             if (activated)
             {
-                gameObject.transform.position += new Vector3(0.0f, 0.0f, speed);
+                gameObject.transform.position += new Vector3(0.0f, 0.0f, speed * Time.deltaTime * 100.0f);
 
                 if (gameObject.transform.position.z >= 0.0f)
                 {
@@ -37,7 +39,7 @@ public class CameraMover : MonoBehaviour
         {
             if (!activated)
             {
-                gameObject.transform.position += new Vector3(0.0f, 0.0f, -speed);
+                gameObject.transform.position += new Vector3(0.0f, 0.0f, -speed * Time.deltaTime * 100.0f);
 
                 if (gameObject.transform.position.z <= -20.0f)
                 {

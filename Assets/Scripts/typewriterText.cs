@@ -11,38 +11,43 @@ public class typewriterText : MonoBehaviour
     public string fullText;
     private string curText = "";
     public bool startText = false;
-    public bool clicked = false;
-    public int playAudio = 0;
+
+
     public bool isPlaying = true;
     public int level = 0;
 
-    private bool bTimer = false;
+
     private bool done = false;
     private float timer = 0;
 
     public levelScript LevelManager;
+    public AudioSource umm;
 
     private void Start()
     {
         gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
-        bTimer = true;
+
     }
 
     private void Update()
     {
-        if (bTimer)
-        {
-            timer += Time.deltaTime;
-        }
+       
+        timer += Time.deltaTime;
+        
         if (timer > 5 && done == false)
         {
             LevelManager.GetComponent<levelScript>().Clicked = true;
             done = true;
+            timer = 0;
         }
 
-        if (timer > 15)
+        if (done && timer > 7)
         {
             FindObjectOfType<CameraMover>().activated = true;
+            gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            this.GetComponent<TextMeshPro>().text = "";
+            umm.Play();
+            timer = 0;
         }
 
        level = LevelManager.GetComponent<levelScript>().level;
