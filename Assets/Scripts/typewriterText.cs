@@ -13,14 +13,10 @@ public class typewriterText : MonoBehaviour
     public bool startText = false;
     public bool clicked = false;
     public int playAudio = 0;
-    public bool isPlaying = false;
-
+    public bool isPlaying = true;
     public int level = 0;
 
-
     public levelScript LevelManager;
-
-
 
     private void Start()
     {
@@ -33,13 +29,13 @@ public class typewriterText : MonoBehaviour
        level = LevelManager.GetComponent<levelScript>().level;
        startText = LevelManager.GetComponent<levelScript>().Clicked;
 
-        if (startText)
+        if (startText && isPlaying)
         {
             gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
             gameObject.GetComponentInChildren<BoxCollider>().enabled = true;
             StartCoroutine(RevealText());
             startText = false;
-         
+            isPlaying = false;
         }
         
     }
