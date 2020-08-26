@@ -38,7 +38,8 @@ public class BrainScript : MonoBehaviour
         moveTowards.z = 0;
         moveTowards.Normalize();
         speed = Random.Range(0.5f, 2.0f);
-        
+        FindObjectOfType<brainFart>().swoosh.Play();
+
     }
 
     // Update is called once per frame
@@ -142,6 +143,7 @@ public class BrainScript : MonoBehaviour
        
         FindObjectOfType<ScoreScript>().brainScore += 1;
         score.text = FindObjectOfType<ScoreScript>().brainScore.ToString() + "/ 10";
+        FindObjectOfType<brainFart>().squish.Play();
         GameObject.Destroy(me, 0);
     }
 
