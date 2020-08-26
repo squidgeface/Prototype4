@@ -33,7 +33,7 @@ public class TrumpWriterText : MonoBehaviour
 
     private void Update()
     {
-        
+        playAudio = LevelManager.GetComponent<levelScript>().response;
         level = LevelManager.GetComponent<levelScript>().level;
 
         
