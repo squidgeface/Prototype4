@@ -170,23 +170,27 @@ public class TrumpWriterText : MonoBehaviour
             yield return new WaitForSeconds(delay);
         }
         Cheering.Play();
-      //  yield return new WaitForSeconds(1);
+        
+
         if (level == 1)
         {
             //question2
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(3);
+            FindObjectOfType<ScoreScript>().level += 1;
             SceneManager.LoadScene(4);
         }
         else if (level == 2)
         {
             //question 3
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(3);
+            FindObjectOfType<ScoreScript>().level += 1;
             SceneManager.LoadScene(5);
         }
         else if (level == 3)
         {
             //end of game
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(3);
+            FindObjectOfType<ScoreScript>().level += 1;
             SceneManager.LoadScene(7);
         }
 

@@ -50,8 +50,70 @@ public class CameraMover : MonoBehaviour
 
                 }
             }
+        }
+        else if (level == 2)
+        {
+            if (activated)
+            {
+                gameObject.transform.position += new Vector3(0.0f, 0.0f, speed * Time.deltaTime * 150.0f);
 
-            
+                if (gameObject.transform.position.z >= 0.0f)
+                {
+                    activated = false;
+                    fade = true;
+                    SceneManager.LoadScene(2);
+                }
+            }
+
+
+        }
+        else if (level == 3)
+        {
+            if (!activated)
+            {
+                gameObject.transform.position += new Vector3(0.0f, 0.0f, -speed * Time.deltaTime * 150.0f);
+
+                if (gameObject.transform.position.z <= -20.0f)
+                {
+                    activated = true;
+
+                    trumpSpeak.GetComponent<TrumpWriterText>().startText = true;
+                    trumpSpeak.GetComponent<TrumpWriterText>().isPlaying = true;
+
+                }
+            }
+        }
+        else if (level == 4)
+        {
+            if (activated)
+            {
+                gameObject.transform.position += new Vector3(0.0f, 0.0f, speed * Time.deltaTime * 150.0f);
+
+                if (gameObject.transform.position.z >= 0.0f)
+                {
+                    activated = false;
+                    fade = true;
+                    SceneManager.LoadScene(2);
+                }
+            }
+
+
+        }
+        else if (level == 5)
+        {
+            if (!activated)
+            {
+                gameObject.transform.position += new Vector3(0.0f, 0.0f, -speed * Time.deltaTime * 150.0f);
+
+                if (gameObject.transform.position.z <= -20.0f)
+                {
+                    activated = true;
+
+                    trumpSpeak.GetComponent<TrumpWriterText>().startText = true;
+                    trumpSpeak.GetComponent<TrumpWriterText>().isPlaying = true;
+
+                }
+            }
         }
     }
 }

@@ -71,7 +71,7 @@ public class BrainScript : MonoBehaviour
         //count how long minigame has been going ~26 is end of game in this example
         timer += Time.deltaTime;
 
-        if (timer > 30.0f)
+        if (timer > 28.0f)
         {
             //END MINI GAME AND GOTO NEXT SCENE
 
