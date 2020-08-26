@@ -175,19 +175,23 @@ public class TrumpWriterText : MonoBehaviour
         {
             //question2
             yield return new WaitForSeconds(2);
+           // SceneManager.UnloadSceneAsync(1);
             SceneManager.LoadScene(4);
         }
         else if (level == 2)
         {
             //question 3
-            yield return new WaitForSeconds(2);
-            SceneManager.LoadScene(5);
+           yield return new WaitForSeconds(2);
+           
+          //  SceneManager.UnloadSceneAsync(4);
+            SceneManager.LoadScene(6);
         }
         else if (level == 3)
         {
             //end of game
             yield return new WaitForSeconds(2);
-            SceneManager.LoadScene(7);
+           // SceneManager.UnloadSceneAsync(6);
+            SceneManager.LoadScene(8);
         }
 
     }
