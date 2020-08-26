@@ -14,6 +14,8 @@ public class BrainScript : MonoBehaviour
     private Vector3 moveTowards;
     public Text score;
 
+    public float  speed;
+
     public AudioSource sound1;
     public AudioSource sound2;
     public AudioSource sound3;
@@ -35,6 +37,7 @@ public class BrainScript : MonoBehaviour
         moveTowards = Vector3.MoveTowards(this.transform.position, target.transform.position, 0.1f);
         moveTowards.z = 0;
         moveTowards.Normalize();
+        speed = Random.Range(0.5f, 2.0f);
         
     }
 
@@ -58,7 +61,7 @@ public class BrainScript : MonoBehaviour
 
         //move towards the target
         me.transform.Rotate(0, 0, 1);
-        transform.position -= moveTowards * Time.deltaTime * 8;
+        transform.position -= moveTowards * Time.deltaTime * 8 * speed;
 
         
         //count how long minigame has been going ~26 is end of game in this example
