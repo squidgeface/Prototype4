@@ -1443,7 +1443,7 @@ PrefabInstance:
         type: 3}
       propertyPath: advisorText
       value: 
-      objectReference: {fileID: 920452139}
+      objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: frumpText
@@ -1468,6 +1468,11 @@ PrefabInstance:
         type: 3}
       propertyPath: advisorGO
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
+        type: 3}
+      propertyPath: isPlaying
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312339, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
@@ -2177,7 +2182,7 @@ PrefabInstance:
         type: 3}
       propertyPath: advisorText
       value: 
-      objectReference: {fileID: 920452139}
+      objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: level
@@ -2387,18 +2392,6 @@ MonoBehaviour:
     honest. And I would have to agree with her. If people have concerns they can
     come to me, but no one has. These concerns are Fake news made up by the media
     to make me look bad. '
---- !u!114 &920452139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 920452136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d67b5689fc76e4f4b9074af381b40c06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &926434628
 GameObject:
   m_ObjectHideFlags: 0
@@ -4071,6 +4064,9 @@ MonoBehaviour:
   activated: 0
   fade: 0
   speed: 0.02
+  level: 0
+  LevelManager: {fileID: 920452137}
+  trumpSpeak: {fileID: 140998013}
 --- !u!20 &1859426410
 Camera:
   m_ObjectHideFlags: 0
@@ -4458,5 +4454,10 @@ PrefabInstance:
       propertyPath: Dialogue
       value: 
       objectReference: {fileID: 1786508534}
+    - target: {fileID: 6537429827915395935, guid: 47520745eb6fcbf47a10b3962a959bd1,
+        type: 3}
+      propertyPath: level
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47520745eb6fcbf47a10b3962a959bd1, type: 3}

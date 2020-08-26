@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BrainScript : MonoBehaviour
 
@@ -12,6 +13,8 @@ public class BrainScript : MonoBehaviour
     private Vector3 objectRotation;
     private Vector3 moveTowards;
     public Text score;
+
+
 
     private float timer = 0;
     // Start is called before the first frame update
@@ -47,11 +50,28 @@ public class BrainScript : MonoBehaviour
         if (timer > 26.5f)
         {
             //END MINI GAME AND GOTO NEXT SCENE
-            print("end of game");
 
-            print("score of " + FindObjectOfType<ScoreScript>().brainScore);
+            if (FindObjectOfType<ScoreScript>().game1 == -1)
+            {
+                FindObjectOfType<ScoreScript>().game1 = FindObjectOfType<ScoreScript>().brainScore;
 
-    
+            } else if (FindObjectOfType<ScoreScript>().game2 == -1)
+            {
+                FindObjectOfType<ScoreScript>().game2 = FindObjectOfType<ScoreScript>().brainScore;
+            }
+            else if (FindObjectOfType<ScoreScript>().game3 == -1)
+            {
+                FindObjectOfType<ScoreScript>().game3 = FindObjectOfType<ScoreScript>().brainScore;
+            }
+
+
+            FindObjectOfType<ScoreScript>().brainScore = 0;
+
+
+            SceneManager.LoadScene(3);
+
+
+
         }
     }
     private void OnMouseDown()

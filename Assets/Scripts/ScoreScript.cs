@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScoreScript : MonoBehaviour
 {
@@ -11,7 +12,11 @@ public class ScoreScript : MonoBehaviour
 
     public int brainScore = 0;
 
- 
+    public int game1 = -1;
+    public int game2 = -1;
+    public int game3 = -1;
+
+
 
     void Start()
     {
@@ -21,6 +26,7 @@ public class ScoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         
     }
 

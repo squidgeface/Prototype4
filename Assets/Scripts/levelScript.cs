@@ -8,7 +8,7 @@ public class levelScript : MonoBehaviour
 {
 
     public ScoreScript ScoreCounter;
-    public int level = 1;
+    public int level = 0;
     public int response = 1;
 
     public bool Clicked = false;

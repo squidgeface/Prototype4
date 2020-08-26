@@ -16,16 +16,35 @@ public class typewriterText : MonoBehaviour
     public bool isPlaying = true;
     public int level = 0;
 
+    private bool bTimer = false;
+    private bool done = false;
+    private float timer = 0;
+
     public levelScript LevelManager;
 
     private void Start()
     {
         gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
-
+        bTimer = true;
     }
 
     private void Update()
     {
+        if (bTimer)
+        {
+            timer += Time.deltaTime;
+        }
+        if (timer > 5 && done == false)
+        {
+            LevelManager.GetComponent<levelScript>().Clicked = true;
+            done = true;
+        }
+
+        if (timer > 15)
+        {
+            FindObjectOfType<CameraMover>().activated = true;
+        }
+
        level = LevelManager.GetComponent<levelScript>().level;
        startText = LevelManager.GetComponent<levelScript>().Clicked;
 
@@ -34,6 +53,7 @@ public class typewriterText : MonoBehaviour
             gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
             gameObject.GetComponentInChildren<BoxCollider>().enabled = true;
             StartCoroutine(RevealText());
+          
             startText = false;
             isPlaying = false;
         }
