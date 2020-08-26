@@ -32,42 +32,37 @@ public class typewriterText : MonoBehaviour
 
     private void Update()
     {
-        if (level < 6)
+       
+        timer += Time.deltaTime;
+        
+        if (timer > 5 && done == false)
         {
-            timer += Time.deltaTime;
-
-            if (timer > 5 && done == false)
-            {
-                LevelManager.GetComponent<levelScript>().Clicked = true;
-                Reporter.Play();
-                done = true;
-                timer = 0;
-            }
-
-            if (done && timer > 7)
-            {
-                FindObjectOfType<CameraMover>().activated = true;
-                gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
-                this.GetComponent<TextMeshPro>().text = "";
-                umm.Play();
-                timer = 0;
-            }
-
-            level = LevelManager.GetComponent<levelScript>().level;
-            startText = LevelManager.GetComponent<levelScript>().Clicked;
-
-            if (startText && isPlaying)
-            {
-                gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
-                StartCoroutine(RevealText());
-
-                startText = false;
-                isPlaying = false;
-            }
+            LevelManager.GetComponent<levelScript>().Clicked = true;
+            Reporter.Play();
+            done = true;
+            timer = 0;
         }
-        else
+
+        if (done && timer > 7)
         {
+            FindObjectOfType<CameraMover>().activated = true;
+            gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            this.GetComponent<TextMeshPro>().text = "";
+            umm.Play();
+            timer = 0;
+        }
+
+       level = LevelManager.GetComponent<levelScript>().level;
+       startText = LevelManager.GetComponent<levelScript>().Clicked;
+
+        if (startText && isPlaying)
+        {
+            gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
+            gameObject.GetComponentInChildren<BoxCollider>().enabled = true;
             StartCoroutine(RevealText());
+          
+            startText = false;
+            isPlaying = false;
         }
         
     }
