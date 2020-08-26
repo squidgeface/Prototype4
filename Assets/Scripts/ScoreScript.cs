@@ -9,6 +9,8 @@ public class ScoreScript : MonoBehaviour
     public int StupidScore = 0;
     public int EvilScore = 0;
 
+    public int brainScore = 0;
+
  
 
     void Start()
