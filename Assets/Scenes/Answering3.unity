@@ -2169,7 +2169,7 @@ MonoBehaviour:
     pandemic and proudly been re-elected. '
   StupidEnding: 'Having heard the advice of your people. You now frolick in the Forest
     with Dutin and his bear, having not been re-elected. '
-  NoOption: I'll let my people decide on this one
+  NoOption: 'I will let my people make the decision on this one '
 --- !u!1 &926434628
 GameObject:
   m_ObjectHideFlags: 0
