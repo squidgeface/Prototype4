@@ -45,9 +45,15 @@ public class typewriterText : MonoBehaviour
 
         if (done && timer > 7)
         {
+            if (FindObjectOfType<CameraMover>().activated == false)
+            {
+               // FindObjectOfType<ScoreScript>().level += 1;
+            }
+           
             FindObjectOfType<CameraMover>().activated = true;
             gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
             this.GetComponent<TextMeshPro>().text = "";
+            
             umm.Play();
             timer = 0;
         }

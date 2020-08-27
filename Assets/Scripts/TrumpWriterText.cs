@@ -79,7 +79,7 @@ public class TrumpWriterText : MonoBehaviour
                 clicked = false;
             }
         }
-        else if (level == 2)
+        else if (level == 3)
         {
             scene = 2;
             if (playAudio == 1 && isPlaying)
@@ -119,7 +119,7 @@ public class TrumpWriterText : MonoBehaviour
                 clicked = false;
             }
         }
-        else if (level == 3)
+        else if (level == 5)
         {
             if (playAudio == 1 && isPlaying)
             {
@@ -180,13 +180,13 @@ public class TrumpWriterText : MonoBehaviour
             FindObjectOfType<ScoreScript>().level += 1;
             SceneManager.LoadScene(4);
         }
-        else if (level == 2)
+        else if (level == 3)
         {
             //question 3
 
             yield return new WaitForSeconds(3);
-            FindObjectOfType<ScoreScript>().level += 1;
-            SceneManager.LoadScene(5);
+           FindObjectOfType<ScoreScript>().level += 1;
+            // SceneManager.LoadScene(5);
 
            yield return new WaitForSeconds(2);
            
@@ -194,13 +194,13 @@ public class TrumpWriterText : MonoBehaviour
             SceneManager.LoadScene(6);
 
         }
-        else if (level == 3)
+        else if (level == 5)
         {
             //end of game
 
             yield return new WaitForSeconds(3);
-            FindObjectOfType<ScoreScript>().level += 1;
-            SceneManager.LoadScene(7);
+           FindObjectOfType<ScoreScript>().level += 1;
+           // SceneManager.LoadScene(7);
 
             yield return new WaitForSeconds(2);
             SceneManager.LoadScene(8);

@@ -142,9 +142,19 @@ public class BrainScript : MonoBehaviour
 
             FindObjectOfType<ScoreScript>().brainScore = 0;
 
-
-            SceneManager.LoadScene(3);
-
+            if (FindObjectOfType<ScoreScript>().level == 1)
+            {
+                SceneManager.LoadScene(3);
+            }
+            else if (FindObjectOfType<ScoreScript>().level == 3)
+            {
+                SceneManager.LoadScene(5);
+            }
+            else if (FindObjectOfType<ScoreScript>().level == 5)
+            {
+                SceneManager.LoadScene(7);
+            }
+           
 
 
         }

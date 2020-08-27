@@ -51,7 +51,7 @@ public class CameraMover : MonoBehaviour
                 }
             }
         }
-        else if (level == 3)
+        else if (level == 2)
         {
             if (activated)
             {
@@ -67,7 +67,7 @@ public class CameraMover : MonoBehaviour
 
 
         }
-        else if (level == 4)
+        else if (level == 3)
         {
             if (!activated)
             {
@@ -83,7 +83,7 @@ public class CameraMover : MonoBehaviour
                 }
             }
         }
-        else if (level == 6)
+        else if (level == 4)
         {
             if (activated)
             {
@@ -99,7 +99,7 @@ public class CameraMover : MonoBehaviour
 
 
         }
-        else if (level == 7)
+        else if (level == 5)
         {
             if (!activated)
             {
