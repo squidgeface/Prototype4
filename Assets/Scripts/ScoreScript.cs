@@ -44,17 +44,17 @@ public class ScoreScript : MonoBehaviour
 
     public void GoodEnding()
     {
-        //goto good scene
+        FindObjectOfType<ScoreScript>().response = 3;
 
     }
     public void StupidEnding()
     {
         //goto stupid scene
-
+        FindObjectOfType<ScoreScript>().response = 2;
     }
     public void EvilEnding()
     {
         //goto Evil scene
-
+        FindObjectOfType<ScoreScript>().response = 1;
     }
 }

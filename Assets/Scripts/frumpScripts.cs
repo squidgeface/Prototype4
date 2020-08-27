@@ -45,9 +45,9 @@ public class frumpScripts : MonoBehaviour
 
     public string PerfectEnding = "By leaving matters to the experts. The country has become a Utopia with Martian Colonies. ";
 
-    public string BadEnding = "Having taken matters into your own hands. You have created the perfect hole above the ozone for tanning, saved a third of the population from a global pandemic and proudly been re-elected. ";
+    public string BadEnding = "Having thought super hard about these questions by clicking all the brains, you have created the perfect hole above the ozone for tanning, saved a third of the population from a global pandemic and proudly been re-elected. ";
 
-    public string StupidEnding = "Having heard the advice of your people. You now frolick in the Forest with Dutin and his bear, having not been re-elected. ";
+    public string StupidEnding = "Having not clicked so many brains, you have heard the advice of your people and not destroyed the country. You now frolick in the Forest with Dutin and his bear, having not been re-elected. ";
 
     public string NoOption = "I will let my people make the decision on this one ";
 }

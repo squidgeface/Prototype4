@@ -17,8 +17,7 @@ public class CameraMover : MonoBehaviour
     void Update()
     {
         level = LevelManager.GetComponent<levelScript>().level;
-        
-
+       
         if (level == 0)
         {
             if (activated)
@@ -31,9 +30,7 @@ public class CameraMover : MonoBehaviour
                     fade = true;
                     SceneManager.LoadScene(2);
                 }
-            }
-
-            
+            }   
         }
         else if (level == 1)
         {
