@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -450,7 +450,7 @@ Transform:
   m_GameObject: {fileID: 1044098634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -87.9, y: -29.1, z: 100}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -596,6 +596,7 @@ GameObject:
   - component: {fileID: 1301697442}
   - component: {fileID: 1301697441}
   - component: {fileID: 1301697440}
+  - component: {fileID: 1301697443}
   m_Layer: 0
   m_Name: LevelLoader
   m_TagString: Untagged
@@ -616,7 +617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 0
-  response: 1
+  response: 2
   Clicked: 0
 --- !u!114 &1301697441
 MonoBehaviour:
@@ -644,6 +645,73 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1301697443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301697439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea3d92fed9eacf04f8d1d1ecb54f4197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lvl1Option1: "My people tell me coal is the problem, and my people are the best.
+    So I said the only solution is to burn all the coal and get rid of it, And that
+    was my idea. My people were amazed. They hadn\u2019t thought of that. They literally
+    gasped at how good the idea was. "
+  Lvl1Option2: "You know I did some research, very in-depth research and discovered
+    that factories are the problem. I discovered this myself. So I\u2019m shutting
+    down our factories, I can do that you know. And I'll be sending our production
+    to China. China is very advanced. A very advanced people. Some of the most advanced
+    I've been told. Not only does this help the environment.It also creates jobs
+    now that people don\u2019t have to work in those terrible factories. "
+  Lvl1Option3: "People do not think \u201CAmerica the great\u201D when they hear
+    2nd place, this is what i\u2019ve always said. I promised to make USA number
+    one, and that's what I plan to do. We are getting rid of those old fossil fuels,
+    that's what fossil means. And we will be focusing on renewable resources like
+    coal. You know I made some coal in my fireplace yesterday, and the brilliant
+    idea came to me. We just make more coal and use that power. This ensures we get
+    number one in the carbon mission. "
+  Lvl2Option1: "It\u2019s going to be, really, a voluntary thing. You can do it.
+    You don\u2019t have to do it. I\u2019m choosing not to do it, but some people
+    may want to do it, and that\u2019s OK. It may be good.Probably will. They\u2019re
+    making a recommendation. It\u2019s only a recommendation. Thanks for the recommendation
+    though. "
+  Lvl2Option2: "Ive been told masks help, they help a lot. I checked with my people
+    and they confirm what I said. Personally I will be using my Batman mask. My people
+    tell me any mask is better than none so if spider-man is all you\u2019ve got,
+    go with that. My people also tell me tracing is important. Myself i\u2019m more
+    of a free hand artist, but this is what my people say. "
+  Lvl2Option3: "Suppose that we hit the body with a tremendous force, whether it\u2019s
+    ultraviolet or just very powerful light. Supposing you brought the light inside
+    the body, which you can do either through the skin or in some other way. Is there
+    a way we can do something like that by injection inside or almost a cleaning?
+    It sounds interesting to me, so we\u2019ll see. But the whole concept of the
+    light, the way it kills it in one minute. That\u2019s pretty powerful, let\u2019s
+    fund that. "
+  Lvl3Option1: 'I''ve always said, if a business is struggling you should let it
+    die. The USPS says it  will cause issues with the votes if I dont give them money.
+    They are threatening me. I could shut them down if I wanted to, I really could.
+    I have that power. Maybe I''ll just add huge taxes, who knows I haven''t decided. '
+  Lvl3Option2: "People tell me they are worried that Russia may try and interfere
+    with the elections, but there is no need to panic. I asked Putin myself, a good
+    friend of mine. And he said \u201CNo\u201D. And that's good enough for me. He
+    is a very trustable man. "
+  Lvl3Option3: 'You know I am very honest and dependable person, some people say
+    the most. Just last week a lady came up to me and said Mr.Trump You are very
+    honest. And I would have to agree with her. If people have concerns they can
+    come to me, but no one has. These concerns are Fake news made up by the media
+    to make me look bad. '
+  PerfectEnding: 'By leaving matters to the experts. The country has become a Utopia
+    with Martian Colonies. '
+  BadEnding: 'Having taken matters into your own hands. You have created the perfect
+    hole above the ozone for tanning, saved a third of the population from a global
+    pandemic and proudly been re-elected. '
+  StupidEnding: 'Having heard the advice of your people. You now frolick in the Forest
+    with Dutin and his bear, having not been re-elected. '
+  NoOption: 'I will let my people make the decision on this one '
 --- !u!1001 &1484825033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -659,7 +727,12 @@ PrefabInstance:
     - target: {fileID: 6047744659577997975, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.6
+      value: -1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047744659577997975, guid: e2b0823700b1cfa4b849308a67bccd6d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312333, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
@@ -724,7 +797,7 @@ PrefabInstance:
     - target: {fileID: 8999034593787312333, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 11.4
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312333, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
@@ -839,7 +912,7 @@ PrefabInstance:
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: fullText
-      value: Git Gud Noob
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
@@ -849,7 +922,7 @@ PrefabInstance:
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: startText
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
@@ -906,12 +979,18 @@ PrefabInstance:
       propertyPath: Reporter
       value: 
       objectReference: {fileID: 1777419307}
+    - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
+        type: 3}
+      propertyPath: level
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312339, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: m_Name
       value: Dialogue1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e2b0823700b1cfa4b849308a67bccd6d, type: 3}
 --- !u!1 &1487930912
 GameObject:
@@ -1071,6 +1150,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1643750497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8999034593787312339, guid: e2b0823700b1cfa4b849308a67bccd6d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1484825033}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1643750499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643750497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 157134f5c0f29d24084022d492516c37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  LevelManager: {fileID: 1301697440}
+  frumpText: {fileID: 1301697443}
 --- !u!1 &1739834099
 GameObject:
   m_ObjectHideFlags: 0

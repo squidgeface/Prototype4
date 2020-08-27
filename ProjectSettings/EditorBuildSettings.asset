@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Answering3.unity
     guid: e2812fcaac47dfd4190105d5562513d0
+  - enabled: 1
+    path: Assets/Scenes/GameOverDuplicate.unity
+    guid: af6d85e5959bf5e40884f9ec4ebd6be3
   m_configObjects: {}
