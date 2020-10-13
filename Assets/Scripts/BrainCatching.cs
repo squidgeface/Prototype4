@@ -4,13 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class BrainScript : MonoBehaviour
+public class BrainCatching : MonoBehaviour
 
 {
 
     public GameObject target;
     public GameObject me;
-    private Vector3 objectRotation;
     private Vector3 moveTowards;
     public Text score;
 
@@ -19,8 +18,6 @@ public class BrainScript : MonoBehaviour
     public AudioSource sound1;
     public AudioSource sound2;
     public AudioSource sound3;
-
-    public GameObject bar;
 
 
     private float timer = 0;
@@ -66,7 +63,6 @@ public class BrainScript : MonoBehaviour
         }
 
         //move towards the target
-        me.transform.Rotate(0, 0, 1);
         transform.position -= moveTowards * Time.deltaTime * 8 * speed;
 
         
@@ -161,19 +157,13 @@ public class BrainScript : MonoBehaviour
 
         }
     }
-    private void OnMouseDown()
+
+    private void OnCollisionEnter(Collision collision)
     {
-        //destroy and add to score when clicked
-       
-
-
         FindObjectOfType<ScoreScript>().brainScore += 1;
-      // bar.GetComponent<SmartnessScript>().setSmart(FindObjectOfType<ScoreScript>().brainScore / 10);
-      // float bob = bar.GetComponent<SmartnessScript>().getSmart();
         score.text = FindObjectOfType<ScoreScript>().brainScore.ToString() + "/ 10";
         FindObjectOfType<brainFart>().squish.Play();
         GameObject.Destroy(me, 0);
     }
-
 }
 
