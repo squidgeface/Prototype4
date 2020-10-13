@@ -20,6 +20,8 @@ public class BrainScript : MonoBehaviour
     public AudioSource sound2;
     public AudioSource sound3;
 
+    public GameObject bar;
+
 
     private float timer = 0;
     // Start is called before the first frame update
@@ -163,7 +165,11 @@ public class BrainScript : MonoBehaviour
     {
         //destroy and add to score when clicked
        
+
+
         FindObjectOfType<ScoreScript>().brainScore += 1;
+      // bar.GetComponent<SmartnessScript>().setSmart(FindObjectOfType<ScoreScript>().brainScore / 10);
+      // float bob = bar.GetComponent<SmartnessScript>().getSmart();
         score.text = FindObjectOfType<ScoreScript>().brainScore.ToString() + "/ 10";
         FindObjectOfType<brainFart>().squish.Play();
         GameObject.Destroy(me, 0);
