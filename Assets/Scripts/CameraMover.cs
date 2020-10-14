@@ -28,7 +28,7 @@ public class CameraMover : MonoBehaviour
                     activated = false;
                     fade = true;
 
-                    SceneManager.LoadScene(Random.Range(2, 4));
+                    SceneManager.LoadScene(2);
                 }
             }   
         }
@@ -58,7 +58,7 @@ public class CameraMover : MonoBehaviour
                 {
                     activated = false;
                     fade = true;
-                    SceneManager.LoadScene(Random.Range(2, 4));
+                    SceneManager.LoadScene(2);
                 }
             }
 
@@ -90,7 +90,7 @@ public class CameraMover : MonoBehaviour
                 {
                     activated = false;
                     fade = true;
-                    SceneManager.LoadScene(Random.Range(2, 4));
+                    SceneManager.LoadScene(2);
                 }
             }
 
