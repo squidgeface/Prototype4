@@ -2,20 +2,44 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TrumpMover : MonoBehaviour
 {
     public float moveSpeed = 30.0f;
     int horizontal = 0;
     int vertical = 0;
+    public int brainCount = 0;
 
     private void Update()
     {
-        if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) && gameObject.GetComponent<RectTransform>().position.y > 0.0f)
+        MovePlayer();
+
+        if (brainCount >= 20)
+        {
+            FindScore();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "FlyingBrain")
+        {
+            brainCount++;
+            FindObjectOfType<ScoreScript>().brainScore += 1;
+            Destroy(other.gameObject);
+        }
+    }
+
+    private void MovePlayer()
+    {
+        gameObject.GetComponent<RectTransform>().position = new Vector3(gameObject.GetComponent<RectTransform>().position.x + moveSpeed * horizontal * Time.deltaTime * 100.0f, gameObject.GetComponent<RectTransform>().position.y + moveSpeed * vertical * Time.deltaTime * 100.0f, 0.0f);
+        float offset = 50.0f;
+        if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) && gameObject.GetComponent<RectTransform>().position.y > offset)
         {
             vertical = -1;
         }
-        else if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) && gameObject.GetComponent<RectTransform>().position.y < Screen.height)
+        else if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) && gameObject.GetComponent<RectTransform>().position.y < Screen.height - offset)
         {
             vertical = 1;
         }
@@ -24,11 +48,11 @@ public class TrumpMover : MonoBehaviour
             vertical = 0;
         }
 
-        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) && gameObject.GetComponent<RectTransform>().position.x > 0.0f)
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) && gameObject.GetComponent<RectTransform>().position.x > offset)
         {
             horizontal = -1;
         }
-        else if ((Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) && gameObject.GetComponent<RectTransform>().position.x < Screen.width)
+        else if ((Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) && gameObject.GetComponent<RectTransform>().position.x < Screen.width - offset)
         {
             horizontal = 1;
         }
@@ -36,11 +60,91 @@ public class TrumpMover : MonoBehaviour
         {
             horizontal = 0;
         }
-        MovePlayer();
     }
 
-    private void MovePlayer()
+
+    private void FindScore()
     {
-        gameObject.GetComponent<RectTransform>().position = new Vector3(gameObject.GetComponent<RectTransform>().position.x + moveSpeed * horizontal * Time.deltaTime * 100.0f, gameObject.GetComponent<RectTransform>().position.y + moveSpeed * vertical * Time.deltaTime * 100.0f, 0.0f);
+        if (FindObjectOfType<ScoreScript>().game1 == -1)
+        {
+            FindObjectOfType<ScoreScript>().game1 = FindObjectOfType<ScoreScript>().brainScore;
+            FindObjectOfType<ScoreScript>().level++;
+            if (FindObjectOfType<ScoreScript>().brainScore > 0 && FindObjectOfType<ScoreScript>().brainScore < 4)
+            {
+                FindObjectOfType<ScoreScript>().response = 3;
+            }
+            else if (FindObjectOfType<ScoreScript>().brainScore > 3 && FindObjectOfType<ScoreScript>().brainScore < 8)
+            {
+                FindObjectOfType<ScoreScript>().response = 2;
+            }
+            else if (FindObjectOfType<ScoreScript>().brainScore > 7 && FindObjectOfType<ScoreScript>().brainScore <= 10)
+            {
+                FindObjectOfType<ScoreScript>().response = 1;
+            }
+            else if (FindObjectOfType<ScoreScript>().brainScore == 0)
+            {
+                FindObjectOfType<ScoreScript>().response = 4;
+            }
+
+        }
+        else if (FindObjectOfType<ScoreScript>().game2 == -1)
+        {
+            FindObjectOfType<ScoreScript>().game2 = FindObjectOfType<ScoreScript>().brainScore;
+            FindObjectOfType<ScoreScript>().level++;
+            if (FindObjectOfType<ScoreScript>().brainScore > 0 && FindObjectOfType<ScoreScript>().brainScore < 4)
+            {
+                FindObjectOfType<ScoreScript>().response = 3;
+            }
+            else if (FindObjectOfType<ScoreScript>().brainScore > 3 && FindObjectOfType<ScoreScript>().brainScore < 8)
+            {
+                FindObjectOfType<ScoreScript>().response = 2;
+            }
+            else if (FindObjectOfType<ScoreScript>().brainScore > 7 && FindObjectOfType<ScoreScript>().brainScore <= 10)
+            {
+                FindObjectOfType<ScoreScript>().response = 1;
+            }
+            else if (FindObjectOfType<ScoreScript>().brainScore == 0)
+            {
+                FindObjectOfType<ScoreScript>().response = 4;
+            }
+        }
+        else if (FindObjectOfType<ScoreScript>().game3 == -1)
+        {
+            FindObjectOfType<ScoreScript>().game3 = FindObjectOfType<ScoreScript>().brainScore;
+            FindObjectOfType<ScoreScript>().level++;
+            if (FindObjectOfType<ScoreScript>().brainScore > 0 && FindObjectOfType<ScoreScript>().brainScore < 4)
+            {
+                FindObjectOfType<ScoreScript>().response = 3;
+            }
+            else if (FindObjectOfType<ScoreScript>().brainScore > 3 && FindObjectOfType<ScoreScript>().brainScore < 8)
+            {
+                FindObjectOfType<ScoreScript>().response = 2;
+            }
+            else if (FindObjectOfType<ScoreScript>().brainScore > 7 && FindObjectOfType<ScoreScript>().brainScore <= 10)
+            {
+                FindObjectOfType<ScoreScript>().response = 1;
+            }
+            else if (FindObjectOfType<ScoreScript>().brainScore == 0)
+            {
+                FindObjectOfType<ScoreScript>().response = 4;
+            }
+        }
+
+
+        FindObjectOfType<ScoreScript>().brainScore = 0;
+
+        if (FindObjectOfType<ScoreScript>().level == 1)
+        {
+            SceneManager.LoadScene(3);
+        }
+        else if (FindObjectOfType<ScoreScript>().level == 3)
+        {
+            SceneManager.LoadScene(5);
+        }
+        else if (FindObjectOfType<ScoreScript>().level == 5)
+        {
+            SceneManager.LoadScene(7);
+        }
     }
+
 }

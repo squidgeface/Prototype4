@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Questioning.unity
     guid: 2f662ecc110527f419e3ba81c4fdcc98
   - enabled: 1
+    path: Assets/Scenes/Flying Trump.unity
+    guid: 0a9823dacda32fa4e8e8c9515d8ec957
+  - enabled: 0
     path: Assets/Scenes/GameScene.unity
     guid: a9738f9696290b445a963b456020d5d9
   - enabled: 1

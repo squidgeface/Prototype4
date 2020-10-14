@@ -29,7 +29,6 @@ public class BrainScript : MonoBehaviour
     {
         target = GameObject.Find("Target");
 
-
         // objectRotation = Vector3.RotateTowards(transform.position, target.transform.position, 2 * Mathf.PI, 10);
         me.transform.rotation = new Quaternion();
       
