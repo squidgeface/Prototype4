@@ -11,12 +11,18 @@ public class MoveCatcher : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D))
         {
-            transform.position += new Vector3(Time.deltaTime * speed, 0, 0);
+            if (transform.position.x < 5)
+            {
+                transform.position += new Vector3(Time.deltaTime * speed, 0, 0);
+            }
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position -= new Vector3(Time.deltaTime * speed, 0, 0);
+            if (transform.position.x > -5)
+            {
+                transform.position -= new Vector3(Time.deltaTime * speed, 0, 0);
+            }
         }
     }
 }
