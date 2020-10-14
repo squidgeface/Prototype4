@@ -5,12 +5,10 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class BrainCatching : MonoBehaviour
-
 {
-
-    public GameObject target;
-    public GameObject me;
-    private Vector3 moveTowards;
+    public GameObject brain;
+    float counter = 0;
+    int BrainCounter = 0;
     public Text score;
 
     public float  speed;
@@ -24,47 +22,53 @@ public class BrainCatching : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        target = GameObject.Find("Target");
+        //target = GameObject.Find("Target");
 
 
         // objectRotation = Vector3.RotateTowards(transform.position, target.transform.position, 2 * Mathf.PI, 10);
-        me.transform.rotation = new Quaternion();
+        //me.transform.rotation = new Quaternion();
       
       //  transform.RotateAround(target.transform.position, Random.Range(0, 360));
 
         //find the direction of the target
-        moveTowards = Vector3.MoveTowards(this.transform.position, target.transform.position, 0.1f);
-        moveTowards.z = 0;
-        moveTowards.Normalize();
-        speed = Random.Range(0.5f, 2.0f);
-        FindObjectOfType<brainFart>().swoosh.Play();
+        //moveTowards = Vector3.MoveTowards(this.transform.position, target.transform.position, 0.1f);
+        //moveTowards.z = 0;
+        //moveTowards.Normalize();
+        //speed = Random.Range(0.5f, 2.0f);
+        //FindObjectOfType<brainFart>().swoosh.Play();
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        counter += 1 * Time.deltaTime * 100;
 
-        int random = Random.RandomRange(0, 2000);
-        if (random == 1 || random == 4 || random == 5)
+        if (counter >= 200 && BrainCounter <= 9)
         {
-            if (!sound1.isPlaying)
-                sound1.Play();
-        }
-        if (random == 2)
-        {
-            if (!sound2.isPlaying)
-                sound2.Play();
-        }
-        if (random == 3)
-        {
-            if (!sound3.isPlaying)
-                sound3.Play();
-        }
+            float randomX = Random.Range(-4.0f, 4.0f);
+            Instantiate(brain, new Vector3(randomX, 15.0f, 0.0f), new Quaternion());
+            BrainCounter++;
 
-        //move towards the target
-        transform.position -= moveTowards * Time.deltaTime * 8 * speed;
+            int random = Random.RandomRange(0, 2000);
+            if (random == 1 || random == 4 || random == 5)
+            {
+                if (!sound1.isPlaying)
+                    sound1.Play();
+            }
+            if (random == 2)
+            {
+                if (!sound2.isPlaying)
+                    sound2.Play();
+            }
+            if (random == 3)
+            {
+                if (!sound3.isPlaying)
+                    sound3.Play();
+            }
 
+            counter = 0;
+        }
         
         //count how long minigame has been going ~26 is end of game in this example
         timer += Time.deltaTime;
@@ -152,18 +156,7 @@ public class BrainCatching : MonoBehaviour
             {
                 SceneManager.LoadScene(7);
             }
-           
-
-
         }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        FindObjectOfType<ScoreScript>().brainScore += 1;
-        score.text = FindObjectOfType<ScoreScript>().brainScore.ToString() + "/ 10";
-        FindObjectOfType<brainFart>().squish.Play();
-        GameObject.Destroy(me, 0);
     }
 }
 
