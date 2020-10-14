@@ -11,6 +11,14 @@ public class TrumpMover : MonoBehaviour
     int vertical = 0;
     public int brainCount = 0;
     public AudioSource splat;
+    public AudioSource Music;
+    public Image image;
+    Color c;
+
+    private void Start()
+    {
+        c = image.color;
+    }
 
     private void Update()
     {
@@ -142,6 +150,10 @@ public class TrumpMover : MonoBehaviour
 
     public IEnumerator FadeOut()
     {
+        StartCoroutine(FadeOutMusic(Music, 5));
+
+        yield return new WaitForSeconds(5);
+
         if (FindObjectOfType<ScoreScript>().level == 1)
         {
             SceneManager.LoadScene(3);
@@ -155,7 +167,28 @@ public class TrumpMover : MonoBehaviour
             SceneManager.LoadScene(7);
         }
 
-        return null;
+        yield return null;
+    }
+
+    public IEnumerator FadeOutMusic(AudioSource audioSource, float FadeTime)
+    {
+        float startVolume = audioSource.volume;
+        float adjustedVolume = startVolume;
+
+        while (audioSource.volume > 0)
+        {
+            adjustedVolume -= startVolume * Time.deltaTime / FadeTime;
+            audioSource.volume = adjustedVolume;
+            if (c.a <= 1)
+            {
+                c.a += 0.2f * Time.deltaTime;
+                image.color = c;
+            }
+            yield return null;
+        }
+
+        audioSource.Stop();
+        audioSource.volume = startVolume;
     }
 
 }

@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ImageScroller : MonoBehaviour
 {
+    public float speed = 1.0f;
       // Update is called once per frame
     void Update()
     {
-        gameObject.transform.position += new Vector3(-1 * Time.deltaTime * 100, 0.0f, 0.0f);
+        gameObject.transform.position += new Vector3(-speed * Time.deltaTime * 100, 0.0f, 0.0f);
 
         if (gameObject.transform.position.x <= -(Screen.width/2.0f))
         {
