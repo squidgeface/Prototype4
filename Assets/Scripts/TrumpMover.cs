@@ -10,14 +10,16 @@ public class TrumpMover : MonoBehaviour
     int horizontal = 0;
     int vertical = 0;
     public int brainCount = 0;
+    public AudioSource splat;
 
     private void Update()
     {
         MovePlayer();
 
-        if (brainCount >= 20)
+        if (brainCount == 20)
         {
             FindScore();
+            brainCount++;
         }
     }
 
@@ -28,6 +30,7 @@ public class TrumpMover : MonoBehaviour
             brainCount++;
             FindObjectOfType<ScoreScript>().brainScore += 1;
             Destroy(other.gameObject);
+            splat.Play();
         }
     }
 
@@ -132,7 +135,13 @@ public class TrumpMover : MonoBehaviour
 
 
         FindObjectOfType<ScoreScript>().brainScore = 0;
+        FadeOut();
 
+
+    }
+
+    public IEnumerator FadeOut()
+    {
         if (FindObjectOfType<ScoreScript>().level == 1)
         {
             SceneManager.LoadScene(3);
@@ -145,6 +154,8 @@ public class TrumpMover : MonoBehaviour
         {
             SceneManager.LoadScene(7);
         }
+
+        return null;
     }
 
 }

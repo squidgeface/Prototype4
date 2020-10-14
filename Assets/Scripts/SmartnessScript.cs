@@ -7,11 +7,12 @@ public class SmartnessScript : MonoBehaviour
 {
 
     public Slider slider;
+    public float divider = 10.0f;
 
     // Update is called once per frame
     void Update()
     {
-        slider.value = FindObjectOfType<ScoreScript>().brainScore / 10.0f;
+        slider.value = FindObjectOfType<ScoreScript>().brainScore / divider;
     }
 
     public void setSmart(float smart)

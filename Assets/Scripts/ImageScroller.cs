@@ -11,7 +11,7 @@ public class ImageScroller : MonoBehaviour
 
         if (gameObject.transform.position.x <= -(Screen.width/2.0f))
         {
-            gameObject.transform.position = new Vector3(Screen.width + ((Screen.width / 2.0f)-1), gameObject.transform.position.y, gameObject.transform.position.z);
+            gameObject.transform.position = new Vector3(Screen.width + ((Screen.width / 2.0f)), gameObject.transform.position.y, gameObject.transform.position.z);
         }
     }
 }
