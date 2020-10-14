@@ -135,7 +135,7 @@ public class TrumpMover : MonoBehaviour
 
 
         FindObjectOfType<ScoreScript>().brainScore = 0;
-        FadeOut();
+        StartCoroutine(FadeOut());
 
 
     }
