@@ -12,7 +12,6 @@ public class CameraMover : MonoBehaviour
     public levelScript LevelManager;
     public TrumpWriterText trumpSpeak;
 
-
     // Update is called once per frame
     void Update()
     {
@@ -28,7 +27,8 @@ public class CameraMover : MonoBehaviour
                 {
                     activated = false;
                     fade = true;
-                    SceneManager.LoadScene(2);
+
+                    SceneManager.LoadScene(Random.Range(2, 4));
                 }
             }   
         }
@@ -58,7 +58,7 @@ public class CameraMover : MonoBehaviour
                 {
                     activated = false;
                     fade = true;
-                    SceneManager.LoadScene(2);
+                    SceneManager.LoadScene(Random.Range(2, 4));
                 }
             }
 
@@ -90,7 +90,7 @@ public class CameraMover : MonoBehaviour
                 {
                     activated = false;
                     fade = true;
-                    SceneManager.LoadScene(2);
+                    SceneManager.LoadScene(Random.Range(2, 4));
                 }
             }
 
