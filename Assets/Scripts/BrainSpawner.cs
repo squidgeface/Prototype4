@@ -7,13 +7,18 @@ public class BrainSpawner : MonoBehaviour
 {
     public GameObject brain;
     float counter = 0;
-    public RectTransform canvas;
+    public Canvas canvas;
     float spawnTime = 0.0f;
     public int brainCount = 0;
+    float width;
+    float height;
 
     private void Start()
     {
         spawnTime = Random.Range(100.0f, 200.0f);
+        width = canvas.gameObject.GetComponent<RectTransform>().localPosition.x + canvas.gameObject.GetComponent<RectTransform>().rect.width/2;
+        height = canvas.gameObject.GetComponent<RectTransform>().rect.height;
+
     }
 
     // Update is called once per frame
@@ -22,11 +27,11 @@ public class BrainSpawner : MonoBehaviour
         counter += 1 * Time.deltaTime * 100;
         
 
-        if (counter >= spawnTime && brainCount <= 20)
+        if (counter >= spawnTime && brainCount <= 10)
         {
             spawnTime = Random.Range(100.0f, 200.0f);
-            float randomY = Random.Range(50.0f, Screen.height - 50.0f);
-            Instantiate(brain, new Vector3(Screen.width + 10.0f, randomY, 0.0f), new Quaternion(), canvas);
+            float randomY = Random.Range(- 50.0f,  50.0f);
+            Instantiate(brain, new Vector3(gameObject.transform.position.x, randomY, canvas.gameObject.GetComponent<RectTransform>().localPosition.z), new Quaternion(), canvas.gameObject.GetComponent<RectTransform>());
             Debug.Log("Spawned");
             counter = 0;
             brainCount++;

@@ -1,18 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ImageScroller : MonoBehaviour
 {
     public float speed = 1.0f;
+    public RectTransform canvas;
       // Update is called once per frame
     void Update()
     {
-        gameObject.transform.position += new Vector3(-speed * Time.deltaTime * 100, 0.0f, 0.0f);
+        float width = canvas.rect.width;
+        //gameObject.GetComponent<RectTransform>().rect.x += new Vector3(-speed * Time.deltaTime * 100, 0.0f, 0.0f);
+        gameObject.GetComponent<RectTransform>().localPosition += new Vector3(-speed * Time.deltaTime * 100, 0.0f, 0.0f);
 
-        if (gameObject.transform.position.x <= -(Screen.width/2.0f))
+        if (gameObject.GetComponent<RectTransform>().localPosition.x <= -(width))
         {
-            gameObject.transform.position = new Vector3(Screen.width + ((Screen.width / 2.0f)), gameObject.transform.position.y, gameObject.transform.position.z);
+            gameObject.GetComponent<RectTransform>().localPosition = new Vector3(width, gameObject.GetComponent<RectTransform>().localPosition.y, gameObject.GetComponent<RectTransform>().localPosition.z);
         }
     }
 }

@@ -14,17 +14,20 @@ public class TrumpMover : MonoBehaviour
     public AudioSource Music;
     public Image image;
     Color c;
+    public Canvas canvas;
 
     private void Start()
     {
         c = image.color;
+        tempTrails = gameObject.GetComponentInChildren<ParticleSystem>().GetTrails();
+        oldTrails = new ParticleSystem.Trails();
     }
 
     private void Update()
     {
         MovePlayer();
 
-        if (brainCount == 20)
+        if (brainCount == 10)
         {
             FindScore();
             brainCount++;
@@ -44,13 +47,17 @@ public class TrumpMover : MonoBehaviour
 
     private void MovePlayer()
     {
-        gameObject.GetComponent<RectTransform>().position = new Vector3(gameObject.GetComponent<RectTransform>().position.x + moveSpeed * horizontal * Time.deltaTime * 100.0f, gameObject.GetComponent<RectTransform>().position.y + moveSpeed * vertical * Time.deltaTime * 100.0f, 0.0f);
+        float width = canvas.gameObject.GetComponent<RectTransform>().rect.width;
+        float height = canvas.gameObject.GetComponent<RectTransform>().rect.height;
+
+        gameObject.GetComponent<RectTransform>().localPosition = new Vector3(gameObject.GetComponent<RectTransform>().localPosition.x + moveSpeed * horizontal * Time.deltaTime * 100.0f, gameObject.GetComponent<RectTransform>().localPosition.y + moveSpeed * vertical * Time.deltaTime * 100.0f, gameObject.GetComponent<RectTransform>().localPosition.z);
+        
         float offset = 50.0f;
-        if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) && gameObject.GetComponent<RectTransform>().position.y > offset)
+        if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) && gameObject.GetComponent<RectTransform>().localPosition.y > (-height / 2) + offset)
         {
             vertical = -1;
         }
-        else if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) && gameObject.GetComponent<RectTransform>().position.y < Screen.height - offset)
+        else if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) && gameObject.GetComponent<RectTransform>().localPosition.y < (height / 2) - offset)
         {
             vertical = 1;
         }
@@ -59,11 +66,11 @@ public class TrumpMover : MonoBehaviour
             vertical = 0;
         }
 
-        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) && gameObject.GetComponent<RectTransform>().position.x > offset)
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) && gameObject.GetComponent<RectTransform>().localPosition.x > (-width/2) + offset)
         {
             horizontal = -1;
         }
-        else if ((Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) && gameObject.GetComponent<RectTransform>().position.x < Screen.width - offset)
+        else if ((Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) && gameObject.GetComponent<RectTransform>().localPosition.x < (width / 2) - offset)
         {
             horizontal = 1;
         }
@@ -71,6 +78,8 @@ public class TrumpMover : MonoBehaviour
         {
             horizontal = 0;
         }
+
+        
     }
 
 
