@@ -6,6 +6,12 @@ public class MoveCatcher : MonoBehaviour
 {
     public float speed = 100.0f;
 
+    private void Start()
+    {
+        FindObjectOfType<ScoreScript>().brainScore = 10;
+        FindObjectOfType<BrainCatching>().score.text = FindObjectOfType<ScoreScript>().brainScore.ToString() + "/10";
+    }
+
     // Update is called once per frame
     void Update()
     {
