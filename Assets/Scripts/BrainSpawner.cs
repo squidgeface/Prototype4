@@ -30,7 +30,7 @@ public class BrainSpawner : MonoBehaviour
         if (counter >= spawnTime && brainCount <= 10)
         {
             spawnTime = Random.Range(100.0f, 200.0f);
-            float randomY = Random.Range(- 50.0f,  50.0f);
+            float randomY = Random.Range(- 30.0f,  50.0f);
             Instantiate(brain, new Vector3(gameObject.transform.position.x, randomY, canvas.gameObject.GetComponent<RectTransform>().localPosition.z), new Quaternion(), canvas.gameObject.GetComponent<RectTransform>());
             Debug.Log("Spawned");
             counter = 0;
