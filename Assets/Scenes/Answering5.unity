@@ -2078,41 +2078,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lvl1Option1: "My people tell me coal is the problem, and my people are the best.
     So I said the only solution is to burn all the coal and get rid of it, And that
-    was MY idea. My people were amazed. They hadn\u2019t thought of that. They literally
-    gasped at how good the idea was."
+    was my idea. My people were amazed. They hadn\u2019t thought of that. They literally
+    gasped at how good the idea was. "
   Lvl1Option2: "You know I did some research, very in-depth research and discovered
     that factories are the problem. I discovered this myself. So I\u2019m shutting
     down our factories, I can do that you know. And I'll be sending our production
     to China. China is very advanced. A very advanced people. Some of the most advanced
     I've been told. Not only does this help the environment.It also creates jobs
-    now that people don\u2019t have to work in those terrible factories."
+    now that people don\u2019t have to work in those terrible factories. "
   Lvl1Option3: "People do not think \u201CAmerica the great\u201D when they hear
     2nd place, this is what i\u2019ve always said. I promised to make USA number
     one, and that's what I plan to do. We are getting rid of those old fossil fuels,
-    that's what fossil means. And will be focusing on renewable resources like coal.
-    You know I made some coal in my fireplace yesterday, and the brilliant idea came
-    to me. We just make more coal and use that power. This ensures we get number
-    one in the carbon mission."
+    that's what fossil means. And we will be focusing on renewable resources like
+    coal. You know I made some coal in my fireplace yesterday, and the brilliant
+    idea came to me. We just make more coal and use that power. This ensures we get
+    number one in the carbon mission. "
   Lvl2Option1: "It\u2019s going to be, really, a voluntary thing. You can do it.
     You don\u2019t have to do it. I\u2019m choosing not to do it, but some people
-    may want to do it, and that\u2019s OK. It may be good.Probably will. They\u2019re
-    making a recommendation. It\u2019s only a recommendation.\u201D thanks for the
-    recommendation though."
+    may want to do it, and that\u2019s OK. It may be good. Probably will. They\u2019re
+    making a recommendation. It\u2019s only a recommendation. Thanks for the recommendation
+    though. "
   Lvl2Option2: "Ive been told masks help, they help a lot. I checked with my people
-    and they confirm what I said. Personally I will be using my Bat-Man mask. My
-    people tell me any mask is better than none so if spider-man is all you\u2019ve
-    got, go with that. My people also tell me tracing is important. Myself i\u2019m
-    more of a free hand artist, but this is what my people say."
+    and they confirm what I said. Personally I will be using my Batman mask. My people
+    tell me any mask is better than none so if spider-man is all you\u2019ve got,
+    go with that. My people also tell me tracing is important. Myself i\u2019m more
+    of a free hand artist, but this is what my people say. "
   Lvl2Option3: "Suppose that we hit the body with a tremendous force, whether it\u2019s
     ultraviolet or just very powerful light. Supposing you brought the light inside
     the body, which you can do either through the skin or in some other way. Is there
     a way we can do something like that by injection inside or almost a cleaning?
     It sounds interesting to me, so we\u2019ll see. But the whole concept of the
-    light, the"
-  Lvl3Option1: I've always said if a business is struggling you should let it die.
-    The USPS says it  will cause issues with the votes if I dont give them money.
+    light, the way it kills it in one minute. That\u2019s pretty powerful, let\u2019s
+    fund that. "
+  Lvl3Option1: 'I''ve always said, if a business is struggling you should let it
+    die. The USPS says it  will cause issues with the votes if I dont give them money.
     They are threatening me. I could shut them down if I wanted to, I really could.
-    I have that power. Maybe I'll just add huge taxes, who knows I haven't decided.
+    I have that power. Maybe I''ll just add huge taxes, who knows I haven''t decided. '
   Lvl3Option2: "People tell me they are worried that Russia may try and interfere
     with the elections, but there is no need to panic. I asked Putin myself, a good
     friend of mine. And he said \u201CNo\u201D. And that's good enough for me. He
@@ -2122,6 +2123,22 @@ MonoBehaviour:
     honest. And I would have to agree with her. If people have concerns they can
     come to me, but no one has. These concerns are Fake news made up by the media
     to make me look bad. '
+  Lvl4Option1: "I met with Kim Jong Un.And we had a great meeting because we\u2019re
+    all in this together.We want to get this thing solved.  It\u2019s been going
+    on for a long time.  And we had a great meeting.  And it was unexpected.  I put
+    out yesterday: Maybe I\u2019ll meet with Chairman Kim.And he saw it.  Social
+    media.  A pretty powerful thing, social media. "
+  Lvl4Option2: "Our new budget calls for \u2014 listen to this; you\u2019ll love
+    this \u2014 78 F-35s.  Stealth, right?  Stealth.  (Applause.)  They say they\u2019re
+    hard to beat because you can\u2019t see them, literally.  I\u2019ve gone to some
+    of the great pilots; I say, \u201CWhat do you think of the F-35?  How does the
+    enemy do?\u201D  \u201CWell, they have a problem: They can\u2019t see it, sir.\u201D 
+    I mean, that\u2019s pretty much it, right?  We\u2019ve got a lot of them. "
+  Lvl4Option3: "We\u2019re building, right now, incredible military equipment at
+    a level that nobody has ever seen before.  We have no choice.  We have to do
+    it \u2014 with the adversaries we have out there. \n\n We have a \u2014 I call
+    it the \u201Csuper-duper missile.\u201D  And I heard the other night, It\u2019s
+    17 times faster than what they have right now. "
   Lvl5Option1: 'We are going to have a spaceforce, probably the best spaceforce.
     With my power, and it is a lot. I revive the national space council.  '
   Lvl5Option2: "When it comes to defending America, it is not enough to merely have
@@ -2130,21 +2147,14 @@ MonoBehaviour:
   Lvl5Option3: 'Amid grave threats to our national security, American superiority
     in space is absolutely vital. And we''re leading, but we''re not leading by enough.
     But very shortly we''ll be leading by a lot. '
-  Lvl4Option1: 'We are going to have a spaceforce, probably the best spaceforce.
-    With my power, and it is a lot. I revive the national space council.  '
-  Lvl4Option2: "When it comes to defending America, it is not enough to merely have
-    an american presence in space, we must have an american dominance in space. It\u2019s
-    going to be something. So important. "
-  Lvl4Option3: 'Amid grave threats to our national security, American superiority
-    in space is absolutely vital. And we''re leading, but we''re not leading by enough.
-    But very shortly we''ll be leading by a lot. '
   PerfectEnding: 'By leaving matters to the experts. The country has become a Utopia
     with Martian Colonies. '
-  BadEnding: 'Having taken matters into your own hands. You have created the perfect
-    hole above the ozone for tanning, saved a third of the population from a global
-    pandemic and proudly been re-elected. '
-  StupidEnding: 'Having heard the advice of your people. You now frolick in the Forest
-    with Dutin and his bear, having not been re-elected. '
+  BadEnding: 'Having thought super hard about these questions by clicking all the
+    brains, you have created the perfect hole above the ozone for tanning, saved
+    a third of the population from a global pandemic and proudly been re-elected. '
+  StupidEnding: 'Having not fuelled your intelligence, you have heard the advice
+    of your people and not destroyed the country. You now frolick in the Forest with
+    Dutin and his bear, having not been re-elected. '
   NoOption: 'I will let my people make the decision on this one '
 --- !u!1 &926434628
 GameObject:
