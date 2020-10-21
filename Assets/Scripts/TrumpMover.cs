@@ -19,8 +19,6 @@ public class TrumpMover : MonoBehaviour
     private void Start()
     {
         c = image.color;
-        tempTrails = gameObject.GetComponentInChildren<ParticleSystem>().GetTrails();
-        oldTrails = new ParticleSystem.Trails();
     }
 
     private void Update()
