@@ -43,22 +43,36 @@ public class typewriterText : MonoBehaviour
             timer = 0;
         }
 
-        if (done && timer > 7)
+        if (done && timer > 7 && LevelManager.GetComponent<levelScript>().level < 6)
         {
             if (FindObjectOfType<CameraMover>().activated == false)
             {
-               // FindObjectOfType<ScoreScript>().level += 1;
+                // FindObjectOfType<ScoreScript>().level += 1;
             }
-           
+
             FindObjectOfType<CameraMover>().activated = true;
             gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
             this.GetComponent<TextMeshPro>().text = "";
-            
+
+            umm.Play();
+            timer = 0;
+        }
+        else if (done && timer > 10 && LevelManager.GetComponent<levelScript>().level >= 6)
+        {
+            if (FindObjectOfType<CameraMover>().activated == false)
+            {
+                // FindObjectOfType<ScoreScript>().level += 1;
+            }
+
+            FindObjectOfType<CameraMover>().activated = true;
+            gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            this.GetComponent<TextMeshPro>().text = "";
+
             umm.Play();
             timer = 0;
         }
 
-       level = LevelManager.GetComponent<levelScript>().level;
+        level = LevelManager.GetComponent<levelScript>().level;
        startText = LevelManager.GetComponent<levelScript>().Clicked;
 
         if (startText && isPlaying)

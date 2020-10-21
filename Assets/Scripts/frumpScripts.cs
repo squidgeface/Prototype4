@@ -29,7 +29,7 @@ public class frumpScripts : MonoBehaviour
     public string Lvl2Option3 = "Suppose that we hit the body with a tremendous force, whether it’s ultraviolet or just very powerful light. " +
         "Supposing you brought the light inside the body, which you can do either through the skin or in some other way. " +
         "Is there a way we can do something like that by injection inside or almost a cleaning? " +
-        "It sounds interesting to me, so we’ll see. But the whole concept of the light, the way it kills it in one minute. " +
+        //"It sounds interesting to me, so we’ll see. But the whole concept of the light, the way it kills it in one minute. " +
         "That’s pretty powerful, let’s fund that. ";
 
     public string Lvl3Option1 = "I've always said, if a business is struggling you should let it die. " +

@@ -1071,8 +1071,8 @@ PrefabInstance:
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: fullText
-      value: 'President Frump, care to make a comment on the newly created space
-        force? '
+      value: 'President Frump, what are the benefits to the increase in military
+        spending? Are we scared of any foreign powers? '
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
@@ -3018,7 +3018,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 719e49d1d67242c428f237312e3df455, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b5a7b89c2139fed4a9db4b08c5eb5b4f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1066,13 +1066,13 @@ PrefabInstance:
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: delay
-      value: 0.06
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: fullText
-      value: 'President Frump, what are the benefits to the increase in military
-        spending? Are we scared of any foreign powers? '
+      value: 'President Frump, care to make a comment on the newly created space
+        force? '
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
@@ -2558,6 +2558,7 @@ GameObject:
   - component: {fileID: 1618609793}
   - component: {fileID: 1618609792}
   - component: {fileID: 1618609791}
+  - component: {fileID: 1618609794}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -2613,6 +2614,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1618609794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618609790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5f1e7180f069d4f867077296fd195a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoodScore: 0
+  StupidScore: 0
+  EvilScore: 0
+  brainScore: 0
+  game1: -1
+  game2: -1
+  game3: -1
+  game4: -1
+  game5: -1
+  response: 0
+  level: 7
 --- !u!1 &1643621350
 GameObject:
   m_ObjectHideFlags: 0
@@ -3018,7 +3042,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 719e49d1d67242c428f237312e3df455, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1c26d96a0d2fdbe4e9d19c3845e6e97e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
