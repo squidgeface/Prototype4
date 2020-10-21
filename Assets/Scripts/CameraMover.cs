@@ -16,7 +16,7 @@ public class CameraMover : MonoBehaviour
     void Update()
     {
         level = LevelManager.GetComponent<levelScript>().level;
-       
+        int randLevel = Random.Range(2, 4);
         if (level == 0)
         {
             if (activated)
@@ -28,7 +28,7 @@ public class CameraMover : MonoBehaviour
                     activated = false;
                     fade = true;
 
-                    SceneManager.LoadScene(2);
+                    SceneManager.LoadScene(randLevel);
                 }
             }   
         }
@@ -58,7 +58,7 @@ public class CameraMover : MonoBehaviour
                 {
                     activated = false;
                     fade = true;
-                    SceneManager.LoadScene(2);
+                    SceneManager.LoadScene(randLevel);
                 }
             }
 
@@ -90,13 +90,77 @@ public class CameraMover : MonoBehaviour
                 {
                     activated = false;
                     fade = true;
-                    SceneManager.LoadScene(2);
+                    SceneManager.LoadScene(randLevel);
                 }
             }
 
 
         }
         else if (level == 5)
+        {
+            if (!activated)
+            {
+                gameObject.transform.position += new Vector3(0.0f, 0.0f, -speed * Time.deltaTime * 150.0f);
+
+                if (gameObject.transform.position.z <= -20.0f)
+                {
+                    activated = true;
+
+                    trumpSpeak.GetComponent<TrumpWriterText>().startText = true;
+                    trumpSpeak.GetComponent<TrumpWriterText>().isPlaying = true;
+
+                }
+            }
+        }
+        else if (level == 6)
+        {
+            if (activated)
+            {
+                gameObject.transform.position += new Vector3(0.0f, 0.0f, speed * Time.deltaTime * 150.0f);
+
+                if (gameObject.transform.position.z >= 0.0f)
+                {
+                    activated = false;
+                    fade = true;
+                    SceneManager.LoadScene(randLevel);
+                }
+            }
+
+
+        }
+        else if (level == 7)
+        {
+            if (!activated)
+            {
+                gameObject.transform.position += new Vector3(0.0f, 0.0f, -speed * Time.deltaTime * 150.0f);
+
+                if (gameObject.transform.position.z <= -20.0f)
+                {
+                    activated = true;
+
+                    trumpSpeak.GetComponent<TrumpWriterText>().startText = true;
+                    trumpSpeak.GetComponent<TrumpWriterText>().isPlaying = true;
+
+                }
+            }
+        }
+        else if (level == 8)
+        {
+            if (activated)
+            {
+                gameObject.transform.position += new Vector3(0.0f, 0.0f, speed * Time.deltaTime * 150.0f);
+
+                if (gameObject.transform.position.z >= 0.0f)
+                {
+                    activated = false;
+                    fade = true;
+                    SceneManager.LoadScene(randLevel);
+                }
+            }
+
+
+        }
+        else if (level == 9)
         {
             if (!activated)
             {

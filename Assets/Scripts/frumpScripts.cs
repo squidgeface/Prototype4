@@ -41,7 +41,19 @@ public class frumpScripts : MonoBehaviour
 
     public string Lvl3Option3 = "You know I am very honest and dependable person, some people say the most. " +
         "Just last week a lady came up to me and said Mr.Trump You are very honest. And I would have to agree with her. " +
-        "If people have concerns they can come to me, but no one has. These concerns are Fake news made up by the media to make me look bad. ";
+        "If people have concerns they can come to me, but no one has. These concerns are Fake news made up by the media to make me look bad. "; 
+    
+    public string Lvl4Option1 = "We are going to have a spaceforce, probably the best spaceforce. With my power, and it is a lot. I revive the national space council.  ";
+
+    public string Lvl4Option2 = "When it comes to defending America, it is not enough to merely have an american presence in space, we must have an american dominance in space. It’s going to be something. So important. ";
+
+    public string Lvl4Option3 = "Amid grave threats to our national security, American superiority in space is absolutely vital. And we're leading, but we're not leading by enough. But very shortly we'll be leading by a lot. ";
+    
+    public string Lvl5Option1 = "We are going to have a spaceforce, probably the best spaceforce. With my power, and it is a lot. I revive the national space council.  ";
+
+    public string Lvl5Option2 = "When it comes to defending America, it is not enough to merely have an american presence in space, we must have an american dominance in space. It’s going to be something. So important. ";
+
+    public string Lvl5Option3 = "Amid grave threats to our national security, American superiority in space is absolutely vital. And we're leading, but we're not leading by enough. But very shortly we'll be leading by a lot. ";
 
     public string PerfectEnding = "By leaving matters to the experts. The country has become a Utopia with Martian Colonies. ";
 

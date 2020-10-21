@@ -147,6 +147,48 @@ public class TrumpMover : MonoBehaviour
                 FindObjectOfType<ScoreScript>().response = 4;
             }
         }
+        else if (FindObjectOfType<ScoreScript>().game4 == -1)
+        {
+            FindObjectOfType<ScoreScript>().game4 = FindObjectOfType<ScoreScript>().brainScore;
+            FindObjectOfType<ScoreScript>().level++;
+            if (FindObjectOfType<ScoreScript>().brainScore > 0 && FindObjectOfType<ScoreScript>().brainScore < 4)
+            {
+                FindObjectOfType<ScoreScript>().response = 3;
+            }
+            else if (FindObjectOfType<ScoreScript>().brainScore > 3 && FindObjectOfType<ScoreScript>().brainScore < 8)
+            {
+                FindObjectOfType<ScoreScript>().response = 2;
+            }
+            else if (FindObjectOfType<ScoreScript>().brainScore > 7 && FindObjectOfType<ScoreScript>().brainScore <= 10)
+            {
+                FindObjectOfType<ScoreScript>().response = 1;
+            }
+            else if (FindObjectOfType<ScoreScript>().brainScore == 0)
+            {
+                FindObjectOfType<ScoreScript>().response = 4;
+            }
+        }
+        else if (FindObjectOfType<ScoreScript>().game5 == -1)
+        {
+            FindObjectOfType<ScoreScript>().game5 = FindObjectOfType<ScoreScript>().brainScore;
+            FindObjectOfType<ScoreScript>().level++;
+            if (FindObjectOfType<ScoreScript>().brainScore > 0 && FindObjectOfType<ScoreScript>().brainScore < 4)
+            {
+                FindObjectOfType<ScoreScript>().response = 3;
+            }
+            else if (FindObjectOfType<ScoreScript>().brainScore > 3 && FindObjectOfType<ScoreScript>().brainScore < 8)
+            {
+                FindObjectOfType<ScoreScript>().response = 2;
+            }
+            else if (FindObjectOfType<ScoreScript>().brainScore > 7 && FindObjectOfType<ScoreScript>().brainScore <= 10)
+            {
+                FindObjectOfType<ScoreScript>().response = 1;
+            }
+            else if (FindObjectOfType<ScoreScript>().brainScore == 0)
+            {
+                FindObjectOfType<ScoreScript>().response = 4;
+            }
+        }
 
 
         FindObjectOfType<ScoreScript>().brainScore = 0;
@@ -163,15 +205,23 @@ public class TrumpMover : MonoBehaviour
 
         if (FindObjectOfType<ScoreScript>().level == 1)
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(5);
         }
         else if (FindObjectOfType<ScoreScript>().level == 3)
         {
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(7);
         }
         else if (FindObjectOfType<ScoreScript>().level == 5)
         {
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(9);
+        }
+        else if (FindObjectOfType<ScoreScript>().level == 7)
+        {
+            SceneManager.LoadScene(11);
+        }
+        else if (FindObjectOfType<ScoreScript>().level == 9)
+        {
+            SceneManager.LoadScene(13);
         }
 
         yield return null;

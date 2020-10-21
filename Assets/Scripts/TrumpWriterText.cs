@@ -158,7 +158,84 @@ public class TrumpWriterText : MonoBehaviour
                 clicked = false;
             }
         }
-
+        else if (level == 7)
+        {
+            if (playAudio == 1 && isPlaying)
+            {
+                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
+                trump1.Play();
+                fullText = frumpText.GetComponent<frumpScripts>().Lvl4Option1;
+                StartCoroutine(RevealText());
+                isPlaying = false;
+                clicked = false;
+            }
+            else if (playAudio == 2 && isPlaying)
+            {
+                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
+                trump2.Play();
+                fullText = frumpText.GetComponent<frumpScripts>().Lvl4Option2;
+                StartCoroutine(RevealText());
+                isPlaying = false;
+                clicked = false;
+            }
+            else if (playAudio == 3 && isPlaying)
+            {
+                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
+                trump3.Play();
+                fullText = frumpText.GetComponent<frumpScripts>().Lvl4Option3;
+                StartCoroutine(RevealText());
+                isPlaying = false;
+                clicked = false;
+            }
+            else if (playAudio == 4 && isPlaying)
+            {
+                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
+                trump4.Play();
+                fullText = frumpText.GetComponent<frumpScripts>().NoOption;
+                StartCoroutine(RevealText());
+                isPlaying = false;
+                clicked = false;
+            }
+        }
+        else if (level == 9)
+        {
+            if (playAudio == 1 && isPlaying)
+            {
+                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
+                trump1.Play();
+                fullText = frumpText.GetComponent<frumpScripts>().Lvl5Option1;
+                StartCoroutine(RevealText());
+                isPlaying = false;
+                clicked = false;
+            }
+            else if (playAudio == 2 && isPlaying)
+            {
+                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
+                trump2.Play();
+                fullText = frumpText.GetComponent<frumpScripts>().Lvl5Option2;
+                StartCoroutine(RevealText());
+                isPlaying = false;
+                clicked = false;
+            }
+            else if (playAudio == 3 && isPlaying)
+            {
+                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
+                trump3.Play();
+                fullText = frumpText.GetComponent<frumpScripts>().Lvl5Option3;
+                StartCoroutine(RevealText());
+                isPlaying = false;
+                clicked = false;
+            }
+            else if (playAudio == 4 && isPlaying)
+            {
+                this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
+                trump4.Play();
+                fullText = frumpText.GetComponent<frumpScripts>().NoOption;
+                StartCoroutine(RevealText());
+                isPlaying = false;
+                clicked = false;
+            }
+        }
     }
 
     private IEnumerator RevealText()
@@ -178,7 +255,7 @@ public class TrumpWriterText : MonoBehaviour
 
             yield return new WaitForSeconds(3);
             FindObjectOfType<ScoreScript>().level += 1;
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(6);
         }
         else if (level == 3)
         {
@@ -191,7 +268,7 @@ public class TrumpWriterText : MonoBehaviour
            yield return new WaitForSeconds(2);
            
 
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(8);
 
         }
         else if (level == 5)
@@ -203,7 +280,29 @@ public class TrumpWriterText : MonoBehaviour
            // SceneManager.LoadScene(7);
 
             yield return new WaitForSeconds(2);
-            SceneManager.LoadScene(8);
+            SceneManager.LoadScene(10);
+        }   
+        else if (level == 7)
+        {
+            //end of game
+
+            yield return new WaitForSeconds(3);
+           FindObjectOfType<ScoreScript>().level += 1;
+           // SceneManager.LoadScene(7);
+
+            yield return new WaitForSeconds(2);
+            SceneManager.LoadScene(12);
+        }
+        else if (level == 9)
+        {
+            //end of game
+
+            yield return new WaitForSeconds(3);
+           FindObjectOfType<ScoreScript>().level += 1;
+           // SceneManager.LoadScene(7);
+
+            yield return new WaitForSeconds(2);
+            SceneManager.LoadScene(14);
         }
 
     }

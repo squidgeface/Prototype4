@@ -10,7 +10,15 @@ public class BrainCatchBrians : MonoBehaviour
         transform.position -= new Vector3(0.0f, FindObjectOfType<BrainCatching>().speed * Time.deltaTime, 0.0f);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    FindObjectOfType<ScoreScript>().brainScore -= 1;
+    //    FindObjectOfType<BrainCatching>().score.text = FindObjectOfType<ScoreScript>().brainScore.ToString() + "/10";
+    //    FindObjectOfType<brainFart>().squish.Play();
+    //    GameObject.Destroy(this.gameObject, 0);
+    //}
+
+    private void OnTriggerEnter(Collider other)
     {
         FindObjectOfType<ScoreScript>().brainScore -= 1;
         FindObjectOfType<BrainCatching>().score.text = FindObjectOfType<ScoreScript>().brainScore.ToString() + "/10";

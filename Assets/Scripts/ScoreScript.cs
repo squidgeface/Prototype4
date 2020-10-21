@@ -15,6 +15,8 @@ public class ScoreScript : MonoBehaviour
     public int game1 = -1;
     public int game2 = -1;
     public int game3 = -1;
+    public int game4 = -1;
+    public int game5 = -1;
 
     public int response = 0;
     public int level = 0;

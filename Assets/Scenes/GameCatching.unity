@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 93319159}
+  divider: 10
 --- !u!114 &93319159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,13 +308,14 @@ GameObject:
   - component: {fileID: 372737280}
   - component: {fileID: 372737279}
   - component: {fileID: 372737278}
+  - component: {fileID: 372737281}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &372737278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,6 +364,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &372737281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372737277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5f1e7180f069d4f867077296fd195a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoodScore: 0
+  StupidScore: 0
+  EvilScore: 0
+  brainScore: 0
+  game1: -1
+  game2: -1
+  game3: -1
+  game4: -1
+  game5: -1
+  response: 0
+  level: 0
 --- !u!1 &513823185
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,7 +702,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 124
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &1065149291
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,12 +787,12 @@ PrefabInstance:
     - target: {fileID: 4179384246586025351, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4179384246586025351, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_Size.y
-      value: 2.46
+      value: 1.5451698
       objectReference: {fileID: 0}
     - target: {fileID: 4179384246586025351, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
@@ -777,27 +802,32 @@ PrefabInstance:
     - target: {fileID: 4179384246586025351, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_Center.x
-      value: -0.03999996
+      value: 0.14378977
       objectReference: {fileID: 0}
     - target: {fileID: 4179384246586025351, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_Center.z
-      value: 1.5750453
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4179384246586025351, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_Size.x
-      value: 2.98
+      value: 2.058548
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179384246586025351, guid: 920cce13fcc428949b397d4ba188eb31,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.082159996
       objectReference: {fileID: 0}
     - target: {fileID: 8928586117392055570, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.02
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8928586117392055570, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8928586118102193576, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}

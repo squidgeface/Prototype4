@@ -39,6 +39,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Answering3.unity
     guid: e2812fcaac47dfd4190105d5562513d0
   - enabled: 1
+    path: Assets/Scenes/Questioning4.unity
+    guid: dee052452692995418f39409a51a4e92
+  - enabled: 1
+    path: Assets/Scenes/Answering4.unity
+    guid: 8d12161084f0a57478b8171de1a88bc2
+  - enabled: 1
+    path: Assets/Scenes/Questioning5.unity
+    guid: e4ce96d41b81a45479f7a88c744c1289
+  - enabled: 1
+    path: Assets/Scenes/Answering5.unity
+    guid: ae4e59b5fe11d474bb4e477366b1a460
+  - enabled: 1
     path: Assets/Scenes/GameOverDuplicate.unity
     guid: af6d85e5959bf5e40884f9ec4ebd6be3
   m_configObjects: {}
