@@ -15,7 +15,7 @@ public class frumpScripts : MonoBehaviour
 
     public string Lvl1Option3 = "People do not think “America the great” when they hear 2nd place, this is what i’ve always said. " +
         "I promised to make USA number one, and that's what I plan to do. We are getting rid of those old fossil fuels, that's what fossil means. " +
-        "And we will be focusing on renewable resources like coal. You know I made some coal in my fireplace yesterday, and the brilliant idea came to me. " +
+        "And we will be focusing on renewable resources like coal. You know I made some coal in my fireplace the other day, and the brilliant idea came to me. " +
         "We just make more coal and use that power. This ensures we get number one in the carbon mission. ";  
 
     public string Lvl2Option1 = "It’s going to be, really, a voluntary thing. You can do it. You don’t have to do it. I’m choosing not to do it, but some people may want to do it, and that’s OK. It may be good. Probably will. They’re making a recommendation. It’s only a recommendation. Thanks for the recommendation though. ";
@@ -58,5 +58,5 @@ public class frumpScripts : MonoBehaviour
 
     public string StupidEnding = "Having not fuelled your intelligence, you have heard the advice of your people and not destroyed the country. You now frolick in the Forest with Dutin and his bear, having not been re-elected. ";
 
-    public string NoOption = "I will let my people make the decision on this one ";
+    public string NoOption = "I will let my people make the decision on this one. ";
 }
