@@ -1541,7 +1541,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &694766947
 GameObject:
@@ -1977,6 +1977,115 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 435971046}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &914836975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 914836979}
+  - component: {fileID: 914836978}
+  - component: {fileID: 914836977}
+  - component: {fileID: 914836976}
+  - component: {fileID: 914836980}
+  m_Layer: 0
+  m_Name: Frump
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &914836976
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914836975}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &914836977
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914836975}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 85cc25dee4e81064db9a77270bc99229, type: 2}
+  - {fileID: 2100000, guid: cd2a9083be3327842806c5412a079d46, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &914836978
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914836975}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &914836979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914836975}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: 0.19000006, y: 5.75, z: 0.60999966}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
+--- !u!114 &914836980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914836975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5f9d5813b62c86499b9abbe57956860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1859426410}
 --- !u!1 &920452136 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6537429827915395934, guid: 47520745eb6fcbf47a10b3962a959bd1,
@@ -2009,42 +2118,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lvl1Option1: "My people tell me coal is the problem, and my people are the best.
     So I said the only solution is to burn all the coal and get rid of it, And that
-    was my idea. My people were amazed. They hadn\u2019t thought of that. They literally
-    gasped at how good the idea was. "
+    was MY idea. My people were amazed. They hadn\u2019t thought of that. They literally
+    gasped at how good the idea was."
   Lvl1Option2: "You know I did some research, very in-depth research and discovered
     that factories are the problem. I discovered this myself. So I\u2019m shutting
     down our factories, I can do that you know. And I'll be sending our production
     to China. China is very advanced. A very advanced people. Some of the most advanced
     I've been told. Not only does this help the environment.It also creates jobs
-    now that people don\u2019t have to work in those terrible factories. "
+    now that people don\u2019t have to work in those terrible factories."
   Lvl1Option3: "People do not think \u201CAmerica the great\u201D when they hear
     2nd place, this is what i\u2019ve always said. I promised to make USA number
     one, and that's what I plan to do. We are getting rid of those old fossil fuels,
-    that's what fossil means. And we will be focusing on renewable resources like
-    coal. You know I made some coal in my fireplace yesterday, and the brilliant
-    idea came to me. We just make more coal and use that power. This ensures we get
-    number one in the carbon mission. "
+    that's what fossil means. And will be focusing on renewable resources like coal.
+    You know I made some coal in my fireplace yesterday, and the brilliant idea came
+    to me. We just make more coal and use that power. This ensures we get number
+    one in the carbon mission."
   Lvl2Option1: "It\u2019s going to be, really, a voluntary thing. You can do it.
     You don\u2019t have to do it. I\u2019m choosing not to do it, but some people
-    may want to do it, and that\u2019s OK. It may be good. Probably will. They\u2019re
-    making a recommendation. It\u2019s only a recommendation. Thanks for the recommendation
-    though. "
+    may want to do it, and that\u2019s OK. It may be good.Probably will. They\u2019re
+    making a recommendation. It\u2019s only a recommendation.\u201D thanks for the
+    recommendation though."
   Lvl2Option2: "Ive been told masks help, they help a lot. I checked with my people
-    and they confirm what I said. Personally I will be using my Batman mask. My people
-    tell me any mask is better than none so if spider-man is all you\u2019ve got,
-    go with that. My people also tell me tracing is important. Myself i\u2019m more
-    of a free hand artist, but this is what my people say. "
+    and they confirm what I said. Personally I will be using my Bat-Man mask. My
+    people tell me any mask is better than none so if spider-man is all you\u2019ve
+    got, go with that. My people also tell me tracing is important. Myself i\u2019m
+    more of a free hand artist, but this is what my people say."
   Lvl2Option3: "Suppose that we hit the body with a tremendous force, whether it\u2019s
     ultraviolet or just very powerful light. Supposing you brought the light inside
     the body, which you can do either through the skin or in some other way. Is there
     a way we can do something like that by injection inside or almost a cleaning?
     It sounds interesting to me, so we\u2019ll see. But the whole concept of the
-    light, the way it kills it in one minute. That\u2019s pretty powerful, let\u2019s
-    fund that. "
-  Lvl3Option1: 'I''ve always said, if a business is struggling you should let it
-    die. The USPS says it  will cause issues with the votes if I dont give them money.
+    light, the"
+  Lvl3Option1: I've always said if a business is struggling you should let it die.
+    The USPS says it  will cause issues with the votes if I dont give them money.
     They are threatening me. I could shut them down if I wanted to, I really could.
-    I have that power. Maybe I''ll just add huge taxes, who knows I haven''t decided. '
+    I have that power. Maybe I'll just add huge taxes, who knows I haven't decided.
   Lvl3Option2: "People tell me they are worried that Russia may try and interfere
     with the elections, but there is no need to panic. I asked Putin myself, a good
     friend of mine. And he said \u201CNo\u201D. And that's good enough for me. He
@@ -2054,37 +2162,13 @@ MonoBehaviour:
     honest. And I would have to agree with her. If people have concerns they can
     come to me, but no one has. These concerns are Fake news made up by the media
     to make me look bad. '
-  Lvl4Option1: "I met with Kim Jong Un.And we had a great meeting because we\u2019re
-    all in this together.We want to get this thing solved.  It\u2019s been going
-    on for a long time.  And we had a great meeting.  And it was unexpected.  I put
-    out yesterday: Maybe I\u2019ll meet with Chairman Kim.And he saw it.  Social
-    media.  A pretty powerful thing, social media. "
-  Lvl4Option2: "Our new budget calls for \u2014 listen to this; you\u2019ll love
-    this \u2014 78 F-35s.  Stealth, right?  Stealth.  (Applause.)  They say they\u2019re
-    hard to beat because you can\u2019t see them, literally.  I\u2019ve gone to some
-    of the great pilots; I say, \u201CWhat do you think of the F-35?  How does the
-    enemy do?\u201D  \u201CWell, they have a problem: They can\u2019t see it, sir.\u201D 
-    I mean, that\u2019s pretty much it, right?  We\u2019ve got a lot of them. "
-  Lvl4Option3: "We\u2019re building, right now, incredible military equipment at
-    a level that nobody has ever seen before.  We have no choice.  We have to do
-    it \u2014 with the adversaries we have out there. \n\n We have a \u2014 I call
-    it the \u201Csuper-duper missile.\u201D  And I heard the other night, It\u2019s
-    17 times faster than what they have right now. "
-  Lvl5Option1: 'We are going to have a spaceforce, probably the best spaceforce.
-    With my power, and it is a lot. I revive the national space council.  '
-  Lvl5Option2: "When it comes to defending America, it is not enough to merely have
-    an american presence in space, we must have an american dominance in space. It\u2019s
-    going to be something. So important. "
-  Lvl5Option3: 'Amid grave threats to our national security, American superiority
-    in space is absolutely vital. And we''re leading, but we''re not leading by enough.
-    But very shortly we''ll be leading by a lot. '
   PerfectEnding: 'By leaving matters to the experts. The country has become a Utopia
     with Martian Colonies. '
   BadEnding: 'Having thought super hard about these questions by clicking all the
     brains, you have created the perfect hole above the ozone for tanning, saved
     a third of the population from a global pandemic and proudly been re-elected. '
-  StupidEnding: 'Having not fuelled your intelligence, you have heard the advice
-    of your people and not destroyed the country. You now frolick in the Forest with
+  StupidEnding: 'Having not clicked so many brains, you have heard the advice of
+    your people and not destroyed the country. You now frolick in the Forest with
     Dutin and his bear, having not been re-elected. '
   NoOption: 'I will let my people make the decision on this one '
 --- !u!1 &926434628
@@ -2886,17 +2970,17 @@ PrefabInstance:
     - target: {fileID: 2287345061029970121, guid: 93f47a0c6b6ac3a42b5cea4d6367d80d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.42
+      value: -1.0312233
       objectReference: {fileID: 0}
     - target: {fileID: 2287345061029970121, guid: 93f47a0c6b6ac3a42b5cea4d6367d80d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8
+      value: 6.857525
       objectReference: {fileID: 0}
     - target: {fileID: 2287345061029970121, guid: 93f47a0c6b6ac3a42b5cea4d6367d80d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -17.6
+      value: -6.945486
       objectReference: {fileID: 0}
     - target: {fileID: 2287345061029970121, guid: 93f47a0c6b6ac3a42b5cea4d6367d80d,
         type: 3}
@@ -2921,7 +3005,7 @@ PrefabInstance:
     - target: {fileID: 2287345061029970121, guid: 93f47a0c6b6ac3a42b5cea4d6367d80d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2287345061029970121, guid: 93f47a0c6b6ac3a42b5cea4d6367d80d,
         type: 3}
@@ -2965,6 +3049,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93f47a0c6b6ac3a42b5cea4d6367d80d, type: 3}
+--- !u!1 &1618609790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1618609793}
+  - component: {fileID: 1618609792}
+  - component: {fileID: 1618609791}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1618609791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618609790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1618609792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618609790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1618609793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618609790}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1643621350
 GameObject:
   m_ObjectHideFlags: 0
@@ -3360,75 +3510,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 17450044195031952}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1804790151
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7085898994415243812, guid: 81fdc513601422f458656e52064d2b19,
-        type: 3}
-      propertyPath: m_Name
-      value: Frump (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 81fdc513601422f458656e52064d2b19, type: 3}
 --- !u!1 &1811966162
 GameObject:
   m_ObjectHideFlags: 0
@@ -3957,7 +4038,7 @@ PrefabInstance:
     - target: {fileID: 2318892738789040212, guid: 67445a2f7e7c29d40a00370aa561fcf7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2318892738789040212, guid: 67445a2f7e7c29d40a00370aa561fcf7,
         type: 3}
