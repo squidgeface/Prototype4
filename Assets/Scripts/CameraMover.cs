@@ -16,7 +16,7 @@ public class CameraMover : MonoBehaviour
     void Update()
     {
         level = LevelManager.GetComponent<levelScript>().level;
-        int randLevel = Random.Range(2, 4);
+        int randLevel = Random.Range(2, 5);
         if (level == 0)
         {
             if (activated)
