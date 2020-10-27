@@ -70,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 211e1978619bb534b940b8591ab64347, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ff50739d319b905418dc980fe5d581a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -128,6 +128,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   me: {fileID: 8928586118102193581}
+  score: {fileID: 0}
+  speed: 0
+  sound1: {fileID: 0}
+  sound2: {fileID: 0}
+  sound3: {fileID: 0}
+  bar: {fileID: 0}
 --- !u!65 &4179384246586025351
 BoxCollider:
   m_ObjectHideFlags: 0
