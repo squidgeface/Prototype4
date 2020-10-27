@@ -27,7 +27,7 @@ public class BrainSpawner : MonoBehaviour
         counter += 1 * Time.deltaTime * 100;
         
 
-        if (counter >= spawnTime && brainCount < 10)
+        if (counter >= spawnTime && brainCount <= 10)
         {
             spawnTime = Random.Range(100.0f, 200.0f);
             float randomY = Random.Range(- 30.0f,  50.0f);
