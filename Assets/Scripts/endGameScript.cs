@@ -34,11 +34,15 @@ public class endGameScript : MonoBehaviour
         }
         else if (playAudio == 3 && !done)
         {
+            fullText = frumpText.GetComponent<frumpScripts>().GoodEnding;
+            StartCoroutine(RevealText());
+        }
+        else if (playAudio == 4 && !done)
+        {
             fullText = frumpText.GetComponent<frumpScripts>().PerfectEnding;
             StartCoroutine(RevealText());
         }
 
-        
         done = true;
 
         

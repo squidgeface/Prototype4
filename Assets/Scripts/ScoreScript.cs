@@ -40,10 +40,15 @@ public class ScoreScript : MonoBehaviour
         }
         else
         {
-            StupidEnding();
+            PerfectEnding();
         }
     }
 
+    public void PerfectEnding()
+    {
+        FindObjectOfType<ScoreScript>().response = 4;
+
+    }
     public void GoodEnding()
     {
         FindObjectOfType<ScoreScript>().response = 3;

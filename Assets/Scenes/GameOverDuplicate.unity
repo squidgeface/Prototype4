@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -296,6 +296,96 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209060776}
   m_CullTransparentMesh: 0
+--- !u!1 &704559188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 704559192}
+  - component: {fileID: 704559191}
+  - component: {fileID: 704559190}
+  - component: {fileID: 704559189}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &704559189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704559188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5f1e7180f069d4f867077296fd195a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoodScore: 0
+  StupidScore: 0
+  EvilScore: 0
+  brainScore: 0
+  game1: -1
+  game2: -1
+  game3: -1
+  game4: -1
+  game5: -1
+  response: 3
+  level: 0
+--- !u!114 &704559190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704559188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &704559191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704559188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &704559192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704559188}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &903720642
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,7 +707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 0
-  response: 2
+  response: 0
   Clicked: 0
 --- !u!114 &1301697441
 MonoBehaviour:
@@ -671,12 +761,12 @@ MonoBehaviour:
     2nd place, this is what i\u2019ve always said. I promised to make USA number
     one, and that's what I plan to do. We are getting rid of those old fossil fuels,
     that's what fossil means. And we will be focusing on renewable resources like
-    coal. You know I made some coal in my fireplace yesterday, and the brilliant
+    coal. You know I made some coal in my fireplace the other day, and the brilliant
     idea came to me. We just make more coal and use that power. This ensures we get
     number one in the carbon mission. "
   Lvl2Option1: "It\u2019s going to be, really, a voluntary thing. You can do it.
     You don\u2019t have to do it. I\u2019m choosing not to do it, but some people
-    may want to do it, and that\u2019s OK. It may be good.Probably will. They\u2019re
+    may want to do it, and that\u2019s OK. It may be good. Probably will. They\u2019re
     making a recommendation. It\u2019s only a recommendation. Thanks for the recommendation
     though. "
   Lvl2Option2: "Ive been told masks help, they help a lot. I checked with my people
@@ -704,14 +794,42 @@ MonoBehaviour:
     honest. And I would have to agree with her. If people have concerns they can
     come to me, but no one has. These concerns are Fake news made up by the media
     to make me look bad. '
+  Lvl4Option1: "I met with Kim Jong Un.And we had a great meeting because we\u2019re
+    all in this together.We want to get this thing solved.  It\u2019s been going
+    on for a long time.  And we had a great meeting.  And it was unexpected.  I put
+    out yesterday: Maybe I\u2019ll meet with Chairman Kim.And he saw it.  Social
+    media.  A pretty powerful thing, social media. "
+  Lvl4Option2: "Our new budget calls for \u2014 listen to this; you\u2019ll love
+    this \u2014 78 F-35s.  Stealth, right?  Stealth.  (Applause.)  They say they\u2019re
+    hard to beat because you can\u2019t see them, literally.  I\u2019ve gone to some
+    of the great pilots; I say, \u201CWhat do you think of the F-35?  How does the
+    enemy do?\u201D  \u201CWell, they have a problem: They can\u2019t see it, sir.\u201D 
+    I mean, that\u2019s pretty much it, right?  We\u2019ve got a lot of them. "
+  Lvl4Option3: "We\u2019re building, right now, incredible military equipment at
+    a level that nobody has ever seen before.  We have no choice.  We have to do
+    it \u2014 with the adversaries we have out there. \n\n We have a \u2014 I call
+    it the \u201Csuper-duper missile.\u201D  And I heard the other night, It\u2019s
+    17 times faster than what they have right now. "
+  Lvl5Option1: 'We are going to have a spaceforce, probably the best spaceforce.
+    With my power, and it is a lot. I revive the national space council.  '
+  Lvl5Option2: "When it comes to defending America, it is not enough to merely have
+    an american presence in space, we must have an american dominance in space. It\u2019s
+    going to be something. So important. "
+  Lvl5Option3: 'Amid grave threats to our national security, American superiority
+    in space is absolutely vital. And we''re leading, but we''re not leading by enough.
+    But very shortly we''ll be leading by a lot. '
   PerfectEnding: 'By leaving matters to the experts. The country has become a Utopia
     with Martian Colonies. '
-  BadEnding: 'Having taken matters into your own hands. You have created the perfect
-    hole above the ozone for tanning, saved a third of the population from a global
-    pandemic and proudly been re-elected. '
-  StupidEnding: 'Having heard the advice of your people. You now frolick in the Forest
-    with Dutin and his bear, having not been re-elected. '
-  NoOption: 'I will let my people make the decision on this one '
+  BadEnding: 'Having thought super hard about these questions by clicking all the
+    brains, you have created the perfect hole above the ozone for tanning, saved
+    a third of the population from a global pandemic and proudly been re-elected. '
+  StupidEnding: 'Having not fuelled your intelligence, you have heard the advice
+    of your people and not destroyed the country. You now frolick in the Forest with
+    Dutin and his bear, having not been re-elected. '
+  GoodEnding: 'Having not fuelled your intelligence, you have heard the advice of
+    your people and not destroyed the country. You now frolick in the Forest with
+    Dutin and his bear, having not been re-elected. '
+  NoOption: 'I will let my people make the decision on this one. '
 --- !u!1001 &1484825033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -772,7 +890,7 @@ PrefabInstance:
     - target: {fileID: 8999034593787312333, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312333, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
@@ -992,72 +1110,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e2b0823700b1cfa4b849308a67bccd6d, type: 3}
---- !u!1 &1487930912
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1487930915}
-  - component: {fileID: 1487930914}
-  - component: {fileID: 1487930913}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1487930913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487930912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &1487930914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487930912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &1487930915
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487930912}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1541249856
 GameObject:
   m_ObjectHideFlags: 0
