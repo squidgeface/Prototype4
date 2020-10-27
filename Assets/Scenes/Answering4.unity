@@ -2086,6 +2086,8 @@ MonoBehaviour:
   StupidEnding: 'Having not fuelled your intelligence, you have heard the advice
     of your people and not destroyed the country. You now frolick in the Forest with
     Dutin and his bear, having not been re-elected. '
+  GoodEnding: 'Having not fuelled your intelligence, you have heard the advice of
+    your people and not destroyed the country. '
   NoOption: 'I will let my people make the decision on this one '
 --- !u!1 &926434628
 GameObject:
@@ -2304,7 +2306,7 @@ PrefabInstance:
     - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
         type: 3}
@@ -2314,7 +2316,7 @@ PrefabInstance:
     - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
         type: 3}
@@ -2329,7 +2331,7 @@ PrefabInstance:
     - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
         type: 3}
