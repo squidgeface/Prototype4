@@ -7,7 +7,7 @@ public class SmartnessScript : MonoBehaviour
 {
 
     public Slider slider;
-    public float divider = 10.0f;
+    public float divider = 10.5f;
 
     // Update is called once per frame
     void Update()

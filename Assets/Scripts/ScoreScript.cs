@@ -28,13 +28,13 @@ public class ScoreScript : MonoBehaviour
 
     public void EndGame()
     {
-        if (GoodScore >= 2)
+        if (GoodScore >= 4)
         {
             GoodEnding();
-        } else if (StupidScore >= 2)
+        } else if (StupidScore >= 4)
         {
             StupidEnding();
-        }else if(EvilScore >= 2)
+        }else if(EvilScore >= 4)
         {
             EvilEnding();
         }
