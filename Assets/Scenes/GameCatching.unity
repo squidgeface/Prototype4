@@ -1052,7 +1052,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1378,10 +1378,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 90054b5654bd4ad4ba0c67c550533700, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fcb51f53398a2b94682681a7fd850294, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
-  m_Pitch: 0.9
+  m_Volume: 0.35
+  m_Pitch: 1.03
   Loop: 0
   Mute: 0
   Spatialize: 0
