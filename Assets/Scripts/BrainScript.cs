@@ -47,7 +47,7 @@ public class BrainScript : MonoBehaviour
     void Update()
     {
 
-        int random = Random.RandomRange(0, 2000);
+        int random = Random.Range(0, 2000);
         if (random == 1 || random == 4 || random == 5)
         {
             if (!sound1.isPlaying)
@@ -217,7 +217,7 @@ public class BrainScript : MonoBehaviour
         FindObjectOfType<ScoreScript>().brainScore += 1;
       // bar.GetComponent<SmartnessScript>().setSmart(FindObjectOfType<ScoreScript>().brainScore / 10);
       // float bob = bar.GetComponent<SmartnessScript>().getSmart();
-        score.text = FindObjectOfType<ScoreScript>().brainScore.ToString() + "/ 10";
+      // score.text = FindObjectOfType<ScoreScript>().brainScore.ToString() + "/ 10";
         FindObjectOfType<brainFart>().squish.Play();
         GameObject.Destroy(me, 0);
     }

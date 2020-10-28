@@ -9,7 +9,7 @@ public class MoveCatcher : MonoBehaviour
     private void Start()
     {
         FindObjectOfType<ScoreScript>().brainScore = 10;
-        FindObjectOfType<BrainCatching>().score.text = FindObjectOfType<ScoreScript>().brainScore.ToString() + "/10";
+        //FindObjectOfType<BrainCatching>().score.text = FindObjectOfType<ScoreScript>().brainScore.ToString() + "/10";
     }
 
     // Update is called once per frame
