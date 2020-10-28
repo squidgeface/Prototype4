@@ -21,8 +21,17 @@ public class ScoreScript : MonoBehaviour
     public int response = 0;
     public int level = 0;
 
+    private ScoreScript[] EventSystems;
+
     void Start()
     {
+        EventSystems = FindObjectsOfType<ScoreScript>();
+
+        if (EventSystems.Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+
         Object.DontDestroyOnLoad(this);
     }
 

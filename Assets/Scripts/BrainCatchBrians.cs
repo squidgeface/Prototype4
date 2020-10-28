@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class BrainCatchBrians : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class BrainCatchBrians : MonoBehaviour
     {
         FindObjectOfType<ScoreScript>().brainScore -= 1;
         //FindObjectOfType<BrainCatching>().score.text = FindObjectOfType<ScoreScript>().brainScore.ToString() + "/10";
+        float pitch = Random.Range(0.9f, 1.1f);
+        FindObjectOfType<brainFart>().squish.pitch = pitch;
         FindObjectOfType<brainFart>().squish.Play();
         GameObject.Destroy(this.gameObject);
     }
