@@ -9,7 +9,7 @@ public class BrainSpawner : MonoBehaviour
     float counter = 0;
     public Canvas canvas;
     float spawnTime = 0.0f;
-    public int brainCount = 0;
+    public int brainCount = 1;
     float width;
     float height;
 
