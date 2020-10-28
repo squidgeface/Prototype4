@@ -5,7 +5,7 @@ using UnityEngine;
 public class frumpScripts : MonoBehaviour
 {
     public string Lvl1Option1 = "My people tell me coal is the problem, and my people are the best. " +
-        "So I said the only solution is to burn all the coal and get rid of it, And that was my idea. " +
+        "So I said the only solution is to burn all the coal and get rid of it. And that was my idea. " +
         "My people were amazed. They hadn’t thought of that. They literally gasped at how good the idea was. ";
 
     public string Lvl1Option2 = "You know I did some research, very in-depth research and discovered that factories are the problem. " +
