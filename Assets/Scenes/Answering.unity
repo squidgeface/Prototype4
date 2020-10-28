@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1349,7 +1349,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 97fe25e6f81b1fc458622e04608f19ce, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.383
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1445,7 +1445,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 64b61adb8202b5f49a1a84cb19e32ce3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.393
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2086,6 +2086,8 @@ MonoBehaviour:
   StupidEnding: 'Having not fuelled your intelligence, you have heard the advice
     of your people and not destroyed the country. You now frolick in the Forest with
     Dutin and his bear, having not been re-elected. '
+  GoodEnding: 'Having not fuelled your intelligence, you have heard the advice of
+    your people and not destroyed the country. '
   NoOption: 'I will let my people make the decision on this one '
 --- !u!1 &926434628
 GameObject:
@@ -3395,7 +3397,7 @@ PrefabInstance:
     - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
         type: 3}
@@ -3405,7 +3407,7 @@ PrefabInstance:
     - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
         type: 3}
@@ -3420,7 +3422,7 @@ PrefabInstance:
     - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7085898994415243832, guid: 81fdc513601422f458656e52064d2b19,
         type: 3}

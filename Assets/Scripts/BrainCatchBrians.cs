@@ -21,8 +21,8 @@ public class BrainCatchBrians : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         FindObjectOfType<ScoreScript>().brainScore -= 1;
-        FindObjectOfType<BrainCatching>().score.text = FindObjectOfType<ScoreScript>().brainScore.ToString() + "/10";
+        //FindObjectOfType<BrainCatching>().score.text = FindObjectOfType<ScoreScript>().brainScore.ToString() + "/10";
         FindObjectOfType<brainFart>().squish.Play();
-        GameObject.Destroy(this.gameObject, 0);
+        GameObject.Destroy(this.gameObject);
     }
 }

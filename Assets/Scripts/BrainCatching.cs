@@ -50,7 +50,7 @@ public class BrainCatching : MonoBehaviour
             Instantiate(brain, new Vector3(randomX, 15.0f, 0.0f), new Quaternion());
             BrainCounter++;
 
-            int random = Random.RandomRange(0, 2000);
+            int random = Random.Range(0, 2000);
             if (random == 1 || random == 4 || random == 5)
             {
                 if (!sound1.isPlaying)
