@@ -22,6 +22,7 @@ public class BrainScript : MonoBehaviour
 
     public GameObject bar;
 
+    
 
     private float timer = 0;
     // Start is called before the first frame update
@@ -46,6 +47,7 @@ public class BrainScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
 
         int random = Random.Range(0, 2000);
         if (random == 1 || random == 4 || random == 5)

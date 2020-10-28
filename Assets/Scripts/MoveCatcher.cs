@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoveCatcher : MonoBehaviour
 {
     public float speed = 100.0f;
+    public Animator aniAnimator;
 
     private void Start()
     {
@@ -15,6 +16,9 @@ public class MoveCatcher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        aniAnimator.GetComponent<Animator>().SetFloat("Score", FindObjectOfType<ScoreScript>().brainScore);
+
         if (Input.GetKey(KeyCode.D))
         {
             if (transform.position.x < 5)
