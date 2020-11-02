@@ -262,35 +262,30 @@ public class TrumpWriterText : MonoBehaviour
             //question 3
 
             yield return new WaitForSeconds(3);
-           FindObjectOfType<ScoreScript>().level += 1;
-            // SceneManager.LoadScene(5);
-
-           yield return new WaitForSeconds(2);
-           
+    
+            FindObjectOfType<ScoreScript>().level += 1;
 
             SceneManager.LoadScene(8);
 
         }
         else if (level == 5)
         {
-            //end of game
+        
 
             yield return new WaitForSeconds(3);
-           FindObjectOfType<ScoreScript>().level += 1;
-           // SceneManager.LoadScene(7);
+          
 
-            yield return new WaitForSeconds(2);
+            FindObjectOfType<ScoreScript>().level += 1;
             SceneManager.LoadScene(10);
         }   
         else if (level == 7)
         {
-            //end of game
+
 
             yield return new WaitForSeconds(3);
-           FindObjectOfType<ScoreScript>().level += 1;
-           // SceneManager.LoadScene(7);
-
-            yield return new WaitForSeconds(2);
+  
+   
+            FindObjectOfType<ScoreScript>().level += 1;
             SceneManager.LoadScene(12);
         }
         else if (level == 9)
@@ -298,10 +293,9 @@ public class TrumpWriterText : MonoBehaviour
             //end of game
 
             yield return new WaitForSeconds(3);
-           FindObjectOfType<ScoreScript>().level += 1;
-           // SceneManager.LoadScene(7);
-
-            yield return new WaitForSeconds(2);
+      
+    
+            FindObjectOfType<ScoreScript>().level += 1;
             SceneManager.LoadScene(14);
         }
 

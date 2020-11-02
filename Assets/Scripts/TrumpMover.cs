@@ -15,6 +15,7 @@ public class TrumpMover : MonoBehaviour
     public Image image;
     Color c;
     public Canvas canvas;
+    public Animator star;
 
     private void Start()
     {
@@ -40,6 +41,7 @@ public class TrumpMover : MonoBehaviour
             FindObjectOfType<ScoreScript>().brainScore += 1;
             Destroy(other.gameObject);
             splat.Play();
+            star.GetComponent<Animator>().SetBool("IsStar", true);
         }
     }
 
