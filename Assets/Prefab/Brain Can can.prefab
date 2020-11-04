@@ -29,7 +29,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 596504004887351238}
+  m_Father: {fileID: 3035440739493468871}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1019915376748650424
@@ -109,7 +109,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 596504004887351238}
+  - component: {fileID: 3035440739493468871}
   m_Layer: 0
   m_Name: Brain Can can
   m_TagString: Untagged
@@ -117,7 +117,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &596504004887351238
+--- !u!4 &3035440739493468871
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,7 +162,7 @@ Transform:
   m_LocalPosition: {x: 0, y: -0.18, z: 0.19}
   m_LocalScale: {x: 0.68610847, y: 0.68610847, z: 0.68610847}
   m_Children: []
-  m_Father: {fileID: 596504004887351238}
+  m_Father: {fileID: 3035440739493468871}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5689253010656663384
