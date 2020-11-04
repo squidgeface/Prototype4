@@ -12,7 +12,6 @@ public class endGameScript : MonoBehaviour
     int playAudio = 0;
 
     bool done = false;
-    float timer = 0;
 
     public levelScript LevelManager;
     public frumpScripts frumpText;
@@ -22,26 +21,31 @@ public class endGameScript : MonoBehaviour
     {
         playAudio = LevelManager.GetComponent<levelScript>().response;
 
-        if (playAudio == 1 && !done)
-        {
-            fullText = frumpText.GetComponent<frumpScripts>().BadEnding;
-            StartCoroutine(RevealText());
-        }
-        else if (playAudio == 2 && !done)
-        {
-            fullText = frumpText.GetComponent<frumpScripts>().StupidEnding;
-            StartCoroutine(RevealText());
-        }
-        else if (playAudio == 3 && !done)
-        {
-            fullText = frumpText.GetComponent<frumpScripts>().GoodEnding;
-            StartCoroutine(RevealText());
-        }
-        else if (playAudio == 4 && !done)
-        {
-            fullText = frumpText.GetComponent<frumpScripts>().PerfectEnding;
-            StartCoroutine(RevealText());
-        }
+            if (playAudio == 1 && !done)
+            {
+                fullText = frumpText.GetComponent<frumpScripts>().BadEnding;
+                StartCoroutine(RevealText());
+            
+            }
+            else if (playAudio == 2 && !done)
+            {
+                fullText = frumpText.GetComponent<frumpScripts>().StupidEnding;
+                StartCoroutine(RevealText());
+           
+            }
+            else if (playAudio == 3 && !done)
+            {
+                fullText = frumpText.GetComponent<frumpScripts>().GoodEnding;
+                StartCoroutine(RevealText());
+              
+            }
+            else if (playAudio == 4 && !done)
+            {
+                fullText = frumpText.GetComponent<frumpScripts>().PerfectEnding;
+                StartCoroutine(RevealText());
+     
+            }
+        
 
         done = true;
 

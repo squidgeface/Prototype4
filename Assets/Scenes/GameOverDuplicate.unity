@@ -1362,12 +1362,12 @@ PrefabInstance:
         type: 3}
       propertyPath: umm
       value: 
-      objectReference: {fileID: 1777419307}
+      objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: Reporter
       value: 
-      objectReference: {fileID: 1777419307}
+      objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: level
@@ -1634,7 +1634,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0104000f3c4fe2e41b83cdfda1847469, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1748,9 +1748,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Source: {fileID: 0}
   Perfect: {fileID: 8300000, guid: 28899c740adc10c43bc0eddf94a5a275, type: 3}
-  Good: {fileID: 8300000, guid: b764870e2200b9f4eb0deffaa8336c1f, type: 3}
-  Stupid: {fileID: 8300000, guid: f71880d3af0afe74f8ba24d0674aacf8, type: 3}
-  Evil: {fileID: 8300000, guid: 8ee9b9e97cebd914382cd68b322ae7a7, type: 3}
+  Good: {fileID: 8300000, guid: 5bb1c558406a3364b83d5e5169095129, type: 3}
+  Stupid: {fileID: 8300000, guid: 09ef234e83fffca4489aa8cf2217f545, type: 3}
+  Evil: {fileID: 8300000, guid: b977660ab66ec4043ab10353cf384742, type: 3}
 --- !u!1 &1793620934
 GameObject:
   m_ObjectHideFlags: 0
