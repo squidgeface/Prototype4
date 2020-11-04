@@ -43,7 +43,7 @@ public class TrumpMover : MonoBehaviour
             Destroy(other.gameObject);
             splat.Play();
             star.GetComponent<Animator>().SetBool("IsStar", true);
-            Instantiate(poof, other.gameObject.transform.position, new Quaternion(), canvas.transform);
+            Instantiate(poof, other.gameObject.transform.position, new Quaternion());
            
         }
     }

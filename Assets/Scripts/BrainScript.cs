@@ -220,7 +220,6 @@ public class BrainScript : MonoBehaviour
         FindObjectOfType<brainFart>().squish.Play();
         Instantiate(poof, gameObject.transform.position, new Quaternion(), canvas.transform);
         GameObject.Destroy(me, 0);
-
     }
 
 }
