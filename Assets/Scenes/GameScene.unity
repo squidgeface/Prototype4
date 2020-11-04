@@ -320,6 +320,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 382493933}
     m_Modifications:
+    - target: {fileID: 1019915376748650424, guid: 53fa0c6b7166ce24181bf7e210452b6b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3035440739493468871, guid: 53fa0c6b7166ce24181bf7e210452b6b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -333,7 +338,7 @@ PrefabInstance:
     - target: {fileID: 3035440739493468871, guid: 53fa0c6b7166ce24181bf7e210452b6b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3035440739493468871, guid: 53fa0c6b7166ce24181bf7e210452b6b,
         type: 3}
@@ -394,6 +399,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brain Can can
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689253010656663384, guid: 53fa0c6b7166ce24181bf7e210452b6b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53fa0c6b7166ce24181bf7e210452b6b, type: 3}
@@ -469,6 +479,11 @@ PrefabInstance:
       propertyPath: bar
       value: 
       objectReference: {fileID: 127319271}
+    - target: {fileID: 8928586118102193579, guid: 920cce13fcc428949b397d4ba188eb31,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1382956731}
     - target: {fileID: 8928586118102193581, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_Name
@@ -683,9 +698,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382493932}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.4000244, y: -2.369995, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children:
   - {fileID: 1452337592}
   - {fileID: 95516820}
@@ -765,6 +780,11 @@ PrefabInstance:
       propertyPath: bar
       value: 
       objectReference: {fileID: 127319271}
+    - target: {fileID: 8928586118102193579, guid: 920cce13fcc428949b397d4ba188eb31,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1382956731}
     - target: {fileID: 8928586118102193581, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_Name
@@ -844,6 +864,11 @@ PrefabInstance:
       propertyPath: bar
       value: 
       objectReference: {fileID: 127319271}
+    - target: {fileID: 8928586118102193579, guid: 920cce13fcc428949b397d4ba188eb31,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1382956731}
     - target: {fileID: 8928586118102193581, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_Name
@@ -1204,6 +1229,11 @@ PrefabInstance:
       propertyPath: bar
       value: 
       objectReference: {fileID: 127319271}
+    - target: {fileID: 8928586118102193579, guid: 920cce13fcc428949b397d4ba188eb31,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1382956731}
     - target: {fileID: 8928586118102193581, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_Name
@@ -1373,6 +1403,11 @@ PrefabInstance:
       propertyPath: bar
       value: 
       objectReference: {fileID: 127319271}
+    - target: {fileID: 8928586118102193579, guid: 920cce13fcc428949b397d4ba188eb31,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1382956731}
     - target: {fileID: 8928586118102193581, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_Name
@@ -1452,6 +1487,11 @@ PrefabInstance:
       propertyPath: bar
       value: 
       objectReference: {fileID: 127319271}
+    - target: {fileID: 8928586118102193579, guid: 920cce13fcc428949b397d4ba188eb31,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1382956731}
     - target: {fileID: 8928586118102193581, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_Name
@@ -1531,6 +1571,11 @@ PrefabInstance:
       propertyPath: bar
       value: 
       objectReference: {fileID: 127319271}
+    - target: {fileID: 8928586118102193579, guid: 920cce13fcc428949b397d4ba188eb31,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1382956731}
     - target: {fileID: 8928586118102193581, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_Name
@@ -1545,6 +1590,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 382493933}
     m_Modifications:
+    - target: {fileID: 1019915376748650424, guid: 53fa0c6b7166ce24181bf7e210452b6b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019915376748650424, guid: 53fa0c6b7166ce24181bf7e210452b6b,
+        type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019915376748650424, guid: 53fa0c6b7166ce24181bf7e210452b6b,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1327717845
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019915376748650424, guid: 53fa0c6b7166ce24181bf7e210452b6b,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3035440739493468871, guid: 53fa0c6b7166ce24181bf7e210452b6b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1558,7 +1623,7 @@ PrefabInstance:
     - target: {fileID: 3035440739493468871, guid: 53fa0c6b7166ce24181bf7e210452b6b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.47
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3035440739493468871, guid: 53fa0c6b7166ce24181bf7e210452b6b,
         type: 3}
@@ -1619,6 +1684,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brain Can can (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689253010656663384, guid: 53fa0c6b7166ce24181bf7e210452b6b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689253010656663384, guid: 53fa0c6b7166ce24181bf7e210452b6b,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1327717845
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689253010656663384, guid: 53fa0c6b7166ce24181bf7e210452b6b,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53fa0c6b7166ce24181bf7e210452b6b, type: 3}
@@ -2041,6 +2121,11 @@ PrefabInstance:
       propertyPath: bar
       value: 
       objectReference: {fileID: 127319271}
+    - target: {fileID: 8928586118102193579, guid: 920cce13fcc428949b397d4ba188eb31,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1382956731}
     - target: {fileID: 8928586118102193581, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_Name
@@ -2120,6 +2205,11 @@ PrefabInstance:
       propertyPath: bar
       value: 
       objectReference: {fileID: 127319271}
+    - target: {fileID: 8928586118102193579, guid: 920cce13fcc428949b397d4ba188eb31,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1382956731}
     - target: {fileID: 8928586118102193581, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_Name
@@ -2134,6 +2224,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 382493933}
     m_Modifications:
+    - target: {fileID: 1019915376748650424, guid: 53fa0c6b7166ce24181bf7e210452b6b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3035440739493468871, guid: 53fa0c6b7166ce24181bf7e210452b6b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2147,7 +2242,7 @@ PrefabInstance:
     - target: {fileID: 3035440739493468871, guid: 53fa0c6b7166ce24181bf7e210452b6b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3035440739493468871, guid: 53fa0c6b7166ce24181bf7e210452b6b,
         type: 3}
@@ -2208,6 +2303,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brain Can can (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689253010656663384, guid: 53fa0c6b7166ce24181bf7e210452b6b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53fa0c6b7166ce24181bf7e210452b6b, type: 3}
@@ -2293,6 +2393,11 @@ PrefabInstance:
       propertyPath: bar
       value: 
       objectReference: {fileID: 127319271}
+    - target: {fileID: 8928586118102193579, guid: 920cce13fcc428949b397d4ba188eb31,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1382956731}
     - target: {fileID: 8928586118102193581, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_Name
@@ -3104,6 +3209,11 @@ PrefabInstance:
       propertyPath: bar
       value: 
       objectReference: {fileID: 127319271}
+    - target: {fileID: 8928586118102193579, guid: 920cce13fcc428949b397d4ba188eb31,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1382956731}
     - target: {fileID: 8928586118102193581, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_Name

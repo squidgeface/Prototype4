@@ -256,6 +256,7 @@ MonoBehaviour:
   sound2: {fileID: 0}
   sound3: {fileID: 0}
   bar: {fileID: 0}
+  poof: {fileID: 6512302473148147680, guid: 30d8310e3c4766644b2abae21c24e72e, type: 3}
 --- !u!65 &4179384246586025351
 BoxCollider:
   m_ObjectHideFlags: 0

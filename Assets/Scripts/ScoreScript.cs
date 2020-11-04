@@ -21,6 +21,7 @@ public class ScoreScript : MonoBehaviour
     public int response = 0;
     public int level = 0;
 
+
     private ScoreScript[] EventSystems;
 
     void Start()

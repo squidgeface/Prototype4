@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FlyingBrain : MonoBehaviour
 {
     float speed = 0.0f;
     public AudioSource swoosh;
     private TrumpMover brain;
+    public Animator cloud;
+    public Image brainSprite;
+   
     void Start()
     {
         speed = Random.Range(2.0f, 7.0f);
@@ -25,4 +29,5 @@ public class FlyingBrain : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
 }

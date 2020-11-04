@@ -2339,6 +2339,7 @@ MonoBehaviour:
   image: {fileID: 1843260833}
   canvas: {fileID: 569648637}
   star: {fileID: 1549647370}
+  poof: {fileID: 6512302473148147680, guid: 30d8310e3c4766644b2abae21c24e72e, type: 3}
 --- !u!222 &1747495407
 CanvasRenderer:
   m_ObjectHideFlags: 0
