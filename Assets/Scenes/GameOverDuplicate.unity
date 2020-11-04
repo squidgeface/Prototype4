@@ -546,7 +546,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quit
+  m_Text: 
 --- !u!222 &903720645
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -646,6 +646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1044098636}
   - component: {fileID: 1044098635}
+  - component: {fileID: 1044098637}
   m_Layer: 0
   m_Name: Frump's brain
   m_TagString: Untagged
@@ -717,6 +718,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1044098637
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044098634}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7f416f836ec83f4aa052377e8a0e9ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1211935805
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,7 +854,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 171, y: 45}
+  m_AnchoredPosition: {x: -4, y: -113.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1280397603
@@ -910,8 +930,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 720393cd659504ef39e5dc041b46a90d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1001,21 +1021,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Lvl1Option1: "My people tell me coal is the problem, and my people are the best.
-    So I said the only solution is to burn all the coal and get rid of it, And that
+    So I said the only solution is to burn all the coal and get rid of it. And that
     was my idea. My people were amazed. They hadn\u2019t thought of that. They literally
     gasped at how good the idea was. "
   Lvl1Option2: "You know I did some research, very in-depth research and discovered
     that factories are the problem. I discovered this myself. So I\u2019m shutting
-    down our factories, I can do that you know. And I'll be sending our production
-    to China. China is very advanced. A very advanced people. Some of the most advanced
-    I've been told. Not only does this help the environment.It also creates jobs
-    now that people don\u2019t have to work in those terrible factories. "
-  Lvl1Option3: "People do not think \u201CAmerica the great\u201D when they hear
-    2nd place, this is what i\u2019ve always said. I promised to make USA number
-    one, and that's what I plan to do. We are getting rid of those old fossil fuels,
+    down our factories. I can do that you know. And I'll be sending our production
+    to Shynah. Shynah is very advanced. A very advanced people. Some of the most
+    advanced I've been told. Not only does this help the environment.It also creates
+    jobs now that people don\u2019t have to work in those terrible factories. "
+  Lvl1Option3: "People do not think \u201CMurca the great\u201D when they hear 2nd
+    place, this is what i\u2019ve always said. I promised to make SA number one,
+    and that's what I plan to do. We are getting rid of those 'old' fossil fuels,
     that's what fossil means. And we will be focusing on renewable resources like
-    coal. You know I made some coal in my fireplace the other day, and the brilliant
-    idea came to me. We just make more coal and use that power. This ensures we get
+    coal. You know, I made some coal in my fireplace the other day, and this brilliant
+    idea came to me. We just make more coal and use that power! This ensures we get
     number one in the carbon mission. "
   Lvl2Option1: "It\u2019s going to be, really, a voluntary thing. You can do it.
     You don\u2019t have to do it. I\u2019m choosing not to do it, but some people
@@ -1035,53 +1055,51 @@ MonoBehaviour:
     light, the way it kills it in one minute. That\u2019s pretty powerful, let\u2019s
     fund that. "
   Lvl3Option1: 'I''ve always said, if a business is struggling you should let it
-    die. The USPS says it  will cause issues with the votes if I dont give them money.
+    die. The EUSPS says it will cause issues with the votes if I dont give them money.
     They are threatening me. I could shut them down if I wanted to, I really could.
     I have that power. Maybe I''ll just add huge taxes, who knows I haven''t decided. '
-  Lvl3Option2: "People tell me they are worried that Russia may try and interfere
-    with the elections, but there is no need to panic. I asked Putin myself, a good
+  Lvl3Option2: "People tell me they are worried that Brusha may try and interfere
+    with the elections, but there is no need to panic. I asked Bootin myself, a good
     friend of mine. And he said \u201CNo\u201D. And that's good enough for me. He
     is a very trustable man. "
-  Lvl3Option3: 'You know I am very honest and dependable person, some people say
-    the most. Just last week a lady came up to me and said Mr.Trump You are very
-    honest. And I would have to agree with her. If people have concerns they can
-    come to me, but no one has. These concerns are Fake news made up by the media
-    to make me look bad. '
-  Lvl4Option1: "I met with Kim Jong Un.And we had a great meeting because we\u2019re
-    all in this together.We want to get this thing solved.  It\u2019s been going
-    on for a long time.  And we had a great meeting.  And it was unexpected.  I put
-    out yesterday: Maybe I\u2019ll meet with Chairman Kim.And he saw it.  Social
-    media.  A pretty powerful thing, social media. "
-  Lvl4Option2: "Our new budget calls for \u2014 listen to this; you\u2019ll love
-    this \u2014 78 F-35s.  Stealth, right?  Stealth.  (Applause.)  They say they\u2019re
-    hard to beat because you can\u2019t see them, literally.  I\u2019ve gone to some
-    of the great pilots; I say, \u201CWhat do you think of the F-35?  How does the
-    enemy do?\u201D  \u201CWell, they have a problem: They can\u2019t see it, sir.\u201D 
+  Lvl3Option3: "You know I am very honest and dependable person, some people say
+    the most. Just last week a lady came up to me and said, \u201CMr. Frump, You
+    are very honest.\u201D And I would have to agree with her. If people have concerns
+    they can come to me, but no one has. These concerns are Fake news made up by
+    the media to make me look bad. "
+  Lvl4Option1: "I met with Him Ong One and we had a great meeting because we\u2019re
+    all in this together. We want to get this thing solved. It\u2019s been going
+    on for a long time. And we had a great meeting. And it was unexpected. I put
+    out yesterday: Maybe I\u2019ll meet with Chairman Him. And he saw it. Social
+    media. A pretty powerful thing, social media. "
+  Lvl4Option2: "Our new budget calls for \u2014 listen to this, you\u2019ll love
+    this, \n 78 F-35s.  \n Stealth, right?  Stealth. They say they\u2019re hard to
+    beat because you can\u2019t see them, literally. I\u2019ve gone to some of the
+    great pilots. I say, \u201CWhat do you think of the F-35?  How does the enemy
+    do?\u201D  \u201CWell, they have a problem. They can\u2019t see it, sir.\u201D 
     I mean, that\u2019s pretty much it, right?  We\u2019ve got a lot of them. "
   Lvl4Option3: "We\u2019re building, right now, incredible military equipment at
-    a level that nobody has ever seen before.  We have no choice.  We have to do
-    it \u2014 with the adversaries we have out there. \n\n We have a \u2014 I call
-    it the \u201Csuper-duper missile.\u201D  And I heard the other night, It\u2019s
-    17 times faster than what they have right now. "
+    a level that nobody has ever seen before. We have no choice. We have to do it
+    with the adversaries we have out there. \n\n We have a \u2014 I call it the \u201Csuper-duper
+    missile.\u201D  And I heard the other night, It\u2019s 17 times faster than what
+    they have right now. "
   Lvl5Option1: 'We are going to have a spaceforce, probably the best spaceforce.
-    With my power, and it is a lot. I revive the national space council.  '
-  Lvl5Option2: "When it comes to defending America, it is not enough to merely have
-    an american presence in space, we must have an american dominance in space. It\u2019s
+    With my power, and it is a lot, I revive the national space council.  '
+  Lvl5Option2: "When it comes to defending Murca, it is not enough to merely have
+    a Murcan presence in space, we must have a Murcan dominance in space. It\u2019s
     going to be something. So important. "
-  Lvl5Option3: 'Amid grave threats to our national security, American superiority
-    in space is absolutely vital. And we''re leading, but we''re not leading by enough.
+  Lvl5Option3: 'Amid grave threats to our national security, Murcan superiority in
+    space is absolutely vital. And we''re leading, but we''re not leading by enough.
     But very shortly we''ll be leading by a lot. '
   PerfectEnding: 'By leaving matters to the experts. The country has become a Utopia
     with Martian Colonies. '
   BadEnding: 'Having thought super hard about these questions by clicking all the
     brains, you have created the perfect hole above the ozone for tanning, saved
-    a third of the population from a global pandemic and proudly been re-elected. '
-  StupidEnding: 'Having not fuelled your intelligence, you have heard the advice
-    of your people and not destroyed the country. You now frolick in the Forest with
-    Dutin and his bear, having not been re-elected. '
+    a third of the population from a global pandemic and have proudly been re-elected. '
+  StupidEnding: 'You now frolick in the Liberian forest with Dutin and his bear,
+    having not been re-elected. '
   GoodEnding: 'Having not fuelled your intelligence, you have heard the advice of
-    your people and not destroyed the country. You now frolick in the Forest with
-    Dutin and his bear, having not been re-elected. '
+    your people and not destroyed the country. '
   NoOption: 'I will let my people make the decision on this one. '
 --- !u!1001 &1484825033
 PrefabInstance:
@@ -1344,12 +1362,12 @@ PrefabInstance:
         type: 3}
       propertyPath: umm
       value: 
-      objectReference: {fileID: 1777419307}
+      objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: Reporter
       value: 
-      objectReference: {fileID: 1777419307}
+      objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312338, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: level
@@ -1545,7 +1563,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play Again
+  m_Text: 
 --- !u!222 &1739834102
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1598,6 +1616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1777419308}
   - component: {fileID: 1777419307}
+  - component: {fileID: 1777419309}
   m_Layer: 0
   m_Name: EmptyAudio
   m_TagString: Untagged
@@ -1615,7 +1634,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0104000f3c4fe2e41b83cdfda1847469, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1715,6 +1734,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1777419309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777419306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1252c00613589fe469acd3a8b2d4e6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Source: {fileID: 0}
+  Perfect: {fileID: 8300000, guid: 28899c740adc10c43bc0eddf94a5a275, type: 3}
+  Good: {fileID: 8300000, guid: 5bb1c558406a3364b83d5e5169095129, type: 3}
+  Stupid: {fileID: 8300000, guid: 09ef234e83fffca4489aa8cf2217f545, type: 3}
+  Evil: {fileID: 8300000, guid: b977660ab66ec4043ab10353cf384742, type: 3}
 --- !u!1 &1793620934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,7 +1983,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 171, y: -10}
+  m_AnchoredPosition: {x: -4, y: -168.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1940585540
@@ -2023,8 +2059,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: bf71ddb65e0d84e118f4f641756066ef, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

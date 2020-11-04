@@ -16,6 +16,7 @@ public class TrumpMover : MonoBehaviour
     Color c;
     public Canvas canvas;
     public Animator star;
+    public GameObject poof;
 
     private void Start()
     {
@@ -42,6 +43,8 @@ public class TrumpMover : MonoBehaviour
             Destroy(other.gameObject);
             splat.Play();
             star.GetComponent<Animator>().SetBool("IsStar", true);
+            Instantiate(poof, other.gameObject.transform.position, new Quaternion());
+           
         }
     }
 
