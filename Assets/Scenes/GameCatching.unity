@@ -298,6 +298,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99179893}
   m_CullTransparentMesh: 0
+--- !u!1001 &111890973
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1933855408}
+    m_Modifications:
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024944906975221573, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_Name
+      value: Brain Frump rejected dancing
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fe389198354eef548858c4c55f6004c6, type: 3}
 --- !u!1 &297936705
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +720,12 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!4 &614987404 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+    type: 3}
+  m_PrefabInstance: {fileID: 961132154}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &633766289 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1706267223904886057, guid: 920cce13fcc428949b397d4ba188eb31,
@@ -755,6 +830,75 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1270955481}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &961132154
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1933855408}
+    m_Modifications:
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6650308951846764792, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_Name
+      value: Brain Frump rejected pose
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0186b61462ab1c4a83d1541eaafcd22, type: 3}
 --- !u!1 &983067051 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8928586118102193581, guid: 920cce13fcc428949b397d4ba188eb31,
@@ -885,6 +1029,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065149291}
   m_CullTransparentMesh: 0
+--- !u!4 &1149381113 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 111890973}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1270955481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1347,6 +1497,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Frump's brain squat
       objectReference: {fileID: 0}
+    - target: {fileID: 7541538195201292319, guid: 1534379964da7d24189210a4f9dc9870,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1534379964da7d24189210a4f9dc9870, type: 3}
 --- !u!1 &1716442085
@@ -1450,6 +1605,38 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1933855407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1933855408}
+  m_Layer: 0
+  m_Name: Frump Brain rejected stuff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1933855408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933855407}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.94, y: -1.28, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_Children:
+  - {fileID: 614987404}
+  - {fileID: 1149381113}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2137413691
 GameObject:
   m_ObjectHideFlags: 0

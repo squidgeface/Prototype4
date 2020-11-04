@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -486,6 +486,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81fdc513601422f458656e52064d2b19, type: 3}
+--- !u!1001 &2524131501725491930
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523957646122490173, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6650308951846764792, guid: e0186b61462ab1c4a83d1541eaafcd22,
+        type: 3}
+      propertyPath: m_Name
+      value: Brain Frump rejected pose
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0186b61462ab1c4a83d1541eaafcd22, type: 3}
 --- !u!1001 &5843353630970359394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -571,6 +640,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cloud effect
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512302473148147680, guid: 30d8310e3c4766644b2abae21c24e72e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6512302473148147683, guid: 30d8310e3c4766644b2abae21c24e72e,
         type: 3}
@@ -851,3 +925,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 766c58c0654fce6448a76ab376f4905e, type: 3}
+--- !u!1001 &8660839963143007455
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414835527456623385, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024944906975221573, guid: fe389198354eef548858c4c55f6004c6,
+        type: 3}
+      propertyPath: m_Name
+      value: Brain Frump rejected dancing
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fe389198354eef548858c4c55f6004c6, type: 3}
