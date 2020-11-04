@@ -6,6 +6,7 @@ public class MoveCatcher : MonoBehaviour
 {
     public float speed = 100.0f;
     public Animator aniAnimator;
+    public Animator aniDebuff;
 
     private void Start()
     {
@@ -34,5 +35,10 @@ public class MoveCatcher : MonoBehaviour
                 transform.position -= new Vector3(Time.deltaTime * speed, 0, 0);
             }
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        aniDebuff.GetComponent<Animator>().SetBool("IsDebuff", true);
     }
 }
