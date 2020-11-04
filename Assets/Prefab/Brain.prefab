@@ -120,6 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swoosh: {fileID: 4493652638007122844}
+  cloud: {fileID: 0}
+  brainSprite: {fileID: 2982319302748144831}
 --- !u!82 &4493652638007122844
 AudioSource:
   m_ObjectHideFlags: 0

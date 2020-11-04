@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,8 +97,9 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_LightingDataAsset: {fileID: 112000000, guid: 2b48023c79abaff4494beee0dae698fb,
+    type: 2}
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -211,7 +212,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 209060777}
   - {fileID: 1280397602}
   - {fileID: 1940585539}
   m_Father: {fileID: 0}
@@ -222,7 +222,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &209060776
+--- !u!1 &174666675
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -230,72 +230,163 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 209060777}
-  - component: {fileID: 209060779}
-  - component: {fileID: 209060778}
-  m_Layer: 5
-  m_Name: Image
+  - component: {fileID: 174666676}
+  - component: {fileID: 174666677}
+  m_Layer: 0
+  m_Name: window background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &209060777
-RectTransform:
+--- !u!4 &174666676
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209060776}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 174666675}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 106377044}
+  m_Father: {fileID: 1775605197}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &209060778
-MonoBehaviour:
+--- !u!212 &174666677
+SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209060776}
+  m_GameObject: {fileID: 174666675}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 546467d8fc9e4874ab3a2106b6904ebb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7df41aeb760d09d40ad280257023c254, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &209060779
-CanvasRenderer:
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 30.48, y: 20.48}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1001 &609219477
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209060776}
-  m_CullTransparentMesh: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3114811714558017432, guid: d71b103bc715e504a816c125c60453e3,
+        type: 3}
+      propertyPath: m_Name
+      value: w
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114811714558017433, guid: d71b103bc715e504a816c125c60453e3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114811714558017433, guid: d71b103bc715e504a816c125c60453e3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -144.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114811714558017433, guid: d71b103bc715e504a816c125c60453e3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -240.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114811714558017433, guid: d71b103bc715e504a816c125c60453e3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114811714558017433, guid: d71b103bc715e504a816c125c60453e3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114811714558017433, guid: d71b103bc715e504a816c125c60453e3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114811714558017433, guid: d71b103bc715e504a816c125c60453e3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114811714558017433, guid: d71b103bc715e504a816c125c60453e3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114811714558017433, guid: d71b103bc715e504a816c125c60453e3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114811714558017433, guid: d71b103bc715e504a816c125c60453e3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114811714558017433, guid: d71b103bc715e504a816c125c60453e3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114811714558017433, guid: d71b103bc715e504a816c125c60453e3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114811714558017433, guid: d71b103bc715e504a816c125c60453e3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114811714558017433, guid: d71b103bc715e504a816c125c60453e3,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3000
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d71b103bc715e504a816c125c60453e3, type: 3}
 --- !u!1 &704559188
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,7 +546,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quit
+  m_Text: 
 --- !u!222 &903720645
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -464,6 +555,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903720642}
   m_CullTransparentMesh: 0
+--- !u!1 &991606269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 991606270}
+  - component: {fileID: 991606271}
+  m_Layer: 0
+  m_Name: window background hill 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &991606270
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991606269}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1775605197}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &991606271
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991606269}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e4a57061a11865347b480a86138fa6b9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 30.48, y: 20.48}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1044098634
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,6 +646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1044098636}
   - component: {fileID: 1044098635}
+  - component: {fileID: 1044098637}
   m_Layer: 0
   m_Name: Frump's brain
   m_TagString: Untagged
@@ -539,12 +712,112 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044098634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -87.9, y: -29.1, z: 100}
+  m_LocalPosition: {x: -75.8, y: -29.1, z: 100}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1044098637
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044098634}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7f416f836ec83f4aa052377e8a0e9ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1211935805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1211935806}
+  - component: {fileID: 1211935807}
+  m_Layer: 0
+  m_Name: window background hill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1211935806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211935805}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1775605197}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1211935807
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211935805}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 505700d2e70c40347b9ce2939bea0d7e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 30.48, y: 20.48}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1280397601
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,11 +850,11 @@ RectTransform:
   m_Children:
   - {fileID: 1739834100}
   m_Father: {fileID: 106377044}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -91}
+  m_AnchoredPosition: {x: -4, y: -113.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1280397603
@@ -657,8 +930,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 720393cd659504ef39e5dc041b46a90d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -748,21 +1021,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Lvl1Option1: "My people tell me coal is the problem, and my people are the best.
-    So I said the only solution is to burn all the coal and get rid of it, And that
+    So I said the only solution is to burn all the coal and get rid of it. And that
     was my idea. My people were amazed. They hadn\u2019t thought of that. They literally
     gasped at how good the idea was. "
   Lvl1Option2: "You know I did some research, very in-depth research and discovered
     that factories are the problem. I discovered this myself. So I\u2019m shutting
-    down our factories, I can do that you know. And I'll be sending our production
-    to China. China is very advanced. A very advanced people. Some of the most advanced
-    I've been told. Not only does this help the environment.It also creates jobs
-    now that people don\u2019t have to work in those terrible factories. "
-  Lvl1Option3: "People do not think \u201CAmerica the great\u201D when they hear
-    2nd place, this is what i\u2019ve always said. I promised to make USA number
-    one, and that's what I plan to do. We are getting rid of those old fossil fuels,
+    down our factories. I can do that you know. And I'll be sending our production
+    to Shynah. Shynah is very advanced. A very advanced people. Some of the most
+    advanced I've been told. Not only does this help the environment.It also creates
+    jobs now that people don\u2019t have to work in those terrible factories. "
+  Lvl1Option3: "People do not think \u201CMurca the great\u201D when they hear 2nd
+    place, this is what i\u2019ve always said. I promised to make SA number one,
+    and that's what I plan to do. We are getting rid of those 'old' fossil fuels,
     that's what fossil means. And we will be focusing on renewable resources like
-    coal. You know I made some coal in my fireplace the other day, and the brilliant
-    idea came to me. We just make more coal and use that power. This ensures we get
+    coal. You know, I made some coal in my fireplace the other day, and this brilliant
+    idea came to me. We just make more coal and use that power! This ensures we get
     number one in the carbon mission. "
   Lvl2Option1: "It\u2019s going to be, really, a voluntary thing. You can do it.
     You don\u2019t have to do it. I\u2019m choosing not to do it, but some people
@@ -782,53 +1055,51 @@ MonoBehaviour:
     light, the way it kills it in one minute. That\u2019s pretty powerful, let\u2019s
     fund that. "
   Lvl3Option1: 'I''ve always said, if a business is struggling you should let it
-    die. The USPS says it  will cause issues with the votes if I dont give them money.
+    die. The EUSPS says it will cause issues with the votes if I dont give them money.
     They are threatening me. I could shut them down if I wanted to, I really could.
     I have that power. Maybe I''ll just add huge taxes, who knows I haven''t decided. '
-  Lvl3Option2: "People tell me they are worried that Russia may try and interfere
-    with the elections, but there is no need to panic. I asked Putin myself, a good
+  Lvl3Option2: "People tell me they are worried that Brusha may try and interfere
+    with the elections, but there is no need to panic. I asked Bootin myself, a good
     friend of mine. And he said \u201CNo\u201D. And that's good enough for me. He
     is a very trustable man. "
-  Lvl3Option3: 'You know I am very honest and dependable person, some people say
-    the most. Just last week a lady came up to me and said Mr.Trump You are very
-    honest. And I would have to agree with her. If people have concerns they can
-    come to me, but no one has. These concerns are Fake news made up by the media
-    to make me look bad. '
-  Lvl4Option1: "I met with Kim Jong Un.And we had a great meeting because we\u2019re
-    all in this together.We want to get this thing solved.  It\u2019s been going
-    on for a long time.  And we had a great meeting.  And it was unexpected.  I put
-    out yesterday: Maybe I\u2019ll meet with Chairman Kim.And he saw it.  Social
-    media.  A pretty powerful thing, social media. "
-  Lvl4Option2: "Our new budget calls for \u2014 listen to this; you\u2019ll love
-    this \u2014 78 F-35s.  Stealth, right?  Stealth.  (Applause.)  They say they\u2019re
-    hard to beat because you can\u2019t see them, literally.  I\u2019ve gone to some
-    of the great pilots; I say, \u201CWhat do you think of the F-35?  How does the
-    enemy do?\u201D  \u201CWell, they have a problem: They can\u2019t see it, sir.\u201D 
+  Lvl3Option3: "You know I am very honest and dependable person, some people say
+    the most. Just last week a lady came up to me and said, \u201CMr. Frump, You
+    are very honest.\u201D And I would have to agree with her. If people have concerns
+    they can come to me, but no one has. These concerns are Fake news made up by
+    the media to make me look bad. "
+  Lvl4Option1: "I met with Him Ong One and we had a great meeting because we\u2019re
+    all in this together. We want to get this thing solved. It\u2019s been going
+    on for a long time. And we had a great meeting. And it was unexpected. I put
+    out yesterday: Maybe I\u2019ll meet with Chairman Him. And he saw it. Social
+    media. A pretty powerful thing, social media. "
+  Lvl4Option2: "Our new budget calls for \u2014 listen to this, you\u2019ll love
+    this, \n 78 F-35s.  \n Stealth, right?  Stealth. They say they\u2019re hard to
+    beat because you can\u2019t see them, literally. I\u2019ve gone to some of the
+    great pilots. I say, \u201CWhat do you think of the F-35?  How does the enemy
+    do?\u201D  \u201CWell, they have a problem. They can\u2019t see it, sir.\u201D 
     I mean, that\u2019s pretty much it, right?  We\u2019ve got a lot of them. "
   Lvl4Option3: "We\u2019re building, right now, incredible military equipment at
-    a level that nobody has ever seen before.  We have no choice.  We have to do
-    it \u2014 with the adversaries we have out there. \n\n We have a \u2014 I call
-    it the \u201Csuper-duper missile.\u201D  And I heard the other night, It\u2019s
-    17 times faster than what they have right now. "
+    a level that nobody has ever seen before. We have no choice. We have to do it
+    with the adversaries we have out there. \n\n We have a \u2014 I call it the \u201Csuper-duper
+    missile.\u201D  And I heard the other night, It\u2019s 17 times faster than what
+    they have right now. "
   Lvl5Option1: 'We are going to have a spaceforce, probably the best spaceforce.
-    With my power, and it is a lot. I revive the national space council.  '
-  Lvl5Option2: "When it comes to defending America, it is not enough to merely have
-    an american presence in space, we must have an american dominance in space. It\u2019s
+    With my power, and it is a lot, I revive the national space council.  '
+  Lvl5Option2: "When it comes to defending Murca, it is not enough to merely have
+    a Murcan presence in space, we must have a Murcan dominance in space. It\u2019s
     going to be something. So important. "
-  Lvl5Option3: 'Amid grave threats to our national security, American superiority
-    in space is absolutely vital. And we''re leading, but we''re not leading by enough.
+  Lvl5Option3: 'Amid grave threats to our national security, Murcan superiority in
+    space is absolutely vital. And we''re leading, but we''re not leading by enough.
     But very shortly we''ll be leading by a lot. '
   PerfectEnding: 'By leaving matters to the experts. The country has become a Utopia
     with Martian Colonies. '
   BadEnding: 'Having thought super hard about these questions by clicking all the
     brains, you have created the perfect hole above the ozone for tanning, saved
-    a third of the population from a global pandemic and proudly been re-elected. '
-  StupidEnding: 'Having not fuelled your intelligence, you have heard the advice
-    of your people and not destroyed the country. You now frolick in the Forest with
-    Dutin and his bear, having not been re-elected. '
+    a third of the population from a global pandemic and have proudly been re-elected. '
+  StupidEnding: 'You now frolick in the Liberian forest with Dutin and his bear,
+    having not been re-elected. '
   GoodEnding: 'Having not fuelled your intelligence, you have heard the advice of
-    your people and not destroyed the country. You now frolick in the Forest with
-    Dutin and his bear, having not been re-elected. '
+    your people and not destroyed the country. '
   NoOption: 'I will let my people make the decision on this one. '
 --- !u!1001 &1484825033
 PrefabInstance:
@@ -910,12 +1181,12 @@ PrefabInstance:
     - target: {fileID: 8999034593787312333, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -48.4
+      value: -21.9
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312333, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1
+      value: 14.7
       objectReference: {fileID: 0}
     - target: {fileID: 8999034593787312333, guid: e2b0823700b1cfa4b849308a67bccd6d,
         type: 3}
@@ -1292,7 +1563,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play Again
+  m_Text: 
 --- !u!222 &1739834102
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1301,6 +1572,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739834099}
   m_CullTransparentMesh: 0
+--- !u!1 &1775605196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1775605197}
+  m_Layer: 0
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1775605197
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775605196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 47.6, z: 504.3}
+  m_LocalScale: {x: 15, y: 15, z: 1}
+  m_Children:
+  - {fileID: 174666676}
+  - {fileID: 991606270}
+  - {fileID: 1211935806}
+  - {fileID: 1793620935}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1777419306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,6 +1616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1777419308}
   - component: {fileID: 1777419307}
+  - component: {fileID: 1777419309}
   m_Layer: 0
   m_Name: EmptyAudio
   m_TagString: Untagged
@@ -1428,6 +1734,104 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1777419309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777419306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1252c00613589fe469acd3a8b2d4e6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Source: {fileID: 0}
+  Perfect: {fileID: 8300000, guid: 28899c740adc10c43bc0eddf94a5a275, type: 3}
+  Good: {fileID: 8300000, guid: b764870e2200b9f4eb0deffaa8336c1f, type: 3}
+  Stupid: {fileID: 8300000, guid: f71880d3af0afe74f8ba24d0674aacf8, type: 3}
+  Evil: {fileID: 8300000, guid: 8ee9b9e97cebd914382cd68b322ae7a7, type: 3}
+--- !u!1 &1793620934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1793620935}
+  - component: {fileID: 1793620936}
+  m_Layer: 0
+  m_Name: window background tree
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1793620935
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793620934}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1775605197}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1793620936
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793620934}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e621724ad38904745a77f7d6f15464c7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 30.48, y: 20.48}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1812185356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,7 +1941,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812185356}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -15.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1575,11 +1979,11 @@ RectTransform:
   m_Children:
   - {fileID: 903720643}
   m_Father: {fileID: 106377044}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -146}
+  m_AnchoredPosition: {x: -4, y: -168.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1940585540
@@ -1655,8 +2059,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: bf71ddb65e0d84e118f4f641756066ef, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

@@ -628,6 +628,7 @@ MonoBehaviour:
   trump3: {fileID: 140998009}
   trump4: {fileID: 140998012}
   Cheering: {fileID: 140998019}
+  Crowd: {fileID: 1567024995}
 --- !u!82 &140998019
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2053,6 +2054,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93f47a0c6b6ac3a42b5cea4d6367d80d, type: 3}
+--- !u!95 &1567024995 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8829738944560425813, guid: 93f47a0c6b6ac3a42b5cea4d6367d80d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1567024994}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1781624778 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 17450045965944551, guid: 87229cec3066a3c49a05b8f9e642a942,

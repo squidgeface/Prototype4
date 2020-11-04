@@ -28,6 +28,8 @@ public class TrumpWriterText : MonoBehaviour
     public AudioSource trump4;
     public AudioSource Cheering;
 
+    public Animator Crowd;
+
     private void Start()
     {
         gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
@@ -247,7 +249,7 @@ public class TrumpWriterText : MonoBehaviour
             yield return new WaitForSeconds(delay);
         }
         Cheering.Play();
-        
+        Crowd.GetComponent<Animator>().SetTrigger("IsCheer");
 
         if (level == 1)
         {
