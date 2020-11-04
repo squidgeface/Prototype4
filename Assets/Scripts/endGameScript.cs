@@ -16,6 +16,7 @@ public class endGameScript : MonoBehaviour
     public levelScript LevelManager;
     public frumpScripts frumpText;
 
+    public TextMeshProUGUI text;
 
     private void Update()
     {
@@ -57,7 +58,7 @@ public class endGameScript : MonoBehaviour
         for (int i = 0; i < fullText.Length; i++)
         {
             curText = fullText.Substring(0, i);
-            this.GetComponent<TextMeshPro>().text = curText;
+            text.GetComponent<TextMeshProUGUI>().text = curText;
             yield return new WaitForSeconds(delay);
         }
     }

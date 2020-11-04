@@ -158,7 +158,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 8
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -334,7 +334,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 7043525922366267360}
-  poof: {fileID: 6512302473148147680, guid: 30d8310e3c4766644b2abae21c24e72e, type: 3}
 --- !u!65 &4179384246586025351
 BoxCollider:
   m_ObjectHideFlags: 0
