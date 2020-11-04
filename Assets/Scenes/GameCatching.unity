@@ -749,6 +749,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!95 &814403693 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4423730697238166301, guid: 920cce13fcc428949b397d4ba188eb31,
+    type: 3}
+  m_PrefabInstance: {fileID: 1270955481}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &983067051 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8928586118102193581, guid: 920cce13fcc428949b397d4ba188eb31,
@@ -769,6 +775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   aniAnimator: {fileID: 633766289}
+  aniDebuff: {fileID: 814403693}
 --- !u!54 &983067055
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -785,6 +792,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 124
   m_CollisionDetection: 1
+--- !u!95 &983067056
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983067051}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dcb87dfe8b611934ebdc432793ee34be, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1065149291
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,6 +932,11 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0.082159996
       objectReference: {fileID: 0}
+    - target: {fileID: 4423730697238166301, guid: 920cce13fcc428949b397d4ba188eb31,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5120562132295679282, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -934,6 +965,11 @@ PrefabInstance:
     - target: {fileID: 7126143077684539588, guid: 920cce13fcc428949b397d4ba188eb31,
         type: 3}
       propertyPath: m_RenderingLayerMask
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126143077684539588, guid: 920cce13fcc428949b397d4ba188eb31,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8928586117392055570, guid: 920cce13fcc428949b397d4ba188eb31,
